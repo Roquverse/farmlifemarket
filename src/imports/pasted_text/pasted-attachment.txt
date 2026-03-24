@@ -1,0 +1,228 @@
+Design a homepage UI for a global agricultural trade platform called "Farmlife Market".
+
+IMPORTANT:
+Use the same layout style, spacing, and section flow as the reference design I provided.
+The structure, rhythm, and visual style should feel very similar, but the content must be for Farmlife Market, which is a global agricultural marketplace and trade infrastructure platform.
+
+Do NOT design a farm shop.
+Do NOT design ecommerce.
+Do NOT design fintech.
+Do NOT design crypto.
+Do NOT design startup SaaS.
+
+Design must feel like:
+international trade platform
+agriculture infrastructure
+institutional marketplace
+premium global company
+
+
+--------------------------------
+STYLE RULES
+--------------------------------
+
+Color palette:
+deep forest green #0f2f24
+cream / warm white #f6f4ee
+soft gold accent #c8a96a
+charcoal text #1f1f1f
+light gray section backgrounds
+
+Typography:
+Headings → elegant serif font
+Body → clean sans-serif
+Large spacing
+Wide layout
+Clean grid
+Image-heavy sections
+
+Imagery:
+farms
+farmers
+grain storage
+warehouses
+trucks
+containers
+ports
+cooperatives
+inspection
+exports
+agriculture trade
+
+No neon
+No bright gradients
+No tech glow
+No startup look
+
+
+--------------------------------
+HOMEPAGE STRUCTURE
+Follow the same structure as the reference design
+--------------------------------
+
+
+SECTION 1 — HERO (same style as reference)
+
+Large background farm image
+
+Headline:
+Trusted Agricultural Trade Infrastructure
+
+Subtext:
+Farmlife Market connects verified farmers, cooperatives, and buyers through a standards-driven digital marketplace designed for reliable agricultural trade.
+
+Buttons:
+Explore Platform
+Join Network
+
+Right side stats (same layout style as reference):
+
+Verified Farmers
+Active Buyers
+Regions Served
+Successful Deliveries
+
+
+
+SECTION 2 — IMAGE + TEXT BLOCK (same layout as reference)
+
+Left image: farmer holding produce
+
+Right text:
+
+Title:
+Building a Reliable Agricultural Network
+
+Points list:
+Farmer Verification
+Standards & Compliance
+Structured Marketplace
+Supply Chain Coordination
+
+
+
+SECTION 3 — STATS ROW (same style as reference)
+
+Use large numbers:
+
+Farmers onboarded
+Regions active
+Trade volume
+Partners
+Warehouses
+
+
+
+SECTION 4 — SOFT TEXT SECTION (same style as reference)
+
+Text block:
+
+Connecting farmers to markets through structure, standards, and coordinated supply systems designed for long-term growth.
+
+
+
+SECTION 5 — SERVICES GRID (same layout as reference cards)
+
+Cards:
+
+Digital Marketplace
+Farmer Verification
+Standards & Compliance
+Trade Documentation
+Payments & Settlement
+Supply Chain Coordination
+
+
+
+SECTION 6 — FULL WIDTH IMAGE CTA (same style)
+
+Background farm image
+
+Text:
+Build stronger agricultural supply chains with Farmlife Market
+
+Button:
+Get Started
+
+
+
+SECTION 7 — FEATURE CARDS WITH IMAGES (same layout)
+
+Cards:
+
+Verified Farmer Network
+Institutional Sourcing
+Export & Trade Support
+
+
+
+SECTION 8 — TESTIMONIAL / TRUST SECTION (same layout style)
+
+Text:
+
+Farmlife Market is designed to create fair, reliable, and transparent agricultural trade systems that support farmers, buyers, and partners.
+
+
+
+SECTION 9 — FAQ SECTION (same accordion style)
+
+Questions:
+
+What is Farmlife Market?
+How are farmers verified?
+How does buying work?
+Do you support export supply?
+How does settlement work?
+
+
+
+SECTION 10 — ARTICLES / INSIGHTS GRID (same layout style)
+
+Cards:
+
+Farmer Network Growth
+Understanding Agricultural Standards
+How Trade Documentation Works
+
+
+
+SECTION 11 — CONTACT CTA (same layout as reference)
+
+Large background farm image
+
+Contact box on right
+
+Fields:
+Name
+Email
+Message
+
+Button:
+Send Inquiry
+
+
+
+SECTION 12 — FOOTER (same structure as reference)
+
+Columns:
+
+Company
+Platform
+Standards
+Regions
+Contact
+
+Dark footer with gold accent
+
+
+
+--------------------------------
+IMPORTANT
+--------------------------------
+
+Use the exact layout rhythm of the reference design.
+Use large images.
+Use wide spacing.
+Use premium typography.
+Use calm colors.
+Make it look expensive and trustworthy.

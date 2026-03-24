@@ -1,0 +1,97 @@
+import { ArrowRight } from "lucide-react";
+
+const harvesterImg = "https://images.unsplash.com/photo-1761162850759-f48693513725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21iaW5lJTIwaGFydmVzdGVyJTIwd2hlYXQlMjBmaWVsZCUyMGdvbGRlbnxlbnwxfHx8fDE3NzQzODk3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080";
+const farmerManImg = "https://images.unsplash.com/photo-1773105181028-0ea4b7f60045?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjBtYW4lMjB3b3JraW5nJTIwZmllbGQlMjBoYXR8ZW58MXx8fHwxNzc0Mzg5NzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080";
+const wheatGrainImg = "https://images.unsplash.com/photo-1760379858768-c41ec217514c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGVhdCUyMGdyYWluJTIwY2xvc2V1cCUyMGFncmljdWx0dXJhbCUyMGhhcnZlc3R8ZW58MXx8fHwxNzc0Mzg5NzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080";
+const basketImg = "https://images.unsplash.com/photo-1653550027228-e3202a24ccc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXNrZXQlMjBicmVhZCUyMGdyYWlucyUyMHdoZWF0JTIwcnVzdGljJTIwd29vZGVufGVufDF8fHx8MTc3NDM4OTc1MHww&ixlib=rb-4.1.0&q=80&w=1080";
+
+const posts = [
+  {
+    img: harvesterImg,
+    tag: "Farmland",
+    title: "Harvesting the Golden Fields",
+    desc: "Our state-of-the-art harvesters ensure every grain is collected with minimal waste.",
+    date: "Mar 10, 2026",
+  },
+  {
+    img: farmerManImg,
+    tag: "Sustainable",
+    title: "Current-Year Challenges",
+    desc: "How modern farmers adapt to changing climate conditions and market demands.",
+    date: "Feb 28, 2026",
+  },
+  {
+    img: wheatGrainImg,
+    tag: "Crops",
+    title: "The Anatomy of Perfect Wheat",
+    desc: "Understanding what makes our grain superior to conventionally grown varieties.",
+    date: "Feb 14, 2026",
+  },
+  {
+    img: basketImg,
+    tag: "Products",
+    title: "From Field to Your Table",
+    desc: "Trace the journey of our produce from harvest to your home in under 24 hours.",
+    date: "Jan 30, 2026",
+  },
+];
+
+export function FarmGallery() {
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+          <div className="max-w-lg">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <span className="w-8 h-0.5 bg-[#E8B835]"></span>
+              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Journal</span>
+            </div>
+            <h2
+              className="text-[#1a2e1a]"
+              style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 700, lineHeight: 1.3 }}
+            >
+              Caring for land with soft care, shaping your home to help our local friends each day
+            </h2>
+          </div>
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 border border-[#2d5016] text-[#2d5016] px-6 py-3 rounded-sm hover:bg-[#2d5016] hover:text-white transition-colors shrink-0"
+            style={{ fontWeight: 600 }}
+          >
+            View All Posts
+            <ArrowRight size={14} />
+          </a>
+        </div>
+
+        {/* Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {posts.map((post) => (
+            <article key={post.title} className="group cursor-pointer">
+              <div className="rounded-xl overflow-hidden aspect-[4/3] mb-4">
+                <img
+                  src={post.img}
+                  alt={post.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div>
+                <span className="inline-block bg-[#E8B835]/15 text-[#b8891a] text-xs px-2.5 py-1 rounded-full mb-2" style={{ fontWeight: 600 }}>
+                  {post.tag}
+                </span>
+                <h3
+                  className="text-[#1a2e1a] mb-2 group-hover:text-[#2d5016] transition-colors"
+                  style={{ fontSize: "0.95rem", fontWeight: 600, lineHeight: 1.4 }}
+                >
+                  {post.title}
+                </h3>
+                <p className="text-gray-500 text-sm mb-3" style={{ lineHeight: 1.6 }}>{post.desc}</p>
+                <span className="text-gray-400 text-xs">{post.date}</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
