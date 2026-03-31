@@ -1,10 +1,27 @@
 import { Facebook, Instagram, Twitter, Youtube, Mail, MapPin, Phone } from "lucide-react";
+import { Link } from "react-router";
 import logoImg from "figma:asset/f1a60f3da12baa16d2d6978f07f8a486bfc2d3a5.png";
 
 const links = {
-  Company: ["About Us", "Our Farm", "Sustainability", "Careers", "Press"],
-  Services: ["Farm Tours", "CSA Boxes", "Wholesale", "Delivery", "Events"],
-  "Legal": ["Privacy Policy", "Terms of Use", "Cookie Policy", "Certifications"],
+  Company: [
+    { label: "About Us", href: "/about" },
+    { label: "What We Do", href: "/what-we-do" },
+    { label: "Standards", href: "/standards" },
+    { label: "Partnerships", href: "/partnerships" },
+    { label: "Contact", href: "/contact" },
+  ],
+  Platform: [
+    { label: "Our Platform", href: "/platform" },
+    { label: "Global Operations", href: "/global-operations" },
+    { label: "Network", href: "/network" },
+    { label: "Trade & Supply", href: "/trade-supply" },
+  ],
+  Legal: [
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Use", href: "#" },
+    { label: "Cookie Policy", href: "#" },
+    { label: "Certifications", href: "/standards" },
+  ],
 };
 
 export function Footer() {
@@ -15,10 +32,10 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-5">
+            <Link to="/" className="flex items-center gap-2 mb-5">
               <img src={logoImg} alt="Farmlife Market logo" className="w-12 h-12 object-contain" />
               <span className="text-white text-lg" style={{ fontWeight: 600 }}>Farmlife Market</span>
-            </div>
+            </Link>
             <p className="text-white/50 text-sm mb-6" style={{ lineHeight: 1.8, maxWidth: "280px" }}>
               Empowering farmers and nourishing families with certified organic produce since 2010.
             </p>
@@ -35,7 +52,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Mail size={14} className="shrink-0 text-[#E8B835]" />
-                hello@agrofarm.com
+                hello@farmlifemarket.com
               </div>
             </div>
 
@@ -59,13 +76,13 @@ export function Footer() {
               <h4 className="text-white text-sm mb-5" style={{ fontWeight: 600 }}>{category}</h4>
               <ul className="space-y-3">
                 {items.map((item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
+                  <li key={item.label}>
+                    <Link
+                      to={item.href}
                       className="text-white/50 text-sm hover:text-white transition-colors"
                     >
-                      {item}
-                    </a>
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
