@@ -30,11 +30,11 @@ export function OrganicFoodSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div className="max-w-lg">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]"></span>
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Mission</span>
+              <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
+              <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Mission</span>
             </div>
             <h2
-              className="text-[#1a2e1a]"
+              className="text-[#0f172a]"
               style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.25 }}
             >
               We grow fresh organic food for you
@@ -58,13 +58,13 @@ export function OrganicFoodSection() {
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <span className="inline-block bg-[#E8B835] text-[#1a1a1a] text-xs px-2.5 py-1 rounded-sm mb-3" style={{ fontWeight: 600 }}>
+                <span className="inline-block bg-[#f5ad10] text-[#1a1a1a] text-xs px-2.5 py-1 rounded-sm mb-3" style={{ fontWeight: 600 }}>
                   {card.tag}
                 </span>
                 <h3 className="text-white" style={{ fontWeight: 600, lineHeight: 1.4 }}>
                   {card.title}
                 </h3>
-                <div className="flex items-center gap-2 mt-3 text-white/70 text-sm group-hover:text-[#E8B835] transition-colors">
+                <div className="flex items-center gap-2 mt-3 text-white/70 text-sm group-hover:text-[#f5ad10] transition-colors">
                   <span>Learn more</span>
                   <ArrowRight size={14} />
                 </div>

@@ -34,11 +34,11 @@ export function FAQSection() {
           {/* Left */}
           <div>
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]"></span>
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>FAQ</span>
+              <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
+              <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>FAQ</span>
             </div>
             <h2
-              className="text-[#1a2e1a] mb-6"
+              className="text-[#0f172a] mb-6"
               style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.25 }}
             >
               Questions about our farm
@@ -49,7 +49,7 @@ export function FAQSection() {
             </p>
             <a
               href="#"
-              className="inline-flex items-center gap-2 bg-[#2d5016] text-white px-8 py-3.5 rounded-sm hover:bg-[#1f3a0f] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#1e293b] text-white px-8 py-3.5 rounded-sm hover:bg-[#0f172a] transition-colors"
               style={{ fontWeight: 600 }}
             >
               Contact Us
@@ -68,16 +68,16 @@ export function FAQSection() {
                   onClick={() => setOpen(open === i ? null : i)}
                 >
                   <span
-                    className="text-[#1a2e1a] text-sm pr-4"
+                    className="text-[#0f172a] text-sm pr-4"
                     style={{ fontWeight: 600 }}
                   >
                     {faq.q}
                   </span>
-                  <div className="w-7 h-7 rounded-full bg-[#E8B835]/15 flex items-center justify-center shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-[#f5ad10]/15 flex items-center justify-center shrink-0">
                     {open === i ? (
-                      <Minus size={14} className="text-[#b8891a]" />
+                      <Minus size={14} className="text-[#d18b00]" />
                     ) : (
-                      <Plus size={14} className="text-[#b8891a]" />
+                      <Plus size={14} className="text-[#d18b00]" />
                     )}
                   </div>
                 </button>

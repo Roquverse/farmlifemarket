@@ -1,8 +1,8 @@
 const stats = [
-  { value: "2025", label: "Founded Year" },
-  { value: "Fresno", label: "Location, CA" },
-  { value: "$14M", label: "Annual Revenue" },
-  { value: "26", label: "Team Members" },
+  { value: "2025", label: "Platform Launch" },
+  { value: "Global Network", label: "Expanding Across Key Agricultural Regions" },
+  { value: "$14M+", label: "Trade Volume Facilitated" },
+  { value: "26+", label: "Active Partners & Operators" },
 ];
 
 export function StatsBar() {
@@ -13,7 +13,7 @@ export function StatsBar() {
           {stats.map((stat, i) => (
             <div key={i} className="text-center md:text-left">
               <div
-                className="text-[#1a2e1a]"
+                className="text-[#0f172a]"
                 style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 700 }}
               >
                 {stat.value}

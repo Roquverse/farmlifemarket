@@ -21,7 +21,7 @@ export function HeroSection() {
         <div className="max-w-xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#E8B835]"></span>
+            <span className="w-2 h-2 rounded-full bg-[#f5ad10]"></span>
             <span className="text-white/90 text-xs">Sustainable Agriculture</span>
           </div>
 
@@ -34,19 +34,18 @@ export function HeroSection() {
               letterSpacing: "-0.02em",
             }}
           >
-            Empowering Farmers with Advanced{" "}
-            <span className="text-[#E8B835]">Agriculture</span> Solutions
+            Connecting Farmers to Global{" "}
+            <span className="text-[#f5ad10]">Markets</span>—Seamlessly
           </h1>
 
-          <p className="text-white/75 text-base mb-8 max-w-md" style={{ lineHeight: 1.7 }}>
-            We provide cutting-edge farming tools and expertise to help you grow
-            more, waste less, and build a sustainable future for generations to come.
+          <p className="text-white/75 text-base mb-8 max-w-xl" style={{ lineHeight: 1.7 }}>
+            We provide farmers with direct access to markets, structured logistics, and growth-focused tools—enabling them to operate more efficiently, reduce losses, and increase profitability. Farm Life Market brings together the core elements of agriculture into one connected system.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <a
               href="#"
-              className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-7 py-3.5 rounded-sm hover:bg-[#d4a52e] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#f5ad10] text-[#1a1a1a] px-7 py-3.5 rounded-sm hover:bg-[#e09a05] transition-colors"
               style={{ fontWeight: 600 }}
             >
               Explore Services
@@ -69,8 +68,8 @@ export function HeroSection() {
             <div className="text-white/70 text-xs mt-1">Client Satisfaction</div>
           </div>
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4 text-center">
-            <div className="text-white text-2xl" style={{ fontWeight: 700 }}>12+</div>
-            <div className="text-white/70 text-xs mt-1">Years Experience</div>
+            <div className="text-white text-2xl" style={{ fontWeight: 700 }}>20+</div>
+            <div className="text-white/70 text-xs mt-1">Active Vendors</div>
           </div>
         </div>
       </div>

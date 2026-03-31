@@ -12,7 +12,7 @@ export function CTABanner() {
           alt="Aerial farmland"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#1a2e1a]/75" />
+        <div className="absolute inset-0 bg-[#0f172a]/75" />
       </div>
 
       {/* Decorative wheat SVG lines */}
@@ -38,29 +38,28 @@ export function CTABanner() {
       {/* Content */}
       <div className="relative z-10 text-center max-w-2xl mx-auto px-6">
         <div className="inline-flex items-center gap-2 mb-5">
-          <span className="w-8 h-0.5 bg-[#E8B835]"></span>
-          <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Get Started</span>
-          <span className="w-8 h-0.5 bg-[#E8B835]"></span>
+          <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
+          <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Get Started</span>
+          <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
         </div>
 
         <h2
           className="text-white mb-6"
           style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", fontWeight: 700, lineHeight: 1.2 }}
         >
-          Start your journey to organic for living now today
+          Access the Future of Agricultural Trade
         </h2>
 
         <p className="text-white/70 mb-8 text-base" style={{ lineHeight: 1.7 }}>
-          Join thousands of families who have made the switch to fresh, organic produce
-          delivered straight from our farm to your door.
+          Join a growing network of farmers, buyers, and partners building a more efficient and connected agricultural economy.
         </p>
 
         <a
           href="#"
-          className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-8 py-4 rounded-sm hover:bg-[#d4a52e] transition-colors"
+          className="inline-flex items-center gap-2 bg-[#f5ad10] text-[#1a1a1a] px-8 py-4 rounded-sm hover:bg-[#e09a05] transition-colors"
           style={{ fontWeight: 700 }}
         >
-          Join Our Community
+          Join the Platform
           <ArrowRight size={16} />
         </a>
       </div>

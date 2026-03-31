@@ -8,7 +8,7 @@ export function ContactCTA() {
       {/* Background */}
       <div className="absolute inset-0">
         <img src={sheepImg} alt="Pastoral farm scene" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-[#1a2e1a]/70" />
+        <div className="absolute inset-0 bg-[#0f172a]/70" />
       </div>
 
       {/* Content */}
@@ -17,8 +17,8 @@ export function ContactCTA() {
           {/* Text */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]"></span>
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Get in Touch</span>
+              <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
+              <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Get in Touch</span>
             </div>
             <h2
               className="text-white mb-4"
@@ -33,45 +33,45 @@ export function ContactCTA() {
 
           {/* Contact card */}
           <div className="bg-white rounded-2xl p-8 w-full max-w-md shadow-2xl">
-            <h3 className="text-[#1a2e1a] mb-6" style={{ fontWeight: 700 }}>Send us a message</h3>
+            <h3 className="text-[#0f172a] mb-6" style={{ fontWeight: 700 }}>Send us a message</h3>
             <form className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="text-[#1a2e1a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>First Name</label>
+                  <label className="text-[#0f172a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>First Name</label>
                   <input
                     type="text"
                     placeholder="John"
-                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#2d5016] transition-colors"
+                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#1e293b] transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="text-[#1a2e1a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>Last Name</label>
+                  <label className="text-[#0f172a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>Last Name</label>
                   <input
                     type="text"
                     placeholder="Doe"
-                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#2d5016] transition-colors"
+                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#1e293b] transition-colors"
                   />
                 </div>
               </div>
               <div>
-                <label className="text-[#1a2e1a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>Email</label>
+                <label className="text-[#0f172a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>Email</label>
                 <input
                   type="email"
                   placeholder="john@example.com"
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#2d5016] transition-colors"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#1e293b] transition-colors"
                 />
               </div>
               <div>
-                <label className="text-[#1a2e1a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>Message</label>
+                <label className="text-[#0f172a] text-xs mb-1.5 block" style={{ fontWeight: 600 }}>Message</label>
                 <textarea
                   rows={3}
                   placeholder="How can we help you?"
-                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#2d5016] transition-colors resize-none"
+                  className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-[#1e293b] transition-colors resize-none"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#E8B835] text-[#1a1a1a] py-3.5 rounded-lg hover:bg-[#d4a52e] transition-colors"
+                className="w-full bg-[#f5ad10] text-[#1a1a1a] py-3.5 rounded-lg hover:bg-[#e09a05] transition-colors"
                 style={{ fontWeight: 700 }}
               >
                 Send Message
@@ -79,11 +79,11 @@ export function ContactCTA() {
             </form>
 
             <div className="mt-6 pt-6 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
-              <a href="tel:+15595550182" className="flex items-center gap-2 text-gray-500 hover:text-[#2d5016] text-sm transition-colors">
+              <a href="tel:+15595550182" className="flex items-center gap-2 text-gray-500 hover:text-[#1e293b] text-sm transition-colors">
                 <Phone size={14} />
                 (559) 555-0182
               </a>
-              <a href="mailto:hello@agrofarm.com" className="flex items-center gap-2 text-gray-500 hover:text-[#2d5016] text-sm transition-colors">
+              <a href="mailto:hello@agrofarm.com" className="flex items-center gap-2 text-gray-500 hover:text-[#1e293b] text-sm transition-colors">
                 <Mail size={14} />
                 hello@agrofarm.com
               </a>

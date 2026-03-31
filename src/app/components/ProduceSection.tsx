@@ -64,12 +64,12 @@ export function ProduceSection() {
         {/* Header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-8 h-0.5 bg-[#E8B835]"></span>
-            <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Products</span>
-            <span className="w-8 h-0.5 bg-[#E8B835]"></span>
+            <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
+            <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Products</span>
+            <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
           </div>
           <h2
-            className="text-[#1a2e1a]"
+            className="text-[#0f172a]"
             style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.25 }}
           >
             Wonderful produce
@@ -93,21 +93,21 @@ export function ProduceSection() {
                 {p.emoji}
               </div>
               <div className="flex items-center justify-between mb-1">
-                <span className="text-xs text-[#b8891a] bg-[#E8B835]/10 px-2.5 py-0.5 rounded-full" style={{ fontWeight: 600 }}>
+                <span className="text-xs text-[#d18b00] bg-[#f5ad10]/10 px-2.5 py-0.5 rounded-full" style={{ fontWeight: 600 }}>
                   {p.category}
                 </span>
                 <div className="flex items-center gap-1">
-                  <Star size={12} className="text-[#E8B835] fill-[#E8B835]" />
+                  <Star size={12} className="text-[#f5ad10] fill-[#f5ad10]" />
                   <span className="text-xs text-gray-600" style={{ fontWeight: 600 }}>{p.rating}</span>
                   <span className="text-xs text-gray-400">({p.reviews})</span>
                 </div>
               </div>
-              <h3 className="text-[#1a2e1a] mt-2 mb-1" style={{ fontWeight: 600, fontSize: "0.95rem" }}>
+              <h3 className="text-[#0f172a] mt-2 mb-1" style={{ fontWeight: 600, fontSize: "0.95rem" }}>
                 {p.name}
               </h3>
               <div className="flex items-center justify-between mt-4">
-                <span className="text-[#2d5016]" style={{ fontWeight: 700, fontSize: "1rem" }}>{p.price}</span>
-                <button className="w-9 h-9 bg-[#2d5016] text-white rounded-lg flex items-center justify-center hover:bg-[#1f3a0f] transition-colors">
+                <span className="text-[#1e293b]" style={{ fontWeight: 700, fontSize: "1rem" }}>{p.price}</span>
+                <button className="w-9 h-9 bg-[#1e293b] text-white rounded-lg flex items-center justify-center hover:bg-[#0f172a] transition-colors">
                   <ShoppingCart size={15} />
                 </button>
               </div>
@@ -119,22 +119,22 @@ export function ProduceSection() {
         <div className="mt-16 bg-[#f8f5ee] rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto">
           <div className="flex justify-center gap-1 mb-4">
             {[1,2,3,4,5].map(i => (
-              <Star key={i} size={18} className="text-[#E8B835] fill-[#E8B835]" />
+              <Star key={i} size={18} className="text-[#f5ad10] fill-[#f5ad10]" />
             ))}
           </div>
           <blockquote
-            className="text-[#1a2e1a] mb-6"
+            className="text-[#0f172a] mb-6"
             style={{ fontSize: "clamp(0.95rem, 2vw, 1.2rem)", fontWeight: 500, lineHeight: 1.7 }}
           >
             "The quality of produce from Agrofarm is absolutely outstanding. Every delivery
             is fresh, flavourful, and you can genuinely taste the difference that organic farming makes."
           </blockquote>
           <div className="flex items-center justify-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#E8B835]/30 flex items-center justify-center text-sm" style={{ fontWeight: 700 }}>
+            <div className="w-10 h-10 rounded-full bg-[#f5ad10]/30 flex items-center justify-center text-sm" style={{ fontWeight: 700 }}>
               SM
             </div>
             <div className="text-left">
-              <div className="text-[#1a2e1a] text-sm" style={{ fontWeight: 600 }}>Sarah Mitchell</div>
+              <div className="text-[#0f172a] text-sm" style={{ fontWeight: 600 }}>Sarah Mitchell</div>
               <div className="text-gray-400 text-xs">Loyal customer since 2021</div>
             </div>
           </div>

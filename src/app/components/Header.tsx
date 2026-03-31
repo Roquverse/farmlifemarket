@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { NavLink, Link } from "react-router";
-import logoImg from "figma:asset/f1a60f3da12baa16d2d6978f07f8a486bfc2d3a5.png";
 
 const navGroups = [
   { label: "About", href: "/about" },
@@ -50,7 +49,7 @@ function DropdownMenu({
   return (
     <div className="relative" ref={ref}>
       <button
-        className={`flex items-center gap-1 text-sm transition-colors ${
+        className={`flex items-center gap-1 text-sm font-medium transition-colors ${
           isScrolled
             ? "text-[#1a2e1a]/80 hover:text-[#1a2e1a]"
             : "text-white/90 hover:text-white"
@@ -111,7 +110,7 @@ export function Header() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img
-            src={logoImg}
+            src="/logo.png"
             alt="Farmlife Market logo"
             className="w-12 h-12 object-contain drop-shadow-md"
           />
@@ -143,7 +142,7 @@ export function Header() {
                 key={group.href}
                 to={group.href!}
                 className={({ isActive }) =>
-                  `text-sm transition-colors ${
+                  `text-sm font-medium transition-colors ${
                     isScrolled
                       ? isActive
                         ? "text-[#2d5016]"
@@ -188,7 +187,7 @@ export function Header() {
           }`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
 

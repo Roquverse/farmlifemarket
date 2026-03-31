@@ -9,29 +9,29 @@ const posts = [
   {
     img: harvesterImg,
     tag: "Farmland",
-    title: "Harvesting the Golden Fields",
-    desc: "Our state-of-the-art harvesters ensure every grain is collected with minimal waste.",
+    title: "Optimizing Yield at Scale",
+    desc: "Leveraging technology to ensure agricultural outputs are maximized with precision.",
     date: "Mar 10, 2026",
   },
   {
     img: farmerManImg,
     tag: "Sustainable",
-    title: "Current-Year Challenges",
-    desc: "How modern farmers adapt to changing climate conditions and market demands.",
+    title: "Adapting to Market and Climate Shifts",
+    desc: "How modern producers adapt to changing climate conditions and global demands.",
     date: "Feb 28, 2026",
   },
   {
     img: wheatGrainImg,
     tag: "Crops",
-    title: "The Anatomy of Perfect Wheat",
-    desc: "Understanding what makes our grain superior to conventionally grown varieties.",
+    title: "Quality Standards in Modern Grain Production",
+    desc: "Establishing strict quality benchmarks for trading on the global market.",
     date: "Feb 14, 2026",
   },
   {
     img: basketImg,
     tag: "Products",
-    title: "From Field to Your Table",
-    desc: "Trace the journey of our produce from harvest to your home in under 24 hours.",
+    title: "From Production to Distribution",
+    desc: "Streamlining logistics to ensure efficient delivery across the supply chain.",
     date: "Jan 30, 2026",
   },
 ];
@@ -44,19 +44,22 @@ export function FarmGallery() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div className="max-w-lg">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]"></span>
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Journal</span>
+              <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
+              <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Journal</span>
             </div>
             <h2
-              className="text-[#1a2e1a]"
+              className="text-[#0f172a] mb-4"
               style={{ fontSize: "clamp(1.4rem, 3vw, 2.2rem)", fontWeight: 700, lineHeight: 1.3 }}
             >
-              Caring for land with soft care, shaping your home to help our local friends each day
+              Insights on Agriculture, Trade, and Scale
             </h2>
+            <p className="text-gray-500 text-base" style={{ lineHeight: 1.6 }}>
+              Perspectives, data, and field insights shaping the future of agricultural markets.
+            </p>
           </div>
           <a
             href="#"
-            className="inline-flex items-center gap-2 border border-[#2d5016] text-[#2d5016] px-6 py-3 rounded-sm hover:bg-[#2d5016] hover:text-white transition-colors shrink-0"
+            className="inline-flex items-center gap-2 border border-[#1e293b] text-[#1e293b] px-6 py-3 rounded-sm hover:bg-[#1e293b] hover:text-white transition-colors shrink-0"
             style={{ fontWeight: 600 }}
           >
             View All Posts
@@ -76,11 +79,11 @@ export function FarmGallery() {
                 />
               </div>
               <div>
-                <span className="inline-block bg-[#E8B835]/15 text-[#b8891a] text-xs px-2.5 py-1 rounded-full mb-2" style={{ fontWeight: 600 }}>
+                <span className="inline-block bg-[#f5ad10]/15 text-[#d18b00] text-xs px-2.5 py-1 rounded-full mb-2" style={{ fontWeight: 600 }}>
                   {post.tag}
                 </span>
                 <h3
-                  className="text-[#1a2e1a] mb-2 group-hover:text-[#2d5016] transition-colors"
+                  className="text-[#0f172a] mb-2 group-hover:text-[#1e293b] transition-colors"
                   style={{ fontSize: "0.95rem", fontWeight: 600, lineHeight: 1.4 }}
                 >
                   {post.title}
