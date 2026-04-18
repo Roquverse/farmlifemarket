@@ -32,12 +32,11 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2010", event: "Founded in Fresno, CA with 3 local partner farms" },
-  { year: "2014", event: "Launched first regional distribution network across California" },
-  { year: "2017", event: "Achieved USDA Organic Certification across all product lines" },
-  { year: "2019", event: "Expanded to 12 states with 200+ farm partners" },
-  { year: "2022", event: "Launched digital platform serving 50,000+ customers" },
-  { year: "2026", event: "Operating in 30+ countries with 1,200 certified farms" },
+  { year: "2025", event: "Founded in New York, with 3 local partner farms" },
+  { year: "2025", event: "Launched first regional distribution network across New York" },
+  { year: "2026", event: "Expanded to African Continent with 50+ farm partners" },
+  { year: "2026", event: "Launched digital platform serving vendors and consumers" },
+  { year: "2026", event: "Operating in 3+ countries with 50+ certified farms" },
 ];
 
 const team = [
@@ -54,7 +53,7 @@ export function AboutPage() {
         badge="Our Story"
         title="Growing a Better World,"
         titleHighlight="Together"
-        description="Farmlife Market was founded on a simple belief: that great food starts with great farming. For over 15 years, we've been connecting communities with the farmers who feed them."
+        description="Farmlife Market was founded on a simple belief: that great food starts with great farming. For over 2 years, we've been connecting communities with the farmers who feed them."
         image={heroImage}
         breadcrumb={[{ label: "About" }]}
       />
@@ -77,7 +76,7 @@ export function AboutPage() {
                 More than a marketplace — a movement for sustainable food
               </h2>
               <p className="text-gray-600 mb-5" style={{ lineHeight: 1.8 }}>
-                Farmlife Market began as a single farmers' market stall in Fresno, California. Today, we connect over 1,200 certified organic farms with millions of consumers across 30 countries — all while staying true to our roots.
+                Farmlife Market began as a single farmers' market stall in New York, USA. Today, we connect over 50+ certified organic farms with millions of consumers across 3 countries — all while staying true to our roots.
               </p>
               <p className="text-gray-600 mb-8" style={{ lineHeight: 1.8 }}>
                 We believe the food system can be healthier, fairer, and more transparent. That's why we've built a platform that puts farmers first and gives consumers the confidence to know exactly where their food comes from.
@@ -108,7 +107,7 @@ export function AboutPage() {
                 <img src={teamImage} alt="Farmlife Market team" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-[#2d5016] text-white rounded-xl p-5 shadow-xl">
-                <div className="text-3xl mb-1" style={{ fontWeight: 700 }}>1,200+</div>
+                <div className="text-3xl mb-1" style={{ fontWeight: 700 }}>50+</div>
                 <div className="text-white/80 text-xs" style={{ fontWeight: 500 }}>Certified Farm<br />Partners Worldwide</div>
               </div>
             </div>

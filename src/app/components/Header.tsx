@@ -8,19 +8,19 @@ const navGroups = [
     label: "Solutions",
     children: [
       { label: "What We Do", href: "/what-we-do" },
-      { label: "Platform", href: "/platform" },
-      { label: "Standards", href: "/standards" },
+      { label: "Logistics", href: "/logistics" },
     ],
   },
+  { label: "Platform", href: "https://app.farmlifemarket.com" },
   {
     label: "Global",
     children: [
       { label: "Global Operations", href: "/global-operations" },
       { label: "Network", href: "/network" },
       { label: "Trade & Supply", href: "/trade-supply" },
+
     ],
   },
-  { label: "Partnerships", href: "/partnerships" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -49,11 +49,10 @@ function DropdownMenu({
   return (
     <div className="relative" ref={ref}>
       <button
-        className={`flex items-center gap-1 text-sm font-medium transition-colors ${
-          isScrolled
-            ? "text-[#1a2e1a]/80 hover:text-[#1a2e1a]"
-            : "text-white/90 hover:text-white"
-        }`}
+        className={`flex items-center gap-1 text-sm font-medium transition-colors ${isScrolled
+          ? "text-[#1a2e1a]/80 hover:text-[#1a2e1a]"
+          : "text-white/90 hover:text-white"
+          }`}
         onClick={() => setOpen(!open)}
       >
         {label}
@@ -71,10 +70,9 @@ function DropdownMenu({
               to={item.href}
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                `block px-4 py-2.5 text-sm transition-colors ${
-                  isActive
-                    ? "text-[#2d5016] bg-[#f0f7e8]"
-                    : "text-gray-700 hover:text-[#2d5016] hover:bg-[#f0f7e8]"
+                `block px-4 py-2.5 text-sm transition-colors ${isActive
+                  ? "text-[#2d5016] bg-[#f0f7e8]"
+                  : "text-gray-700 hover:text-[#2d5016] hover:bg-[#f0f7e8]"
                 }`
               }
             >
@@ -100,12 +98,20 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+        : "bg-transparent"
+        }`}
     >
+      {/* Top Navbar */}
+      <div className="bg-[#cc0000] text-white text-xs font-medium py-1.5 px-6 hidden md:flex justify-end gap-6 items-center w-full">
+        <Link to="/standards" className="hover:text-white/80 transition-colors">Standards</Link>
+        <Link to="/network" className="hover:text-white/80 transition-colors">
+          Network
+        </Link>
+        <Link to="/partnerships" className="hover:text-white/80 transition-colors">Partnerships</Link>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
@@ -114,17 +120,6 @@ export function Header() {
             alt="Farmlife Market logo"
             className="w-12 h-12 object-contain drop-shadow-md"
           />
-          <span
-            className={`text-lg transition-colors ${
-              isScrolled ? "text-[#1a2e1a]" : "text-white"
-            }`}
-            style={{
-              fontWeight: 700,
-              textShadow: isScrolled ? "none" : "0 1px 4px rgba(0,0,0,0.4)",
-            }}
-          >
-            Farmlife Market
-          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -142,12 +137,11 @@ export function Header() {
                 key={group.href}
                 to={group.href!}
                 className={({ isActive }) =>
-                  `text-sm font-medium transition-colors ${
-                    isScrolled
-                      ? isActive
-                        ? "text-[#2d5016]"
-                        : "text-[#1a2e1a]/80 hover:text-[#1a2e1a]"
-                      : isActive
+                  `text-sm font-medium transition-colors ${isScrolled
+                    ? isActive
+                      ? "text-[#2d5016]"
+                      : "text-[#1a2e1a]/80 hover:text-[#1a2e1a]"
+                    : isActive
                       ? "text-[#E8B835]"
                       : "text-white/90 hover:text-white"
                   }`
@@ -163,11 +157,10 @@ export function Header() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             to="/contact"
-            className={`text-sm transition-colors ${
-              isScrolled
-                ? "text-[#1a2e1a]/70 hover:text-[#1a2e1a]"
-                : "text-white/90 hover:text-white"
-            }`}
+            className={`text-sm transition-colors ${isScrolled
+              ? "text-[#1a2e1a]/70 hover:text-[#1a2e1a]"
+              : "text-white/90 hover:text-white"
+              }`}
           >
             Sign In
           </Link>
@@ -182,9 +175,8 @@ export function Header() {
 
         {/* Mobile toggle */}
         <button
-          className={`md:hidden transition-colors ${
-            isScrolled ? "text-[#1a2e1a]" : "text-white"
-          }`}
+          className={`md:hidden transition-colors ${isScrolled ? "text-[#1a2e1a]" : "text-white"
+            }`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X size={26} /> : <Menu size={26} />}
@@ -209,9 +201,8 @@ export function Header() {
                   {group.label}
                   <ChevronDown
                     size={14}
-                    className={`transition-transform ${
-                      mobileExpanded === group.label ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform ${mobileExpanded === group.label ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 {mobileExpanded === group.label && (
@@ -222,10 +213,9 @@ export function Header() {
                         to={item.href}
                         onClick={() => setMobileOpen(false)}
                         className={({ isActive }) =>
-                          `py-2 text-sm ${
-                            isActive
-                              ? "text-[#2d5016]"
-                              : "text-gray-600 hover:text-[#2d5016]"
+                          `py-2 text-sm ${isActive
+                            ? "text-[#2d5016]"
+                            : "text-gray-600 hover:text-[#2d5016]"
                           }`
                         }
                       >
@@ -241,8 +231,7 @@ export function Header() {
                 to={group.href!}
                 onClick={() => setMobileOpen(false)}
                 className={({ isActive }) =>
-                  `py-3 text-sm border-b border-gray-50 last:border-0 ${
-                    isActive ? "text-[#2d5016]" : "text-[#1a2e1a]/80 hover:text-[#2d5016]"
+                  `py-3 text-sm border-b border-gray-50 last:border-0 ${isActive ? "text-[#2d5016]" : "text-[#1a2e1a]/80 hover:text-[#2d5016]"
                   }`
                 }
               >
