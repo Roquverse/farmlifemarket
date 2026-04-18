@@ -43,7 +43,7 @@ export function Footer() {
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <MapPin size={14} className="shrink-0 text-[#f5ad10]" />
-                1234 Harvest Road, Fresno, CA 93711
+                New York, USA
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Phone size={14} className="shrink-0 text-[#f5ad10]" />
@@ -51,7 +51,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Mail size={14} className="shrink-0 text-[#E8B835]" />
-                hello@farmlifemarket.com
+                contact@farmlifemarket.com
               </div>
             </div>
 
