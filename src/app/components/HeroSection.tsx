@@ -62,7 +62,7 @@ export function HeroSection() {
         </div>
 
         {/* Stats bottom right */}
-        <div className="absolute bottom-12 right-6 md:right-12 flex gap-6">
+        <div className="absolute bottom-20 right-6 md:right-12 hidden md:flex gap-6">
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-4 text-center">
             <div className="text-white text-2xl" style={{ fontWeight: 700 }}>96%</div>
             <div className="text-white/70 text-xs mt-1">Client Satisfaction</div>

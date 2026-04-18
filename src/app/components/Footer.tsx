@@ -36,8 +36,7 @@ export function Footer() {
               <span className="text-white text-lg" style={{ fontWeight: 600 }}>Farmlife Market</span>
             </Link>
             <p className="text-white/50 text-sm mb-6" style={{ lineHeight: 1.8, maxWidth: "280px" }}>
-              Empowering farmers and buyers with efficient trading infrastructure since 2010.
-            </p>
+              We provide farmers with direct access to markets, structured logistics, and growth-focused tools—enabling them to operate more efficiently, reduce losses, and increase profitability. Farm Life Market brings together the core elements of agriculture into one connected system.            </p>
 
             {/* Contact info */}
             <div className="space-y-3 mb-6">
@@ -47,11 +46,11 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Phone size={14} className="shrink-0 text-[#f5ad10]" />
-                (559) 555-0182
+                +1 202-989-0927
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Mail size={14} className="shrink-0 text-[#E8B835]" />
-                contact@farmlifemarket.com
+                support@farmlifemarket.com
               </div>
             </div>
 
