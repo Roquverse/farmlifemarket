@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router";
 
 const familyImg = "https://images.unsplash.com/photo-1774218419969-b4d0e465319a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwZmFybSUyMGZvb2QlMjBmYW1pbHklMjBoZWFsdGh5JTIwZWF0aW5nfGVufDF8fHx8MTc3NDM4OTc0N3ww&ixlib=rb-4.1.0&q=80&w=1080";
 const farmerWomanImg = "https://images.unsplash.com/photo-1627742748562-7cf054787d31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjB3b21hbiUyMHNtaWxpbmclMjBob2xkaW5nJTIwdmVnZXRhYmxlcyUyMGJhc2tldHxlbnwxfHx8fDE3NzQzODk3Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080";
@@ -48,7 +49,7 @@ export function OrganicFoodSection() {
         {/* Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card) => (
-            <div key={card.title} className="group relative rounded-2xl overflow-hidden cursor-pointer">
+            <Link key={card.title} to="/what-we-do" className="group relative rounded-2xl overflow-hidden cursor-pointer block">
               <div className="aspect-[4/3]">
                 <img
                   src={card.img}
@@ -69,7 +70,7 @@ export function OrganicFoodSection() {
                   <ArrowRight size={14} />
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import { Link } from "react-router";
 
 const farmerImage = "/img1.jpg";
 
@@ -63,13 +64,13 @@ export function AboutSection() {
               ))}
             </div>
 
-            <a
-              href="#"
+            <Link
+              to="/what-we-do"
               className="inline-flex items-center gap-2 bg-[#1e293b] text-white px-8 py-3.5 rounded-sm hover:bg-[#0f172a] transition-colors"
               style={{ fontWeight: 600 }}
             >
               Access the Platform
-            </a>
+            </Link>
           </div>
         </div>
       </div>

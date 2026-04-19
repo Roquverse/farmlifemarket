@@ -1,4 +1,5 @@
 import { Leaf, Droplets, Sun } from "lucide-react";
+import { Link } from "react-router";
 
 const tractorImg = "https://images.unsplash.com/photo-1706862609885-7771b001daa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFjdG9yJTIwZmllbGQlMjBhZ3JpY3VsdHVyZSUyMGZhcm1pbmclMjBtYWNoaW5lcnl8ZW58MXx8fHwxNzc0Mzg5NzQzfDA&ixlib=rb-4.1.0&q=80&w=1080";
 const produceImg = "https://images.unsplash.com/photo-1741515044901-58696421d24a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG9yZ2FuaWMlMjB2ZWdldGFibGVzJTIwcHJvZHVjZSUyMG1hcmtldHxlbnwxfHx8fDE3NzQzODk3NDN8MA&ixlib=rb-4.1.0&q=80&w=1080";
@@ -57,13 +58,13 @@ export function HealthSection() {
               ))}
             </div>
 
-            <a
-              href="#"
+            <Link
+              to="/what-we-do"
               className="inline-flex items-center gap-2 bg-[#1e293b] text-white px-8 py-3.5 rounded-sm hover:bg-[#0f172a] transition-colors"
               style={{ fontWeight: 600 }}
             >
               Explore Products
-            </a>
+            </Link>
           </div>
 
           {/* Images right */}

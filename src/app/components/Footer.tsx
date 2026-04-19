@@ -10,7 +10,7 @@ const links = {
     { label: "Contact", href: "/contact" },
   ],
   Platform: [
-    { label: "Our Platform", href: "/platform" },
+    { label: "Our Platform", href: "/what-we-do" },
     { label: "Global Operations", href: "/global-operations" },
     { label: "Network", href: "/network" },
     { label: "Trade & Supply", href: "/trade-supply" },

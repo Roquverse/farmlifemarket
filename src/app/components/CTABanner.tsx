@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router";
 
 const aerialImg = "https://images.unsplash.com/photo-1751818430520-d2954873e314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZXJpYWwlMjBncmVlbiUyMGZhcm1sYW5kJTIwcm93cyUyMGNyb3BzJTIwYmlyZHMlMjBleWV8ZW58MXx8fHwxNzc0Mzg5NzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080";
 
@@ -54,14 +55,14 @@ export function CTABanner() {
           Join a growing network of farmers, buyers, and partners building a more efficient and connected agricultural economy.
         </p>
 
-        <a
-          href="#"
+        <Link
+          to="/contact"
           className="inline-flex items-center gap-2 bg-[#f5ad10] text-[#1a1a1a] px-8 py-4 rounded-sm hover:bg-[#e09a05] transition-colors"
           style={{ fontWeight: 700 }}
         >
           Join the Platform
           <ArrowRight size={16} />
-        </a>
+        </Link>
       </div>
     </section>
   );

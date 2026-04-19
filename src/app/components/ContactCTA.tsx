@@ -79,13 +79,13 @@ export function ContactCTA() {
             </form>
 
             <div className="mt-6 pt-6 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
-              <a href="tel:+15595550182" className="flex items-center gap-2 text-gray-500 hover:text-[#1e293b] text-sm transition-colors">
+              <a href="tel:+12029890927" className="flex items-center gap-2 text-gray-500 hover:text-[#1e293b] text-sm transition-colors">
                 <Phone size={14} />
-                (559) 555-0182
+                +1 202-989-0927
               </a>
-              <a href="mailto:hello@agrofarm.com" className="flex items-center gap-2 text-gray-500 hover:text-[#1e293b] text-sm transition-colors">
+              <a href="mailto:support@farmlifemarket.com" className="flex items-center gap-2 text-gray-500 hover:text-[#1e293b] text-sm transition-colors">
                 <Mail size={14} />
-                hello@agrofarm.com
+                support@farmlifemarket.com
               </a>
             </div>
           </div>
