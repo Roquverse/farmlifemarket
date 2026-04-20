@@ -7,28 +7,20 @@ const heroImage =
 
 const offices = [
   {
-    city: "Fresno, CA",
+    city: "New York",
     country: "United States (HQ)",
-    address: "1234 Harvest Road, Fresno, CA 93711",
-    phone: "+1 (559) 555-0182",
-    email: "hello@farmlifemarket.com",
+    address: "One World Trade Center 85th Floor New York, NY 1007",
+    phone: "+1 (212) 372 6006",
+    email: "contact@farmlifemarket.com",
     hours: "Mon–Fri, 8:00 AM – 6:00 PM PST",
   },
   {
-    city: "Amsterdam",
-    country: "Netherlands (Europe Hub)",
-    address: "Keizersgracht 450, 1016 GD Amsterdam",
-    phone: "+31 20 555 0193",
-    email: "europe@farmlifemarket.com",
+    city: "Lagos",
+    country: "Nigeria (Africa Hub)",
+    address: "Lagos",
+    phone: "+2347077783725",
+    email: "africahub@farmlifemarket.com",
     hours: "Mon–Fri, 9:00 AM – 5:30 PM CET",
-  },
-  {
-    city: "Singapore",
-    country: "Singapore (APAC Hub)",
-    address: "10 Marina Blvd, #22-01, Singapore 018981",
-    phone: "+65 6555 0174",
-    email: "apac@farmlifemarket.com",
-    hours: "Mon–Fri, 9:00 AM – 6:00 PM SGT",
   },
 ];
 

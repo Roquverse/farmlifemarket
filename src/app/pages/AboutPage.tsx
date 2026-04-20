@@ -40,9 +40,10 @@ const milestones = [
 ];
 
 const team = [
+    { name: "MThanda K. Robb, BA ", role: "CEO & Founder", image: "/profile2.jpeg" },
   { name: "Patrick M. Reid, MBA ", role: "Chief Operating Officer, President Of Global Operations. ", image: "/profile1.jpeg" },
-  { name: "MThanda K. Robb, BA ", role: "CEO & Founder", image: "/profile2.jpeg" },
-  { name: "Ojo Olajide ", role: "Chief Technical Officer, Global Operations", image: "/profile3.jpeg" },  
+
+  { name: "Ojo Olajide Samuel", role: "Chief Technical Officer, Global Operations", image: "/profile3.jpeg" },  
 ];
 
 export function AboutPage() {
