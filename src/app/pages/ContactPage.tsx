@@ -9,7 +9,7 @@ const offices = [
   {
     city: "New York",
     country: "United States (HQ)",
-    address: "One World Trade Center 85th Floor New York, NY 1007",
+    address: "One World Trade Center 85th Floor New York, NY 10007",
     phone: "+1 (212) 372 6006",
     email: "contact@farmlifemarket.com",
     hours: "Mon–Fri, 8:00 AM – 6:00 PM PST",
@@ -17,7 +17,7 @@ const offices = [
   {
     city: "Lagos",
     country: "Nigeria (Africa Hub)",
-    address: "Lagos",
+    address: "2 Olatunji street Agodo, Cele Egbe, lkotun Lagos",
     phone: "+2347077783725",
     email: "africahub@farmlifemarket.com",
     hours: "Mon–Fri, 9:00 AM – 5:30 PM CET",
