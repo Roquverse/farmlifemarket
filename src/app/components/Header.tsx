@@ -11,7 +11,7 @@ const navGroups = [
       { label: "Logistics", href: "/logistics" },
     ],
   },
-  { label: "Platform", href: "https://app.farmlifemarket.com" },
+  { label: "Platform", href: "/coming-soon" },
   {
     label: "Global",
     children: [

@@ -146,7 +146,7 @@ export function WhatWeDoPage() {
               Start Today <ArrowRight size={16} />
             </Link>
             <Link
-              to="/platform"
+              to="/coming-soon"
               className="inline-flex items-center gap-2 bg-white/10 border border-white/30 text-white px-8 py-3.5 rounded-sm hover:bg-white/20 transition-colors"
               style={{ fontWeight: 500 }}
             >

@@ -12,6 +12,7 @@ import { LogisticsPage } from "./pages/LogisticsPage";
 import { PartnershipsPage } from "./pages/PartnershipsPage";
 import { ContactPage } from "./pages/ContactPage";
 import { TrackingPage } from "./pages/TrackingPage";
+import { ComingSoonPage } from "./pages/ComingSoonPage";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ export const router = createBrowserRouter([
       { path: "partnerships", Component: PartnershipsPage },
       { path: "contact", Component: ContactPage },
       { path: "tracking", Component: TrackingPage },
+      { path: "coming-soon", Component: ComingSoonPage },
     ],
   },
 ]);

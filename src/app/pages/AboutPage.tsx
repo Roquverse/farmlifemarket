@@ -3,10 +3,10 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1663263687797-c0d079b662b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGZhcm0lMjBncmVlbiUyMGxhbmRzY2FwZSUyMGFlcmlhbCUyMHN1bnJpc2V8ZW58MXx8fHwxNzc0OTg1MDYxfDA&ixlib=rb-4.1.0&q=80&w=1080";
+  "/about-hero.png";
 
 const teamImage =
-  "https://images.unsplash.com/photo-1709532386360-bf8651a95368?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXJzJTIwY29vcGVyYXRpdmUlMjBjb21tdW5pdHklMjBtZWV0aW5nJTIwcnVyYWx8ZW58MXx8fHwxNzc0OTg1MDU5fDA&ixlib=rb-4.1.0&q=80&w=1080";
+  "/about-us.png";
 
 const values = [
   {
@@ -40,10 +40,9 @@ const milestones = [
 ];
 
 const team = [
-  { name: "Clara Whitfield", role: "CEO & Co-Founder", initials: "CW" },
-  { name: "Marcus Osei", role: "Chief Agriculture Officer", initials: "MO" },
-  { name: "Sofia Ramirez", role: "Head of Sustainability", initials: "SR" },
-  { name: "James Chen", role: "VP of Global Operations", initials: "JC" },
+  { name: "Patrick M. Reid, MBA ", role: "Chief Operating Officer, President Of Global Operations. ", image: "/profile1.jpeg" },
+  { name: "MThanda K. Robb, BA ", role: "CEO & Founder", image: "/profile2.jpeg" },
+  { name: "Ojo Olajide ", role: "Chief Technical Officer, Global Operations", image: "/profile3.jpeg" },  
 ];
 
 export function AboutPage() {
@@ -184,16 +183,14 @@ export function AboutPage() {
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
             <h2 className="text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Meet the team behind the mission
+              Meet The Team
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
               <div key={member.name} className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-colors">
-                <div className="w-16 h-16 rounded-full bg-[#E8B835]/20 border-2 border-[#E8B835]/40 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-[#E8B835]" style={{ fontWeight: 700, fontSize: "1.1rem" }}>{member.initials}</span>
-                </div>
-                <div className="text-white text-sm mb-1" style={{ fontWeight: 600 }}>{member.name}</div>
+                <img src={member.image} alt={member.name} style={{ width: "100%", height: "400px", border: "1px solid #E8B835/40", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 4px", overflow: "hidden", borderRadius: "12px", objectFit: "cover" }} />
+                <div className="text-white text-sm mb-1" style={{ fontWeight: 600, paddingTop: "10px", fontSize: "18px" }}>{member.name}</div>
                 <div className="text-white/50 text-xs">{member.role}</div>
               </div>
             ))}

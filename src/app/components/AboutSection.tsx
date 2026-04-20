@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router";
 
-const farmerImage = "/img1.jpg";
+const farmerImage = "/img1.png";
 
 const features = [
   { title: "Integrated Market Access", desc: "Direct connections between farmers and verified buyers, removing unnecessary intermediaries." },
@@ -65,7 +65,7 @@ export function AboutSection() {
             </div>
 
             <Link
-              to="/what-we-do"
+              to="/coming-soon"
               className="inline-flex items-center gap-2 bg-[#1e293b] text-white px-8 py-3.5 rounded-sm hover:bg-[#0f172a] transition-colors"
               style={{ fontWeight: 600 }}
             >

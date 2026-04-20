@@ -56,7 +56,7 @@ export function CTABanner() {
         </p>
 
         <Link
-          to="/contact"
+          to="/coming-soon"
           className="inline-flex items-center gap-2 bg-[#f5ad10] text-[#1a1a1a] px-8 py-4 rounded-sm hover:bg-[#e09a05] transition-colors"
           style={{ fontWeight: 700 }}
         >

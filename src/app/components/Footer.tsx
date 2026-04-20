@@ -10,7 +10,7 @@ const links = {
     { label: "Contact", href: "/contact" },
   ],
   Platform: [
-    { label: "Our Platform", href: "/what-we-do" },
+    { label: "Our Platform", href: "/coming-soon" },
     { label: "Global Operations", href: "/global-operations" },
     { label: "Network", href: "/network" },
     { label: "Trade & Supply", href: "/trade-supply" },
@@ -42,11 +42,15 @@ export function Footer() {
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <MapPin size={14} className="shrink-0 text-[#f5ad10]" />
-                New York, USA
+                New York 
+                <br />
+                One World Trade Center 85th Floor New York, NY 1007 
+    
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Phone size={14} className="shrink-0 text-[#f5ad10]" />
-                +1 202-989-0927
+                (212) 372 6006 
+
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Mail size={14} className="shrink-0 text-[#E8B835]" />
