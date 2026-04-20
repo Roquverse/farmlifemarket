@@ -186,8 +186,8 @@ export function ContactPage() {
                   </div>
                   <div>
                     <div className="text-[#1a2e1a] text-sm mb-1" style={{ fontWeight: 600 }}>Email Us</div>
-                    <a href="mailto:hello@farmlifemarket.com" className="text-gray-500 text-sm hover:text-[#2d5016] transition-colors">
-                      hello@farmlifemarket.com
+                    <a href="mailto:contact@farmlifemarket.com" className="text-gray-500 text-sm hover:text-[#2d5016] transition-colors">
+                      contact@farmlifemarket.com
                     </a>
                   </div>
                 </div>
@@ -197,8 +197,8 @@ export function ContactPage() {
                   </div>
                   <div>
                     <div className="text-[#1a2e1a] text-sm mb-1" style={{ fontWeight: 600 }}>Call Us</div>
-                    <a href="tel:+15595550182" className="text-gray-500 text-sm hover:text-[#2d5016] transition-colors">
-                      +1 (559) 555-0182
+                    <a href="tel:+12123726006" className="text-gray-500 text-sm hover:text-[#2d5016] transition-colors">
+                      +1 (212) 372 6006
                     </a>
                   </div>
                 </div>
