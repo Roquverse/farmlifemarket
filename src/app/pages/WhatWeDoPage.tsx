@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1768602182173-154eeedeed05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGZhcm1pbmclMjB0ZWNobm9sb2d5JTIwZGlnaXRhbCUyMGFncmljdWx0dXJlfGVufDF8fHx8MTc3NDk4NTA1Mnww&ixlib=rb-4.1.0&q=80&w=1080";
+  "/what-we-do-hero.png";
 
 const services = [
   {

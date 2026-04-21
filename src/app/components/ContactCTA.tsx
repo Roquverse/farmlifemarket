@@ -1,6 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 
-const sheepImg = "https://images.unsplash.com/photo-1759871416502-81923d777e2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGVlcCUyMGZhcm0lMjBwYXN0b3JhbCUyMGNvdW50cnlzaWRlJTIwZ3JlZW58ZW58MXx8fHwxNzc0Mzg5NzQzfDA&ixlib=rb-4.1.0&q=80&w=1080";
+const sheepImg = "/home-contact.jpg";
 
 export function ContactCTA() {
   return (

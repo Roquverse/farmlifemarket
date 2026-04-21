@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1709532386360-bf8651a95368?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXJzJTIwY29vcGVyYXRpdmUlMjBjb21tdW5pdHklMjBtZWV0aW5nJTIwcnVyYWx8ZW58MXx8fHwxNzc0OTg1MDU5fDA&ixlib=rb-4.1.0&q=80&w=1080";
+  "/network-hero.png";
 
 const networkTypes = [
   {

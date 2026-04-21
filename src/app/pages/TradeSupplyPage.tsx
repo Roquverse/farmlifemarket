@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1700446390880-b2e08f310183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyYWwlMjB0cmFkZSUyMGNhcmdvJTIwc2hpcCUyMHBvcnQlMjBsb2dpc3RpY3N8ZW58MXx8fHwxNzc0OTg1MDU1fDA&ixlib=rb-4.1.0&q=80&w=1080";
+  "/trade supply.png";
 
 const tradeFeatures = [
   {

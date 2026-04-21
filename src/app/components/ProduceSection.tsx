@@ -126,7 +126,7 @@ export function ProduceSection() {
             className="text-[#0f172a] mb-6"
             style={{ fontSize: "clamp(0.95rem, 2vw, 1.2rem)", fontWeight: 500, lineHeight: 1.7 }}
           >
-            "The quality of produce from Agrofarm is absolutely outstanding. Every delivery
+            "The quality of produce from Farmlife Market is absolutely outstanding. Every delivery
             is fresh, flavourful, and you can genuinely taste the difference that organic farming makes."
           </blockquote>
           <div className="flex items-center justify-center gap-3">

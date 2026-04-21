@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1658869163471-81665d648612?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHBhcnRuZXJzaGlwJTIwaGFuZHNoYWtlJTIwYWdyaWN1bHR1cmUlMjBkZWFsfGVufDF8fHx8MTc3NDk4NTA1NXww&ixlib=rb-4.1.0&q=80&w=1080";
+  "/partnership.png";
 
 const partnershipTypes = [
   {
@@ -36,16 +36,16 @@ const partnershipTypes = [
   },
 ];
 
-const currentPartners = [
-  { name: "AgroBank International", type: "Financial Partner" },
-  { name: "University of Wageningen", type: "Research Partner" },
-  { name: "UN Food Programme", type: "Development Partner" },
-  { name: "FreshNow Group", type: "Retail Partner" },
-  { name: "GreenCapital Fund", type: "Impact Investor" },
-  { name: "EcoTrade Alliance", type: "Trade Partner" },
-  { name: "African Development Bank", type: "Development Finance" },
-  { name: "Berkeley Organic Institute", type: "Research Partner" },
-];
+// const currentPartners = [
+//   { name: "AgroBank International", type: "Financial Partner" },
+//   { name: "University of Wageningen", type: "Research Partner" },
+//   { name: "UN Food Programme", type: "Development Partner" },
+//   { name: "FreshNow Group", type: "Retail Partner" },
+//   { name: "GreenCapital Fund", type: "Impact Investor" },
+//   { name: "EcoTrade Alliance", type: "Trade Partner" },
+//   { name: "African Development Bank", type: "Development Finance" },
+//   { name: "Berkeley Organic Institute", type: "Research Partner" },
+// ];
 
 const partnerProcess = [
   { step: "01", title: "Initial Inquiry", desc: "Fill out our partnership interest form. We'll respond within 2 business days to discuss your goals." },
@@ -125,7 +125,7 @@ export function PartnershipsPage() {
               Trusted by world-class organizations
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {currentPartners.map((p, i) => (
               <div key={i} className="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 bg-[#2d5016]/10 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -135,7 +135,7 @@ export function PartnershipsPage() {
                 <div className="text-[#E8B835] text-xs" style={{ fontWeight: 500 }}>{p.type}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

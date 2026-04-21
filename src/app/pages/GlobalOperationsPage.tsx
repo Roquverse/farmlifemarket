@@ -9,42 +9,36 @@ const regions = [
   {
     name: "North America",
     countries: "USA, Canada, Mexico",
-    farms: 340,
     hubs: ["Fresno, CA", "Toronto, ON", "Mexico City"],
     color: "#E8B835",
   },
   {
     name: "Europe",
     countries: "Germany, France, Netherlands, Spain, Italy + 12 more",
-    farms: 280,
     hubs: ["Amsterdam", "Frankfurt", "Paris"],
     color: "#2d5016",
   },
   {
     name: "Asia Pacific",
     countries: "Australia, Japan, South Korea, New Zealand + 8 more",
-    farms: 220,
     hubs: ["Sydney", "Tokyo", "Singapore"],
     color: "#5a8f2e",
   },
   {
     name: "South America",
     countries: "Brazil, Colombia, Argentina, Peru + 5 more",
-    farms: 195,
     hubs: ["São Paulo", "Bogotá", "Lima"],
     color: "#8fb85a",
   },
   {
     name: "Middle East & Africa",
     countries: "UAE, Kenya, South Africa, Morocco + 9 more",
-    farms: 145,
     hubs: ["Dubai", "Nairobi", "Cape Town"],
     color: "#c4a035",
   },
   {
     name: "Southeast Asia",
     countries: "Thailand, Vietnam, Indonesia, Philippines + 4 more",
-    farms: 120,
     hubs: ["Bangkok", "Ho Chi Minh City", "Jakarta"],
     color: "#6ab04c",
   },
@@ -104,7 +98,7 @@ export function GlobalOperationsPage() {
         badge="Global Reach"
         title="Operating Across"
         titleHighlight="6 Continents"
-        description="Farmlife Market's global operations network spans 30+ countries, connecting local harvests to international demand through precision logistics, local expertise, and real-time supply chain visibility."
+        description="Farmlife Market's global operations network spans 30+ countries and the Carribean, connecting local harvests to international demand through precision logistics, local expertise, and real-time supply chain visibility."
         image={heroImage}
         breadcrumb={[{ label: "Global Operations" }]}
       />
@@ -144,9 +138,7 @@ export function GlobalOperationsPage() {
                   <span
                     className="text-xs px-3 py-1 rounded-full"
                     style={{ background: r.color + "22", color: r.color, fontWeight: 600 }}
-                  >
-                    {r.farms} farms
-                  </span>
+                  ></span>
                 </div>
                 <p className="text-gray-500 text-sm mb-5">{r.countries}</p>
                 <div>

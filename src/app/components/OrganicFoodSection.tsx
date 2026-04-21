@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 
 const familyImg = "https://images.unsplash.com/photo-1774218419969-b4d0e465319a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwZmFybSUyMGZvb2QlMjBmYW1pbHklMjBoZWFsdGh5JTIwZWF0aW5nfGVufDF8fHx8MTc3NDM4OTc0N3ww&ixlib=rb-4.1.0&q=80&w=1080";
-const farmerWomanImg = "https://images.unsplash.com/photo-1627742748562-7cf054787d31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjB3b21hbiUyMHNtaWxpbmclMjBob2xkaW5nJTIwdmVnZXRhYmxlcyUyMGJhc2tldHxlbnwxfHx8fDE3NzQzODk3Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080";
+const farmerWomanImg = "/handpicked.jpg";
 const wheatImg = "https://images.unsplash.com/photo-1760379858768-c41ec217514c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGVhdCUyMGdyYWluJTIwY2xvc2V1cCUyMGFncmljdWx0dXJhbCUyMGhhcnZlc3R8ZW58MXx8fHwxNzc0Mzg5NzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080";
 
 const cards = [

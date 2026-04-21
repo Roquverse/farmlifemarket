@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";
 import { PageHero } from "../components/PageHero";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1716703371653-ca74beaa7a4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250YWN0JTIwdXMlMjBvZmZpY2UlMjBmYXJtJTIwY3VzdG9tZXIlMjBzdXBwb3J0fGVufDF8fHx8MTc3NDk4NTA1NXww&ixlib=rb-4.1.0&q=80&w=1080";
+  "/contact.png";
 
 const offices = [
   {

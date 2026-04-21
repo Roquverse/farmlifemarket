@@ -3,12 +3,12 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "What does Agrofarm offer?",
+    q: "What does Farm life Market offer?",
     a: "We offer a full range of certified organic produce including grains, vegetables, fruits, honey, eggs, and cold-pressed oils — all grown on our sustainable farm in Fresno, CA. We also provide farm tours, CSA (Community Supported Agriculture) boxes, and wholesale supply for restaurants.",
   },
   {
     q: "How can I contact the farm?",
-    a: "You can reach us by phone at (559) 555-0182, by email at hello@agrofarm.com, or by visiting us at our farm stand open Tuesday–Saturday 8am–5pm. Our team responds to all online inquiries within one business day.",
+    a: "You can reach us by phone at +1 (212) 372 6006, by email at contact@farmlifemarket.com, or by visiting us at our farm stand open Tuesday–Saturday 8am–5pm. Our team responds to all online inquiries within one business day.",
   },
   {
     q: "What guidelines do farming approvals?",

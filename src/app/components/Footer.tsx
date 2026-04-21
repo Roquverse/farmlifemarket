@@ -20,6 +20,7 @@ const links = {
     { label: "Terms of Use", href: "#" },
     { label: "Cookie Policy", href: "#" },
     { label: "Certifications", href: "/standards" },
+    { label: "Press", href: "#" },
   ],
 };
 
