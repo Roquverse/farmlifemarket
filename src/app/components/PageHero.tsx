@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 interface PageHeroProps {
   badge?: string;
@@ -9,6 +9,9 @@ interface PageHeroProps {
   image: string;
   breadcrumb?: { label: string; href?: string }[];
   overlayStrength?: string;
+  button?: string;
+  button2?: string;
+  children?: React.ReactNode;
 }
 
 export function PageHero({
@@ -19,6 +22,9 @@ export function PageHero({
   image,
   breadcrumb,
   overlayStrength = "from-black/70 via-black/45 to-black/20",
+  button,
+  button2,
+  children,
 }: PageHeroProps) {
   return (
     <section className="relative h-[72vh] min-h-[480px] flex items-end overflow-hidden">
@@ -78,6 +84,8 @@ export function PageHero({
         >
           {description}
         </p>
+
+        {children}
       </div>
     </section>
   );

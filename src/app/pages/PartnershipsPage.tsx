@@ -8,28 +8,28 @@ const heroImage =
 const partnershipTypes = [
   {
     icon: Building,
-    title: "Corporate & Retail Partners",
+    title: "Commercial Market Partners",
     desc: "We work with food retailers, restaurant groups, and CPG brands to source certified organic ingredients directly from our farmer network.",
     benefits: ["Priority sourcing access", "Volume price guarantees", "Co-branded marketing opportunities", "Dedicated account manager", "Custom product development support"],
     cta: "Become a Buyer Partner",
   },
   {
     icon: GraduationCap,
-    title: "Research & Academic Partners",
+    title: "Research & Innovation Partners",
     desc: "We collaborate with agricultural universities and research institutions to advance regenerative farming practices and food systems innovation.",
     benefits: ["Field trial access across 30+ countries", "Anonymized data sets for research", "Joint grant applications", "Published study co-authorship", "Student placement programs"],
     cta: "Explore Research Partnerships",
   },
   {
     icon: Banknote,
-    title: "Impact Investment Partners",
+    title: "Investment & Finance Partners",
     desc: "We connect impact investors and development finance institutions with investable agricultural SMEs in our vetted farmer network.",
     benefits: ["Deal flow access to vetted farms", "Co-investment opportunities", "ESG impact reporting", "Blended finance structures", "Quarterly portfolio updates"],
     cta: "Discuss Investment",
   },
   {
     icon: Globe,
-    title: "NGO & Government Partners",
+    title: "Public & Development Partners",
     desc: "We partner with development organizations and government agencies to scale organic farming adoption in underserved agricultural communities.",
     benefits: ["Subsidized platform access for beneficiaries", "Joint training programs", "Policy advocacy collaboration", "Reporting & monitoring tools", "Community impact dashboards"],
     cta: "Partner With Us",
@@ -58,9 +58,10 @@ export function PartnershipsPage() {
   return (
     <div>
       <PageHero
-        badge="Work With Us"
-        title="Partnership Built on"
-        titleHighlight="Shared Purpose"
+        badge="Public & Institutional Partnerships"
+        title="Building Partnerships That Strengthen
+"
+        titleHighlight=" Agricultural Systems"
         description="Farmlife Market believes the food system's biggest challenges require collaborative solutions. We partner with businesses, institutions, and organizations that share our vision for a more sustainable world."
         image={heroImage}
         breadcrumb={[{ label: "Partnerships" }]}
@@ -76,7 +77,7 @@ export function PartnershipsPage() {
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
             <h2 className="text-[#1a2e1a] max-w-xl mx-auto" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}>
-              How we collaborate with organizations worldwide
+              Strategic Partnership Areas
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-7">

@@ -5,7 +5,7 @@ const links = {
   Company: [
     { label: "About Us", href: "/about" },
     { label: "What We Do", href: "/what-we-do" },
-    { label: "Standards", href: "/standards" },
+    { label: "Quality & Compliance", href: "/quality-compliance" },
     { label: "Partnerships", href: "/partnerships" },
     { label: "Contact", href: "/contact" },
   ],
@@ -19,7 +19,7 @@ const links = {
     { label: "Privacy Policy", href: "#" },
     { label: "Terms of Use", href: "#" },
     { label: "Cookie Policy", href: "#" },
-    { label: "Certifications", href: "/standards" },
+    { label: "Certifications", href: "/quality-compliance" },
     { label: "Press", href: "#" },
   ],
 };

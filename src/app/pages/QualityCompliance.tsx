@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "/standard.png";
+  "/quality.png";
 
 const certifications = [
   {
@@ -75,16 +75,16 @@ const auditProcess = [
   { step: "5", title: "Annual Renewal", desc: "All certifications are renewed annually with continuous monitoring between audit cycles." },
 ];
 
-export function StandardsPage() {
+export function QualityCompliancePage() {
   return (
     <div>
       <PageHero
-        badge="Quality Assurance"
-        title="Standards That Define"
-        titleHighlight="Trust"
-        description="Every product on the Farmlife Market platform has passed our rigorous multi-level standards review — from soil health and water stewardship to international trade certification."
+        badge="Quality & Compliance"
+        title="Trust Built Through Verified"
+        titleHighlight="Standards"
+        description="Quality assurance, traceability, and compliance protocols designed to support credible agricultural trade."
         image={heroImage}
-        breadcrumb={[{ label: "Standards" }]}
+        breadcrumb={[{ label: "Quality & Compliance" }]}
       />
 
       {/* Intro */}
@@ -108,13 +108,12 @@ export function StandardsPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { value: "6", label: "International certifications supported" },
-                { value: "100%", label: "Third-party audited farms" },
-                { value: "48h", label: "Average audit decision time" },
-                { value: "Zero", label: "Tolerance for fraudulent claims" },
+                { label: "Third-Party Audit Protocols" },
+                { label: "Supplier Verification Controls" },
+                { label: "Rapid Review Processes" },
+                { label: "Fraud Prevention Standards" },
               ].map((s, i) => (
-                <div key={i} className="bg-[#f8f5ee] rounded-xl p-6 text-center">
-                  <div className="text-[#2d5016]" style={{ fontSize: "1.8rem", fontWeight: 800 }}>{s.value}</div>
+                <div key={i} className="bg-[#f8f5ee] rounded-xl p-6 text-center" style={{ padding: '4rem 0' }}>
                   <div className="text-gray-500 text-sm mt-2" style={{ lineHeight: 1.5 }}>{s.label}</div>
                 </div>
               ))}
@@ -133,7 +132,7 @@ export function StandardsPage() {
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
             <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Internationally recognized credentials
+              Standards and Certifications Supported
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

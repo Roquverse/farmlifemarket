@@ -8,7 +8,7 @@ const heroImage =
 const offices = [
   {
     city: "New York",
-    country: "United States (HQ)",
+    country: "United States (Head Office)",
     address: "One World Trade Center 85th Floor New York, NY 10007",
     phone: "+1 (212) 372 6006",
     email: "contact@farmlifemarket.com",
@@ -16,7 +16,7 @@ const offices = [
   },
   {
     city: "Lagos",
-    country: "Nigeria (Africa Hub)",
+    country: "Nigeria (Africa Operations Hub)",
     address: "2 Olatunji street Agodo, Cele Egbe, lkotun Lagos",
     phone: "+2347077783725",
     email: "africahub@farmlifemarket.com",
@@ -35,7 +35,7 @@ const contactReasons = [
   "Other",
 ];
 
-export function ContactPage() {
+export function ConnectPage() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -60,9 +60,10 @@ export function ContactPage() {
     <div>
       <PageHero
         badge="Get in Touch"
-        title="We'd Love to"
-        titleHighlight="Hear From You"
-        description="Whether you're a farmer looking to join our network, a buyer ready to source organic produce, or an organization interested in partnership — our team is here to help."
+        title="Connect With "
+        titleHighlight="Farm Life Market"
+        description="Engage with our team for partnerships, agricultural sourcing, trade opportunities, and farmer network development.
+"
         image={heroImage}
         breadcrumb={[{ label: "Contact" }]}
       />
@@ -75,7 +76,8 @@ export function ContactPage() {
             <div>
               <div className="inline-flex items-center gap-2 mb-6">
                 <span className="w-8 h-0.5 bg-[#E8B835]" />
-                <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Send a Message</span>
+                <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Partnership & Trade Inquiries
+</span>
               </div>
 
               {submitted ? (
@@ -176,7 +178,8 @@ export function ContactPage() {
             <div>
               <div className="inline-flex items-center gap-2 mb-6">
                 <span className="w-8 h-0.5 bg-[#E8B835]" />
-                <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Direct Contact</span>
+                <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Global Contact Desk
+</span>
               </div>
 
               <div className="space-y-4 mb-10">
@@ -208,14 +211,14 @@ export function ContactPage() {
                   </div>
                   <div>
                     <div className="text-[#1a2e1a] text-sm mb-1" style={{ fontWeight: 600 }}>Business Hours</div>
-                    <p className="text-gray-500 text-sm">Monday – Friday, 8:00 AM – 6:00 PM PST</p>
-                    <p className="text-gray-400 text-xs mt-1">Trade desk available 24/7 for urgent matters</p>
+                    <p className="text-gray-500 text-sm">Monday–Friday | 8:00 AM–6:00 PM EST</p>
+                    <p className="text-gray-400 text-xs mt-1">Priority trade inquiries supported 24/7</p>
                   </div>
                 </div>
               </div>
 
               {/* Offices */}
-              <h3 className="text-[#1a2e1a] mb-5" style={{ fontWeight: 600 }}>Our Offices</h3>
+              <h3 className="text-[#1a2e1a] mb-5" style={{ fontWeight: 600 }}>Regional Hubs</h3>
               <div className="space-y-4">
                 {offices.map((office, i) => (
                   <div key={i} className="border border-gray-100 rounded-xl p-5">

@@ -56,11 +56,13 @@ export function WhatWeDoPage() {
     <div>
       <PageHero
         badge="Our Services"
-        title="From Field to Fork —"
-        titleHighlight="We Do It All"
-        description="Farmlife Market provides end-to-end support for farmers and buyers alike — from agronomic guidance and certification to logistics and market intelligence."
+        title="Integrated Agricultural Solutions"
+        titleHighlight="Built for Scale"
+        description="Supporting producers and buyers through market access, logistics coordination, and trade services designed to move agriculture efficiently."
         image={heroImage}
         breadcrumb={[{ label: "What We Do" }]}
+        button="Join the Network"
+        button2="Partner with Us"
       />
 
       {/* Services Grid */}

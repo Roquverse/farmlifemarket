@@ -45,10 +45,10 @@ const regions = [
 ];
 
 const globalStats = [
-  { value: "30+", label: "Countries" },
-  { value: "1,300+", label: "Partner Farms" },
-  { value: "6", label: "Regional Hubs" },
-  { value: "$420M+", label: "Annual Trade Volume" },
+  { value: "30+", label: "Countries Served" },
+  { value: "1,300+", label: "Producer Partners" },
+  { value: "6", label: "Regional Trade Hubs" },
+  { value: "$420M+", label: "Trade Capacity" },
 ];
 
 const logistics = [
@@ -96,11 +96,13 @@ export function GlobalOperationsPage() {
     <div>
       <PageHero
         badge="Global Reach"
-        title="Operating Across"
-        titleHighlight="6 Continents"
-        description="Farmlife Market's global operations network spans 30+ countries and the Carribean, connecting local harvests to international demand through precision logistics, local expertise, and real-time supply chain visibility."
+        title="A Global Agricultural Network"
+        titleHighlight="Spanning 6 Continents"
+        description="Connecting producers, buyers, and logistics partners across 30+ countries through coordinated trade infrastructure and regional market access."
         image={heroImage}
         breadcrumb={[{ label: "Global Operations" }]}
+        button="Join the Network"
+        button2="Partner with Us"
       />
 
       {/* Global Stats */}

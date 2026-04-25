@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "/trade supply.png";
+  "/trade supply.jpg";
 
 const tradeFeatures = [
   {
@@ -62,13 +62,31 @@ export function TradeSupplyPage() {
   return (
     <div>
       <PageHero
-        badge="Trade & Supply Chain"
-        title="Where Organic Meets"
-        titleHighlight="Global Commerce"
-        description="Farmlife Market's trade infrastructure connects verified organic producers with global buyers through transparent pricing, secure payment rails, and end-to-end supply chain visibility."
+        badge="Trade & Supply"
+        title="Global Agricultural"
+        titleHighlight="Trade—Executed with Precision"
+        description="Source verified supply, manage logistics, and transact with confidence through an integrated trade infrastructure."
         image={heroImage}
         breadcrumb={[{ label: "Trade & Supply" }]}
-      />
+      >
+        <div className="flex flex-wrap gap-4" style={{marginTop: "16px"}}>
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 bg-[#f5ad10] text-[#1a1a1a] px-7 py-3.5 rounded-sm hover:bg-[#e09a05] transition-colors"
+              style={{ fontWeight: 600 }}
+            >
+              Start Trading
+              <ArrowRight size={16} />
+            </a>
+            <a
+              href="/"
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-7 py-3.5 rounded-sm hover:bg-white/20 transition-colors"
+              style={{ fontWeight: 500 }}
+            >
+              Explore Supply
+            </a>
+          </div>
+      </PageHero>
 
       {/* Trade Volume Banner */}
       <section className="bg-[#E8B835] py-10">

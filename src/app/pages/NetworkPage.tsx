@@ -3,34 +3,34 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "/network-hero.png";
+  "/network.png";
 
 const networkTypes = [
   {
     icon: Users,
     title: "Certified Farmers",
-    count: "1,200+",
+    // count: "1,200+",
     desc: "Independent organic farmers and cooperatives across 30+ countries, each verified through our multi-stage standards process.",
     color: "#2d5016",
   },
   {
     icon: Store,
     title: "Retail Partners",
-    count: "850+",
+    // count: "850+",
     desc: "Specialty grocers, health food chains, and farmers market operators who trust Farmlife Market to supply authentic organic products.",
     color: "#E8B835",
   },
   {
     icon: Building2,
     title: "Institutional Buyers",
-    count: "320+",
+    // count: "320+",
     desc: "Hospitals, schools, hotels, and corporate campuses sourcing large volumes through our wholesale platform with dedicated account management.",
     color: "#5a8f2e",
   },
   {
     icon: ShoppingCart,
     title: "Online Consumers",
-    count: "50,000+",
+    // count: "50,000+",
     desc: "End consumers who shop directly from farms through our subscription boxes and digital marketplace, receiving fresh produce at their door.",
     color: "#c4a035",
   },
@@ -71,11 +71,13 @@ export function NetworkPage() {
     <div>
       <PageHero
         badge="Our Community"
-        title="A Network That Grows"
-        titleHighlight="With You"
-        description="The Farmlife Market network is more than a marketplace — it's a thriving community of farmers, buyers, and food businesses united by a shared commitment to sustainable, transparent agriculture."
+        title="A Global Agricultural Network—"
+        titleHighlight="Built for Scale"
+        description="Connecting farmers, buyers, and partners through a structured ecosystem designed to move supply efficiently across markets."
         image={heroImage}
         breadcrumb={[{ label: "Network" }]}
+        button="Join the Network"
+        button2="Partner with Us"
       />
 
       {/* Network Types */}
@@ -100,7 +102,7 @@ export function NetworkPage() {
                 >
                   <n.icon size={24} style={{ color: n.color }} />
                 </div>
-                <div style={{ fontSize: "1.8rem", fontWeight: 800, color: n.color }}>{n.count}</div>
+                {/* <div style={{ fontSize: "1.8rem", fontWeight: 800, color: n.color }}>{n.count}</div> */}
                 <h3 className="text-[#1a2e1a] mt-2 mb-3" style={{ fontWeight: 600 }}>{n.title}</h3>
                 <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{n.desc}</p>
               </div>

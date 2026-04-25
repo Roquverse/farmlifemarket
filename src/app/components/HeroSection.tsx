@@ -34,12 +34,12 @@ export function HeroSection() {
               letterSpacing: "-0.02em",
             }}
           >
-            Connecting Farmers to Global{" "}
-            <span className="text-[#f5ad10]">Markets</span>—Seamlessly
+            The Infrastructure Powering Global{" "}
+            <span className="text-[#f5ad10]">Agriculture</span>
           </h1>
 
           <p className="text-white/75 text-base mb-8 max-w-xl" style={{ lineHeight: 1.7 }}>
-            We provide farmers with direct access to markets, structured logistics, and growth-focused tools—enabling them to operate more efficiently, reduce losses, and increase profitability. Farm Life Market brings together the core elements of agriculture into one connected system.
+          Direct trade between farmers and buyers—enabled by integrated logistics, market access, and financial infrastructure built for scale.
           </p>
 
           <div className="flex flex-wrap gap-4">
