@@ -74,11 +74,23 @@ export function ConnectPage() {
           <div className="grid lg:grid-cols-2 gap-14">
             {/* Form */}
             <div>
-              <div className="inline-flex items-center gap-2 mb-6">
-                <span className="w-8 h-0.5 bg-[#E8B835]" />
-                <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Partnership & Trade Inquiries
-</span>
+              <div className="mb-8">
+                <h2 className="text-[#1a2e1a] mb-3" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}>
+                  Submit an Inquiry
+                </h2>
+                <p className="text-gray-600" style={{ lineHeight: 1.75 }}>
+                  Connect with our team regarding partnerships, sourcing, trade opportunities and strategic collaboration.
+                </p>
               </div>
+              <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500 mb-14" style={{ fontWeight: 500 }}>
+            <span>Partnerships</span>
+            <span className="text-gray-300">|</span>
+            <span>Trade Inquiries</span>
+            <span className="text-gray-300">|</span>
+            <span>Farmer Network Support</span>
+            <span className="text-gray-300">|</span>
+            <span>Investor Relations</span>
+          </div>
 
               {submitted ? (
                 <div className="bg-[#f0f7e8] border border-[#2d5016]/20 rounded-2xl p-10 text-center">
@@ -87,7 +99,7 @@ export function ConnectPage() {
                   </div>
                   <h3 className="text-[#1a2e1a] mb-3" style={{ fontWeight: 700, fontSize: "1.3rem" }}>Message Received!</h3>
                   <p className="text-gray-600" style={{ lineHeight: 1.75 }}>
-                    Thank you for reaching out to Farmlife Market. One of our team members will be in touch within 1–2 business days.
+                    Thank you for reaching out to Farm Life Market. One of our team members will be in touch within 1–2 business days.
                   </p>
                   <button
                     onClick={() => { setSubmitted(false); setForm({ name: "", email: "", company: "", reason: "", message: "" }); }}
@@ -246,17 +258,17 @@ export function ConnectPage() {
       <section className="py-12 bg-[#f8f5ee] border-t border-[#e8e2d4]">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h3 className="text-[#1a2e1a] mb-3" style={{ fontWeight: 600, fontSize: "1.2rem" }}>
-            Looking for quick answers?
+            Explore Frequently Asked Questions
           </h3>
           <p className="text-gray-500 text-sm mb-5" style={{ lineHeight: 1.75 }}>
-            Check our FAQ section on the homepage — you might find what you're looking for without waiting for a reply.
+            Find information on partnerships, onboarding, trade operations and platform support.
           </p>
           <a
             href="/"
             className="inline-flex items-center gap-2 text-[#2d5016] text-sm border border-[#2d5016] px-6 py-2.5 rounded-sm hover:bg-[#f0f7e8] transition-colors"
             style={{ fontWeight: 600 }}
           >
-            Visit FAQ
+            Visit Knowledge Center
           </a>
         </div>
       </section>

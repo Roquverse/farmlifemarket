@@ -272,7 +272,7 @@ export function TrackingPage() {
         badge="Shipment Tracking"
         title="Track Your"
         titleHighlight="Shipment"
-        description="Enter your Farmlife Market tracking ID to get real-time status updates, milestone progress, and estimated delivery information."
+        description="Enter your Farm Life Market tracking ID to get real-time status updates, milestone progress, and estimated delivery information."
         image={heroImage}
         breadcrumb={[
           { label: "Logistics", href: "/logistics" },

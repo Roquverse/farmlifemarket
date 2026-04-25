@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "/about-hero.png";
+  "/about-hero.jpg";
 
 const teamImage =
   "/about-us.png";
@@ -11,32 +11,32 @@ const teamImage =
 const values = [
   {
     icon: Leaf,
-    title: "Sustainability First",
-    desc: "Every decision we make is guided by our commitment to environmental stewardship and long-term ecological balance.",
+    title: "Responsible Growth",
+    desc: "We pursue scalable agricultural growth rooted in environmental stewardship and long-term resilience.",
   },
   {
-    icon: Heart,
-    title: "Community Centered",
-    desc: "We believe agriculture thrives when farmers, communities, and markets work in harmony together.",
+    icon: Target,
+    title: "Market Connectivity",
+    desc: "We strengthen connections among farmers, buyers and supply chains to expand opportunity across markets.",
+  },
+  {
+    icon: Eye,
+    title: "Trust & Transparency",
+    desc: "We build confidence across global supply chains through rigorous standards, verifiable sourcing, and open trade practices.",
   },
   {
     icon: Award,
-    title: "Uncompromising Quality",
-    desc: "From seed to shelf, we uphold the highest standards for freshness, safety, and nutritional integrity.",
-  },
-  {
-    icon: Users,
-    title: "Farmer Empowerment",
-    desc: "We invest in the people behind the harvest — providing tools, training, and fair market access.",
+    title: "Innovation in Agriculture",
+    desc: "We leverage technology and modern infrastructure to optimize agricultural trade, improve efficiency, and empower our global network.",
   },
 ];
 
 const milestones = [
-  { year: "2025", event: "Founded in New York, with 3 local partner farms" },
-  { year: "2025", event: "Launched first regional distribution network across New York" },
-  { year: "2026", event: "Expanded to African Continent with 50+ farm partners" },
-  { year: "2026", event: "Launched digital platform serving vendors and consumers" },
-  { year: "2026", event: "Operating in 3+ countries with 50+ certified farms" },
+  { year: "2025", event: "Established Farm Life Market in New York as an agricultural trade and digital commerce platform." },
+  { year: "2025", event: "Initiated regional sourcing and distribution network development." },
+  { year: "2026", event: "Expanded farmer network operations into Africa." },
+  { year: "2026", event: "Launched digital platform supporting agricultural vendors and buyers." },
+  { year: "2026", event: "Advanced multi-market operations across Africa, the Caribbean and North America." },
 ];
 
 const team = [
@@ -51,9 +51,9 @@ export function AboutPage() {
     <div>
       <PageHero
         badge="Our Story"
-        title="Growing a Better World,"
-        titleHighlight="Together"
-        description="Farmlife Market was founded on a simple belief: that great food starts with great farming. For over 2 years, we've been connecting communities with the farmers who feed them."
+        title="Building the Future of "
+        titleHighlight="Agricultural Trade"
+        description="Connecting farmers, markets and supply chains across emerging and global economies."
         image={heroImage}
         breadcrumb={[{ label: "About" }]}
       />
@@ -73,13 +73,17 @@ export function AboutPage() {
                 className="text-[#1a2e1a] mb-6"
                 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}
               >
-                More than a marketplace — a movement for sustainable food
+                More Than a Marketplace — Trade Infrastructure for Agriculture
               </h2>
               <p className="text-gray-600 mb-5" style={{ lineHeight: 1.8 }}>
-                Farmlife Market began as a single farmers' market stall in New York, USA. Today, we connect over 50+ certified organic farms with millions of consumers across 3 countries — all while staying true to our roots.
+                Farm Life Market began as a single farmers' market stall in New York, USA. Today, we connect over 50+ certified organic farms with millions of consumers across 3 countries — all while staying true to our roots.
               </p>
               <p className="text-gray-600 mb-8" style={{ lineHeight: 1.8 }}>
-                We believe the food system can be healthier, fairer, and more transparent. That's why we've built a platform that puts farmers first and gives consumers the confidence to know exactly where their food comes from.
+                <ul>
+                  <li>Supporting farmer networks across multiple markets</li>
+                  <li>Expanding trade access across Africa, the Caribbean and North America</li>
+                </ul>
+
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-[#f8f5ee] rounded-xl p-5">
@@ -88,7 +92,7 @@ export function AboutPage() {
                     <span className="text-[#1a2e1a] text-sm" style={{ fontWeight: 600 }}>Our Mission</span>
                   </div>
                   <p className="text-gray-600 text-sm" style={{ lineHeight: 1.7 }}>
-                    To empower farmers and nourish communities through transparent, sustainable agriculture.
+                    To build trusted infrastructure that connects farmers, buyers and markets through technology, trade and transparent commerce.
                   </p>
                 </div>
                 <div className="bg-[#f8f5ee] rounded-xl p-5">
@@ -97,14 +101,14 @@ export function AboutPage() {
                     <span className="text-[#1a2e1a] text-sm" style={{ fontWeight: 600 }}>Our Vision</span>
                   </div>
                   <p className="text-gray-600 text-sm" style={{ lineHeight: 1.7 }}>
-                    A world where every meal is grown with care, traded with fairness, and eaten with confidence.
+                    To help shape a more connected, efficient and inclusive global food economy.
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden aspect-[4/5]">
-                <img src={teamImage} alt="Farmlife Market team" className="w-full h-full object-cover" />
+                <img src={teamImage} alt="Farm Life Market team" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-[#2d5016] text-white rounded-xl p-5 shadow-xl">
                 <div className="text-3xl mb-1" style={{ fontWeight: 700 }}>50+</div>
@@ -125,7 +129,7 @@ export function AboutPage() {
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
             <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              The principles that guide everything we do
+              Principles That Drive Our Platform
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -148,11 +152,11 @@ export function AboutPage() {
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Journey</span>
+              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Platform Evolution</span>
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
             <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Milestones that shaped us
+             Key Growth Milestones
             </h2>
           </div>
           <div className="relative">
@@ -184,7 +188,7 @@ export function AboutPage() {
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
             <h2 className="text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Meet The Team
+              Leadership Driving the Platform
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

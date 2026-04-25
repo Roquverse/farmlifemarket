@@ -27,7 +27,7 @@ export function ComingSoonPage() {
         </h1>
 
         <p className="text-gray-600 mb-10 max-w-lg mx-auto" style={{ lineHeight: 1.8 }}>
-          We're putting the finishing touches on the Farmlife Market digital platform. Soon, you'll have full access to our global marketplace, real-time logistics, and agricultural trading tools.
+          We're putting the finishing touches on the Farm Life Market digital platform. Soon, you'll have full access to our global marketplace, real-time logistics, and agricultural trading tools.
         </p>
 
         <form className="max-w-md mx-auto mb-10 flex gap-2">

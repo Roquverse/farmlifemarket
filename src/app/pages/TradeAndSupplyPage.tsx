@@ -96,7 +96,7 @@ export default function TradeAndSupplyPage() {
               Ready to streamline your export operations?
             </h2>
             <p className="text-white/80 text-sm" style={{ lineHeight: 1.7 }}>
-              Talk to our trade specialists to understand how Farmlife Market can handle your supply chain end to end.
+              Talk to our trade specialists to understand how Farm Life Market can handle your supply chain end to end.
             </p>
           </div>
           <a href="/contact" className="shrink-0 inline-flex items-center gap-2 bg-white text-[#de0000] px-7 py-3.5 rounded-sm font-bold hover:bg-gray-50 transition-colors">

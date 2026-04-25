@@ -137,7 +137,7 @@ export function WhatWeDoPage() {
             Ready to transform your farm's potential?
           </h2>
           <p className="text-white/70 mb-8" style={{ lineHeight: 1.75 }}>
-            Join over 1,200 farms already growing smarter with Farmlife Market. Our team is ready to help you get started today.
+            Join over 1,200 farms already growing smarter with Farm Life Market. Our team is ready to help you get started today.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link

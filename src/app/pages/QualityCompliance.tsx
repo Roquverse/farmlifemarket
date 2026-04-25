@@ -100,7 +100,7 @@ export function QualityCompliancePage() {
                 A multi-layered framework for authentic organic integrity
               </h2>
               <p className="text-gray-600 mb-6" style={{ lineHeight: 1.8 }}>
-                In an industry rife with greenwashing, we believe that trust is earned through transparency. Our standards framework combines internationally recognized certifications with our own proprietary auditing layer — ensuring that every Farmlife Market listing is genuinely what it claims to be.
+                In an industry rife with greenwashing, we believe that trust is earned through transparency. Our standards framework combines internationally recognized certifications with our own proprietary auditing layer — ensuring that every Farm Life Market listing is genuinely what it claims to be.
               </p>
               <p className="text-gray-600" style={{ lineHeight: 1.8 }}>
                 Farms that cannot meet our baseline requirements are not listed on our platform. Those that exceed them are highlighted with our "Farmlife Verified" badge — the highest mark of quality we award.

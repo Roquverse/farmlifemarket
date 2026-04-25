@@ -17,7 +17,7 @@ const networkTypes = [
     icon: Store,
     title: "Retail Partners",
     // count: "850+",
-    desc: "Specialty grocers, health food chains, and farmers market operators who trust Farmlife Market to supply authentic organic products.",
+    desc: "Specialty grocers, health food chains, and farmers market operators who trust Farm Life Market to supply authentic organic products.",
     color: "#E8B835",
   },
   {
@@ -38,7 +38,7 @@ const networkTypes = [
 
 const testimonials = [
   {
-    quote: "Joining the Farmlife Market network transformed our business. We went from struggling to sell locally to exporting across three continents within 18 months.",
+    quote: "Joining the Farm Life Market network transformed our business. We went from struggling to sell locally to exporting across three continents within 18 months.",
     name: "Elena Marchetti",
     role: "Owner, Marchetti Organic Farms, Italy",
     rating: 5,
@@ -50,7 +50,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "As a retailer, Farmlife Market gives us confidence that every product we stock meets the highest organic standards. Our customers love the QR traceability.",
+    quote: "As a retailer, Farm Life Market gives us confidence that every product we stock meets the highest organic standards. Our customers love the QR traceability.",
     name: "Sarah Kimura",
     role: "Procurement Manager, FreshNow Markets, Japan",
     rating: 5,
@@ -60,7 +60,7 @@ const testimonials = [
 const networkBenefits = [
   { title: "Peer Learning Communities", desc: "Regional farmer circles meet monthly online to share best practices, troubleshoot challenges, and collaborate on bulk purchasing." },
   { title: "Preferential Financing", desc: "Network members access exclusive financing at below-market rates through our partnerships with agricultural development banks." },
-  { title: "Joint Marketing Campaigns", desc: "Participate in seasonal campaigns that amplify your individual brand through the collective Farmlife Market identity." },
+  { title: "Joint Marketing Campaigns", desc: "Participate in seasonal campaigns that amplify your individual brand through the collective Farm Life Market identity." },
   { title: "Buyer Introduction Program", desc: "Our sales team actively introduces verified farmers to qualified buyers, removing the burden of prospecting from producers." },
   { title: "Technology Grants", desc: "High-performing network members may qualify for subsidized access to premium platform features and hardware like soil sensors." },
   { title: "Dispute Resolution", desc: "Our neutral arbitration team handles contract disputes swiftly and fairly, protecting relationships and maintaining trust in the network." },
@@ -177,7 +177,7 @@ export function NetworkPage() {
             Join a community that's changing food systems
           </h2>
           <p className="text-gray-500 mb-8" style={{ lineHeight: 1.75 }}>
-            Whether you're a farmer, retailer, or food business, there's a place for you in the Farmlife Market network. Let's grow together.
+            Whether you're a farmer, retailer, or food business, there's a place for you in the Farm Life Market network. Let's grow together.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link

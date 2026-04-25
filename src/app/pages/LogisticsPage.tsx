@@ -29,7 +29,7 @@ const services = [
   {
     icon: BarChart2,
     title: "Logistics Analytics",
-    desc: "Full visibility into shipment status, transit times, cost per unit, and carrier performance — aggregated in real time on your Farmlife Market platform dashboard.",
+    desc: "Full visibility into shipment status, transit times, cost per unit, and carrier performance — aggregated in real time on your Farm Life Market platform dashboard.",
     features: ["Live shipment tracking", "Cost analytics", "Carrier scorecards", "Delay alerting"],
   },
 ];
@@ -249,7 +249,7 @@ export function LogisticsPage() {
                 <span className="text-[#E8B835]">In Real Time.</span>
               </h2>
               <p className="text-white/65 mb-8" style={{ lineHeight: 1.8 }}>
-                Every shipment moving through the Farmlife Market network is assigned a unique tracking ID. Use it to monitor milestones, temperature status, carrier updates, and estimated arrival — all in one place.
+                Every shipment moving through the Farm Life Market network is assigned a unique tracking ID. Use it to monitor milestones, temperature status, carrier updates, and estimated arrival — all in one place.
               </p>
               <ul className="space-y-3 mb-10">
                 {["Live milestone updates from farm gate to delivery", "Temperature & cold-chain monitoring", "Carrier contact and vessel details", "Automated alerts for delays or breaches"].map((item) => (

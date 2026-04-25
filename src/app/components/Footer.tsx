@@ -33,41 +33,34 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-5">
-              <img src="/logo.png" alt="Farmlife Market logo" className="w-12 h-12 object-contain" />
-              <span className="text-white text-lg" style={{ fontWeight: 600 }}>Farmlife Market</span>
+              <img src="/logo.png" alt="Farm Life Market logo" className="w-12 h-12 object-contain" />
+              <span className="text-white text-lg" style={{ fontWeight: 600 }}>Farm Life Market</span>
             </Link>
-            <p className="text-white/50 text-sm mb-6" style={{ lineHeight: 1.8, maxWidth: "280px" }}>
-              We provide farmers with direct access to markets, structured logistics, and growth-focused tools—enabling them to operate more efficiently, reduce losses, and increase profitability. Farm Life Market brings together the core elements of agriculture into one connected system.            </p>
+            <p className="text-white/50 text-sm mb-8" style={{ lineHeight: 1.8, maxWidth: "280px" }}>
+              Building trusted infrastructure for agricultural trade, logistics and market access.
+            </p>
 
             {/* Contact info */}
-            <div className="space-y-3 mb-6">
-              <div className="flex items-center gap-3 text-white/50 text-sm">
-                <MapPin size={14} className="shrink-0 text-[#f5ad10]" />
-                New York 
-                <br />
-                One World Trade Center 85th Floor New York, NY 1007 
-    
+            <div className="space-y-4 mb-8">
+              <div className="text-white/50 text-sm">
+                <div className="text-white/80 mb-1" style={{ fontWeight: 500 }}>Head Office — New York</div>
+                One World Trade Center, 85th Floor
               </div>
-              <div className="flex items-center gap-3 text-white/50 text-sm">
-                <Phone size={14} className="shrink-0 text-[#f5ad10]" />
-                (212) 372 6006 
-
-              </div>
-              <div className="flex items-center gap-3 text-white/50 text-sm">
-                <Mail size={14} className="shrink-0 text-[#E8B835]" />
-                support@farmlifemarket.com
+              <div className="text-white/50 text-sm">
+                <a href="tel:+12123726006" className="hover:text-[#E8B835] transition-colors">(212) 372 6006</a><br></br>
+                <a href="mailto:contact@farmlifemarket.com" className="hover:text-[#E8B835] transition-colors">contact@farmlifemarket.com</a>
               </div>
             </div>
 
             {/* Socials */}
-            <div className="flex gap-3">
+            <div className="flex gap-4">
               {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
-                  className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#f5ad10]/20 border border-white/10 flex items-center justify-center transition-colors"
+                  className="flex items-center justify-center transition-colors text-white/60 hover:text-[#E8B835]"
                 >
-                  <Icon size={15} className="text-white/60 hover:text-[#f5ad10]" />
+                  <Icon size={18} strokeWidth={1.5} />
                 </a>
               ))}
             </div>
@@ -97,7 +90,7 @@ export function Footer() {
       {/* Newsletter */}
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-white/50 text-sm">Subscribe to our newsletter for seasonal updates and special offers.</p>
+          <p className="text-white/50 text-sm">Insights on agriculture, trade and market opportunities.</p>
           <div className="flex gap-2 w-full md:w-auto">
             <input
               type="email"
@@ -117,7 +110,10 @@ export function Footer() {
       {/* Bottom */}
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-white/30 text-xs">© 2026 Farmlife Market. All rights reserved.</p>
+          <div className="flex flex-col gap-1">
+            <p className="text-white/50 text-xs font-medium">New York | Lagos | Global Operations</p>
+            <p className="text-white/30 text-xs">© 2026 Farm Life Market LLC. All rights reserved.</p>
+          </div>
           <div className="flex gap-6">
             {["Privacy", "Terms", "Cookies"].map((item) => (
               <a key={item} href="#" className="text-white/30 text-xs hover:text-white/60 transition-colors">

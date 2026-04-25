@@ -117,7 +117,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-2">
           <img
             src="/logo.png"
-            alt="Farmlife Market logo"
+            alt="Farm Life Market logo"
             className="w-12 h-12 object-contain drop-shadow-md"
           />
         </Link>

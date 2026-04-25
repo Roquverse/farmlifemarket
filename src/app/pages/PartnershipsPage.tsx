@@ -62,7 +62,7 @@ export function PartnershipsPage() {
         title="Building Partnerships That Strengthen
 "
         titleHighlight=" Agricultural Systems"
-        description="Farmlife Market believes the food system's biggest challenges require collaborative solutions. We partner with businesses, institutions, and organizations that share our vision for a more sustainable world."
+        description="Farm Life Market believes the food system's biggest challenges require collaborative solutions. We partner with businesses, institutions, and organizations that share our vision for a more sustainable world."
         image={heroImage}
         breadcrumb={[{ label: "Partnerships" }]}
       />
