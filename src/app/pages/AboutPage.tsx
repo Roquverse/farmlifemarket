@@ -40,10 +40,10 @@ const milestones = [
 ];
 
 const team = [
-    { name: "Thanda K. Robb, BA ", role: "CEO & Founder", image: "/Thanda.jpg" },
+  { name: "Thanda K. Robb, BA ", role: "Founder and Chief Executive  Officer", image: "/Thanda.jpg" },
   { name: "Patrick M. Reid, MBA ", role: "Chief Operating Officer, President Of Global Operations. ", image: "/profile1.jpg" },
 
-  { name: "Ojo Olajide Samuel", role: "Chief Technical Officer, Global Operations", image: "/profile3.jpg" },  
+  { name: "Ojo Olajide Samuel", role: "Chief Technical Officer, Global Operations", image: "/profile3.jpg" },
 ];
 
 export function AboutPage() {
