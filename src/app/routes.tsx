@@ -13,6 +13,7 @@ import { PartnershipsPage } from "./pages/PartnershipsPage";
 import { ConnectPage } from "./pages/ConnectPage";
 import { TrackingPage } from "./pages/TrackingPage";
 import { ComingSoonPage } from "./pages/ComingSoonPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ export const router = createBrowserRouter([
       { path: "connect", Component: ConnectPage },
       { path: "tracking", Component: TrackingPage },
       { path: "coming-soon", Component: ComingSoonPage },
+      { path: "*", Component: NotFoundPage },
     ],
   },
 ]);

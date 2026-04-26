@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { NavLink, Link } from "react-router";
+import { NavLink, Link, useLocation } from "react-router";
 
 const navGroups = [
   { label: "About", href: "/about" },
@@ -96,10 +96,14 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const location = useLocation();
+  const isConnectPage = location.pathname === '/connect';
+  const isWhiteNav = isScrolled || isConnectPage;
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-        ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isWhiteNav
+        ? "bg-white shadow-sm border-b border-gray-100"
         : "bg-transparent"
         }`}
     >
@@ -130,17 +134,17 @@ export function Header() {
                 key={group.label}
                 label={group.label}
                 children={group.children}
-                isScrolled={isScrolled}
+                isScrolled={isWhiteNav}
               />
             ) : (
               <NavLink
                 key={group.href}
                 to={group.href!}
                 className={({ isActive }) =>
-                  `text-sm font-medium transition-colors ${isScrolled
+                  `text-sm font-medium transition-colors ${isWhiteNav
                     ? isActive
                       ? "text-[#2d5016]"
-                      : "text-[#1a2e1a]/80 hover:text-[#1a2e1a]"
+                      : "text-[#1a2e1a]/80 hover:text-[#2d5016]"
                     : isActive
                       ? "text-[#E8B835]"
                       : "text-white/90 hover:text-white"
@@ -155,7 +159,7 @@ export function Header() {
 
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
-          <Link
+          {/* <Link
             to="/contact"
             className={`text-sm transition-colors ${isScrolled
               ? "text-[#1a2e1a]/70 hover:text-[#1a2e1a]"
@@ -163,9 +167,9 @@ export function Header() {
               }`}
           >
             Sign In
-          </Link>
+          </Link> */}
           <Link
-            to="/contact"
+            to="/connect"
             className="bg-[#E8B835] text-[#1a1a1a] px-5 py-2 rounded-sm text-sm hover:bg-[#d4a52e] transition-colors"
             style={{ fontWeight: 600 }}
           >
@@ -175,7 +179,7 @@ export function Header() {
 
         {/* Mobile toggle */}
         <button
-          className={`md:hidden transition-colors ${isScrolled ? "text-[#1a2e1a]" : "text-white"
+          className={`md:hidden transition-colors ${isWhiteNav ? "text-[#1a2e1a]" : "text-white"
             }`}
           onClick={() => setMobileOpen(!mobileOpen)}
         >
@@ -240,7 +244,7 @@ export function Header() {
             )
           )}
           <Link
-            to="/contact"
+            to="/connect"
             onClick={() => setMobileOpen(false)}
             className="mt-3 bg-[#E8B835] text-[#1a1a1a] px-5 py-3 rounded-sm text-sm text-center"
             style={{ fontWeight: 600 }}

@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1705646742193-d0ffd590193b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBhZ3JpY3VsdHVyZSUyMHdvcmxkJTIwbWFwJTIwc3VwcGx5JTIwY2hhaW58ZW58MXx8fHwxNzc0OTg1MDU0fDA&ixlib=rb-4.1.0&q=80&w=1080";
+  "operations.jpeg";
 
 const regions = [
   {
