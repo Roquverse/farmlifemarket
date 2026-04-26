@@ -6,7 +6,7 @@ const heroImage =
   "/about-hero.jpg";
 
 const teamImage =
-  "/about-us.png";
+  "/img.jpg";
 
 const values = [
   {
@@ -76,15 +76,13 @@ export function AboutPage() {
                 More Than a Marketplace — Trade Infrastructure for Agriculture
               </h2>
               <p className="text-gray-600 mb-5" style={{ lineHeight: 1.8 }}>
-                Farm Life Market began as a single farmers' market stall in New York, USA. Today, we connect over 50+ certified organic farms with millions of consumers across 3 countries — all while staying true to our roots.
+                Farm Life Market is building trusted infrastructure connecting farmers, buyers and supply chains across emerging and global markets.
               </p>
-              <p className="text-gray-600 mb-8" style={{ lineHeight: 1.8 }}>
-                <ul>
-                  <li>Supporting farmer networks across multiple markets</li>
-                  <li>Expanding trade access across Africa, the Caribbean and North America</li>
-                </ul>
-
+              <p className="text-gray-600 mb-5" style={{ lineHeight: 1.8 }}>
+                Supporting farmer networks across strategic markets.
+Expanding trade access across Africa, the Caribbean and North America.
               </p>
+              
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-[#f8f5ee] rounded-xl p-5">
                   <div className="flex items-center gap-2 mb-2">
@@ -92,7 +90,7 @@ export function AboutPage() {
                     <span className="text-[#1a2e1a] text-sm" style={{ fontWeight: 600 }}>Our Mission</span>
                   </div>
                   <p className="text-gray-600 text-sm" style={{ lineHeight: 1.7 }}>
-                    To build trusted infrastructure that connects farmers, buyers and markets through technology, trade and transparent commerce.
+                    Build trusted infrastructure for agricultural trade and market access.
                   </p>
                 </div>
                 <div className="bg-[#f8f5ee] rounded-xl p-5">
@@ -101,7 +99,7 @@ export function AboutPage() {
                     <span className="text-[#1a2e1a] text-sm" style={{ fontWeight: 600 }}>Our Vision</span>
                   </div>
                   <p className="text-gray-600 text-sm" style={{ lineHeight: 1.7 }}>
-                    To help shape a more connected, efficient and inclusive global food economy.
+                    Advance a more connected, efficient and inclusive global food economy.
                   </p>
                 </div>
               </div>
@@ -109,10 +107,6 @@ export function AboutPage() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden aspect-[4/5]">
                 <img src={teamImage} alt="Farm Life Market team" className="w-full h-full object-cover" />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-[#2d5016] text-white rounded-xl p-5 shadow-xl">
-                <div className="text-3xl mb-1" style={{ fontWeight: 700 }}>50+</div>
-                <div className="text-white/80 text-xs" style={{ fontWeight: 500 }}>Certified Farm<br />Partners Worldwide</div>
               </div>
             </div>
           </div>
