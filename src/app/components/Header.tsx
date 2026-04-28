@@ -97,8 +97,8 @@ export function Header() {
   }, []);
 
   const location = useLocation();
-  const isConnectPage = location.pathname === '/connect';
-  const isWhiteNav = isScrolled || isConnectPage;
+  // const isConnectPage = location.pathname === '/connect';
+  const isWhiteNav = isScrolled;
 
   return (
     <header
