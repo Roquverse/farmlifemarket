@@ -106,7 +106,7 @@ export function GlobalOperationsPage() {
       />
 
       {/* Global Stats */}
-      <section className="bg-[#2d5016] py-12">
+      {/* <section className="bg-[#2d5016] py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {globalStats.map((s, i) => (
@@ -117,7 +117,7 @@ export function GlobalOperationsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Regions */}
       <section className="py-20 bg-white">

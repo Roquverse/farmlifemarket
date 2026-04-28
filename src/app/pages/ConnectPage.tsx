@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, Users, Globe, Leaf, Handshake, TrendingUp, ShieldCheck, Lock, ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router";
+import { PageHero } from "../components/PageHero";
+
+const heroImage ="/connect.jpg"; 
 
 const inquiryCategories = [
   "Partnership Opportunity",
@@ -43,66 +46,19 @@ export function ConnectPage() {
 
   return (
     <div className="bg-[#fcfaf8]">
-      {/* Custom Split Hero */}
-      <section className="bg-white">
-        <div className="grid lg:grid-cols-2">
-          {/* Left Text Side */}
-          {/* Left Text Side */}
-          <div className="relative pt-32 pb-24 px-6 lg:pl-[max(1.5rem,calc((100vw-1280px)/2))] lg:pr-16 flex flex-col justify-center overflow-hidden">
-            {/* Background Image & Overlay */}
-            <div className="absolute inset-0 z-0">
-              {/* <img src="/contact.png" alt="Contact Hero" className="w-full h-full object-cover" /> */}
-              {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" /> */}
-            </div>
+      <PageHero
+              badge="Connect"
+              title="Connect With "
+              titleHighlight="Farm Life Market"
+              description="Engage our team on partnerships, sourcing, trade opportunities and strategic collaboration."
+              image={heroImage}
+              breadcrumb={[{ label: "Connect" }]}
+              button="Partnership Inquiry"
+              button2="Speak With Our Team"
+            />
 
-            <div className="relative z-10 w-full">
-              <nav className="flex items-center gap-1.5 mb-6 flex-wrap">
-                <Link to="/" className="text-green/60 text-xs hover:text-green transition-colors">Home</Link>
-                <span className="flex items-center gap-1.5">
-                  <ChevronRight size={12} className="text-green/40" />
-                  <span className="text-green/90 text-xs">Connect</span>
-                </span>
-              </nav>
-              
-              <div className="inline-flex items-center gap-2 bg-green-dark/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-5 w-fit">
-                <span className="w-2 h-2 rounded-full bg-[#E8B835]" />
-                <span className="text-green/90 text-xs">Connect</span>
-              </div>
-              
-              <h1
-                className="text-green mb-5 max-w-2xl"
-                style={{
-                  fontSize: "clamp(1.9rem, 5vw, 3.2rem)",
-                  fontWeight: 700,
-                  lineHeight: 1.15,
-                  letterSpacing: "-0.02em",
-                }}
-              >
-                Connect With{" "}
-                <span className="text-[#E8B835] block mt-2">Farm Life Market</span>
-              </h1>
-              
-              <p
-                className="text-green/75 max-w-lg mb-10"
-                style={{ lineHeight: 1.75, fontSize: "1rem" }}
-              >
-                Engage our team on partnerships, sourcing, trade opportunities and strategic collaboration.
-              </p>
-              
-              <div className="flex flex-wrap gap-4">
-                <button onClick={() => window.scrollTo({ top: 800, behavior: 'smooth' })} className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a2e1a] px-7 py-3.5 rounded hover:bg-[#d4a52e] transition-colors font-semibold">
-                  <Users size={18} />
-                  Partnership Inquiry
-                </button>
-                <a href="tel:+12123726006" className="inline-flex items-center gap-2 bg-[#1a2e1a] text-[#d4a52e] px-7 py-3.5 rounded hover:bg-[#1a2e1a] transition-colors font-semibold">
-                  <Phone size={18} />
-                  Speak With Our Team
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          {/* Right Image Grid Side */}
+      {/* 4 Cards Grid */}
+      <section className="py-16 px-6 max-w-7xl mx-auto -mt-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 h-[600px] lg:h-auto">
             {/* Col 1 */}
             <div className="relative group overflow-hidden">
@@ -138,56 +94,6 @@ export function ConnectPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* 4 Cards Grid */}
-      <section className="py-16 px-6 max-w-7xl mx-auto -mt-8 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col">
-            <div className="w-12 h-12 bg-[#f8f5ee] text-[#1a2e1a] rounded-full flex items-center justify-center mb-6">
-              <Handshake size={22} />
-            </div>
-            <h3 className="text-[#1a2e1a] font-bold text-lg mb-3">Partnership Inquiries</h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
-              Explore strategic partnerships and collaboration opportunities.
-            </p>
-            <button className="text-[#E8B835] self-start mt-auto"><ArrowRight size={20} className="stroke-[2.5]" /></button>
-          </div>
-
-          <div className="bg-white rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col">
-            <div className="w-12 h-12 bg-[#f8f5ee] text-[#1a2e1a] rounded-full flex items-center justify-center mb-6">
-              <Globe size={22} />
-            </div>
-            <h3 className="text-[#1a2e1a] font-bold text-lg mb-3">Trade & Supply Requests</h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
-              Connect with our team for sourcing and trade opportunities.
-            </p>
-            <button className="text-[#E8B835] self-start mt-auto"><ArrowRight size={20} className="stroke-[2.5]" /></button>
-          </div>
-
-          <div className="bg-white rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col">
-            <div className="w-12 h-12 bg-[#f8f5ee] text-[#1a2e1a] rounded-full flex items-center justify-center mb-6">
-              <Leaf size={22} />
-            </div>
-            <h3 className="text-[#1a2e1a] font-bold text-lg mb-3">Farmer Network Support</h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
-              Get support for onboarding, training and network access.
-            </p>
-            <button className="text-[#E8B835] self-start mt-auto"><ArrowRight size={20} className="stroke-[2.5]" /></button>
-          </div>
-
-          <div className="bg-white rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col">
-            <div className="w-12 h-12 bg-[#f8f5ee] text-[#1a2e1a] rounded-full flex items-center justify-center mb-6">
-              <TrendingUp size={22} />
-            </div>
-            <h3 className="text-[#1a2e1a] font-bold text-lg mb-3">Investor Relations</h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
-              Learn about investment opportunities and our growth.
-            </p>
-            <button className="text-[#E8B835] self-start mt-auto"><ArrowRight size={20} className="stroke-[2.5]" /></button>
-          </div>
-        </div>
       </section>
 
       {/* Main Form & Contact Grid */}
@@ -329,6 +235,24 @@ export function ConnectPage() {
                 <div>
                   <h4 className="text-[#1a2e1a] font-bold text-sm mb-1">Our Headquarters</h4>
                   <p className="text-gray-500 text-sm leading-relaxed">One World Trade Center, 85th Floor<br/>New York, NY 10007, USA</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0 border border-gray-100 shadow-sm">
+                  <MapPin size={20} className="text-[#1a2e1a]" />
+                </div>
+                <div>
+                  <h4 className="text-[#1a2e1a] font-bold text-sm mb-1">Lagos Office</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed">23b Commercial Avenue, Sabo Yaba, Lagos State, Nigeria.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0 border border-gray-100 shadow-sm">
+                  <MapPin size={20} className="text-[#1a2e1a]" />
+                </div>
+                <div>
+                  <h4 className="text-[#1a2e1a] font-bold text-sm mb-1">Benue Office</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed">No. 58 High Level Road, Makurdi, Benue State, Nigeria.</p>
                 </div>
               </div>
             </div>

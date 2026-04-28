@@ -36,33 +36,24 @@ export function Footer() {
               <img src="/logo.png" alt="Farm Life Market logo" className="w-12 h-12 object-contain" />
               <span className="text-white text-lg" style={{ fontWeight: 600 }}>Farm Life Market</span>
             </Link>
-            <p className="text-white/50 text-sm mb-8" style={{ lineHeight: 1.8, maxWidth: "280px" }}>
+            <p className="text-white/80 text-sm mb-6" style={{ lineHeight: 1.8, maxWidth: "280px" }}>
               Building trusted infrastructure for agricultural trade, logistics and market access.
             </p>
-
-            {/* Contact info */}
-            <div className="space-y-4 mb-8">
-              <div className="text-white/50 text-sm">
-                <div className="text-white/80 mb-1" style={{ fontWeight: 500 }}>Head Office — New York</div>
-                One World Trade Center, 85th Floor
-              </div>
-              <div className="text-white/50 text-sm">
-                <a href="tel:+12123726006" className="hover:text-[#E8B835] transition-colors">(212) 372 6006</a><br></br>
-                <a href="mailto:contact@farmlifemarket.com" className="hover:text-[#E8B835] transition-colors">contact@farmlifemarket.com</a>
-              </div>
+            
+            <div className="text-white/60 text-[13px] mb-8 flex flex-wrap items-center gap-x-2 gap-y-1">
+              <span className="whitespace-nowrap">Global Agricultural Trade</span>
+              <span className="text-white/30 hidden sm:inline">|</span>
+              <span className="whitespace-nowrap">Logistics</span>
+              <span className="text-white/30 hidden sm:inline">|</span>
+              <span className="whitespace-nowrap">Market Access</span>
             </div>
-
-            {/* Socials */}
-            <div className="flex gap-4">
-              {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="flex items-center justify-center transition-colors text-white/60 hover:text-[#E8B835]"
-                >
-                  <Icon size={18} strokeWidth={1.5} />
-                </a>
-              ))}
+            
+            {/* Contact info */}
+            <div className="space-y-4">
+              <div className="text-white/60 text-sm">
+                <div className="text-white mb-1" style={{ fontWeight: 700 }}>Head Office — New York</div>
+                One World Trade Center
+              </div>
             </div>
           </div>
 

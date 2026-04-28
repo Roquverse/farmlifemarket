@@ -24,7 +24,7 @@ export function ContactCTA() {
               className="text-white mb-4"
               style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)", fontWeight: 700, lineHeight: 1.2 }}
             >
-              Have questions?<br />Get in touch!
+              Let's Build<br />Agricultural Trade<br />Together
             </h2>
             <p className="text-white/70 max-w-md" style={{ lineHeight: 1.7 }}>
               Our friendly team is ready to answer any questions about our farm, products, or delivery options.

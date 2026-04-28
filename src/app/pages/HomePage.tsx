@@ -14,10 +14,10 @@ export function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
-      <StatsBar />
+      {/* <StatsBar /> */}
       <FarmGallery />
       <CTABanner />
-      <HealthSection />
+      {/* <HealthSection /> */}
       <ProduceSection />
       <FAQSection />
       <OrganicFoodSection />

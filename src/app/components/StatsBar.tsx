@@ -1,15 +1,15 @@
 const stats = [
   { value: "2025", label: "Platform Launch" },
   { value: "Global Network", label: "Expanding Across Key Agricultural Regions" },
-  { value: "$14M+", label: "Trade Volume Facilitated" },
-  { value: "26+", label: "Active Partners & Operators" },
+  // { value: "$14M+", label: "Trade Volume Facilitated" },
+  // { value: "26+", label: "Active Partners & Operators" },
 ];
 
 export function StatsBar() {
   return (
     <section className="bg-[#f8f5ee] border-y border-[#e8e2d4] py-10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
           {stats.map((stat, i) => (
             <div key={i} className="text-center md:text-left">
               <div

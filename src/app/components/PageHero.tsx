@@ -10,7 +10,9 @@ interface PageHeroProps {
   breadcrumb?: { label: string; href?: string }[];
   overlayStrength?: string;
   button?: string;
+  buttonTarget?: string;
   button2?: string;
+  button2Target?: string;
   children?: React.ReactNode;
 }
 
@@ -23,13 +25,15 @@ export function PageHero({
   breadcrumb,
   overlayStrength = "from-black/70 via-black/45 to-black/20",
   button,
+  buttonTarget,
   button2,
+  button2Target,
   children,
 }: PageHeroProps) {
   return (
     <section className="relative h-[72vh] min-h-[480px] flex items-end overflow-hidden">
       <div className="absolute inset-0">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <img src={image} alt={title} className="w-full h-full object-cover" style={{objectPosition:"center"}} />
         <div className={`absolute inset-0 bg-gradient-to-r ${overlayStrength}`} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
       </div>

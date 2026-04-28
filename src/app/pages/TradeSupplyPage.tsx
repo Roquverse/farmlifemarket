@@ -89,7 +89,7 @@ export function TradeSupplyPage() {
       </PageHero>
 
       {/* Trade Volume Banner */}
-      <section className="bg-[#E8B835] py-10">
+      {/* <section className="bg-[#E8B835] py-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div>
@@ -113,7 +113,7 @@ export function TradeSupplyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Trade Features */}
       <section className="py-20 bg-white">
