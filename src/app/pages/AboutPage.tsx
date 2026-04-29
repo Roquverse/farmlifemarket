@@ -188,7 +188,7 @@ Expanding trade access across Africa, the Caribbean and North America.
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
               <div key={member.name} className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-colors">
-                <img src={member.image} alt={member.name} style={{ width: "100%", height: "450px", border: "1px solid #E8B835/40", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 4px", overflow: "hidden", borderRadius: "12px", objectFit: "cover" }} />
+                <img src={member.image} alt={member.name} style={{ width: "100%", height: "350px", border: "1px solid #E8B835/40", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 4px", overflow: "hidden", borderRadius: "12px", objectFit: "cover", objectPosition: "top" }} />
                 <div className="text-white text-sm mb-1" style={{ fontWeight: 600, paddingTop: "10px", fontSize: "18px" }}>{member.name}</div>
                 <div className="text-white/50 text-xs">{member.role}</div>
               </div>

@@ -3,7 +3,7 @@ import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
 const heroImage =
-  "/trade supply.jpg";
+  "/trade supply.jpeg";
 
 const tradeFeatures = [
   {

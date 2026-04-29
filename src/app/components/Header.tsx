@@ -97,8 +97,9 @@ export function Header() {
   }, []);
 
   const location = useLocation();
+  const isHomePage = location.pathname === "/";
   // const isConnectPage = location.pathname === '/connect';
-  const isWhiteNav = isScrolled;
+  const isWhiteNav = isScrolled || !isHomePage;
 
   return (
     <header
@@ -107,14 +108,16 @@ export function Header() {
         : "bg-transparent"
         }`}
     >
-      {/* Top Navbar */}
-      <div className="bg-[#cc0000] text-white text-xs font-medium py-1.5 px-6 hidden md:flex justify-end gap-6 items-center w-full">
-        <Link to="/quality-compliance" className="hover:text-white/80 transition-colors">Quality & Compliance</Link>
-        <Link to="/network" className="hover:text-white/80 transition-colors">
-          Network
-        </Link>
-        <Link to="/partnerships" className="hover:text-white/80 transition-colors">Partnerships</Link>
-      </div>
+      {/* Top Navbar - Only on Home Page */}
+      {isHomePage && (
+        <div className="bg-[#cc0000] text-white text-xs font-medium py-1.5 px-6 hidden md:flex justify-end gap-6 items-center w-full">
+          <Link to="/quality-compliance" className="hover:text-white/80 transition-colors">Quality & Compliance</Link>
+          <Link to="/network" className="hover:text-white/80 transition-colors">
+            Network
+          </Link>
+          <Link to="/partnerships" className="hover:text-white/80 transition-colors">Partnerships</Link>
+        </div>
+      )}
 
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}

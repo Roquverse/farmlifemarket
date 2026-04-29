@@ -1,57 +1,56 @@
-import { Handshake, Building, GraduationCap, Banknote, Globe, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Handshake, Building2, Globe, ArrowRight, Leaf, Users, Truck, Settings, TrendingUp, Target, Landmark } from "lucide-react";
 import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
-const heroImage =
-  "/partnership.png";
+const heroImage = "/partnership.JPG";
 
-const partnershipTypes = [
+const focusAreas = [
   {
-    icon: Building,
-    title: "Commercial Market Partners",
-    desc: "We work with food retailers, restaurant groups, and CPG brands to source certified organic ingredients directly from our farmer network.",
-    benefits: ["Priority sourcing access", "Volume price guarantees", "Co-branded marketing opportunities", "Dedicated account manager", "Custom product development support"],
-    cta: "Become a Buyer Partner",
+    icon: Users,
+    title: "Producer & Cooperative Partnerships",
+    desc: "Empowering farmers and cooperatives with inputs, training, financing and market access to grow sustainably and profitably.",
   },
   {
-    icon: GraduationCap,
-    title: "Research & Innovation Partners",
-    desc: "We collaborate with agricultural universities and research institutions to advance regenerative farming practices and food systems innovation.",
-    benefits: ["Field trial access across 30+ countries", "Anonymized data sets for research", "Joint grant applications", "Published study co-authorship", "Student placement programs"],
-    cta: "Explore Research Partnerships",
+    icon: Landmark,
+    title: "Institutional & Government Partnerships",
+    desc: "Collaborating with government agencies and institutions to strengthen food systems, policy frameworks and rural development.",
   },
   {
-    icon: Banknote,
-    title: "Investment & Finance Partners",
-    desc: "We connect impact investors and development finance institutions with investable agricultural SMEs in our vetted farmer network.",
-    benefits: ["Deal flow access to vetted farms", "Co-investment opportunities", "ESG impact reporting", "Blended finance structures", "Quarterly portfolio updates"],
-    cta: "Discuss Investment",
+    icon: Truck,
+    title: "Trade & Distribution Partnerships",
+    desc: "Working with traders, processors and distributors to move quality products efficiently to local and global markets.",
   },
   {
-    icon: Globe,
-    title: "Public & Development Partners",
-    desc: "We partner with development organizations and government agencies to scale organic farming adoption in underserved agricultural communities.",
-    benefits: ["Subsidized platform access for beneficiaries", "Joint training programs", "Policy advocacy collaboration", "Reporting & monitoring tools", "Community impact dashboards"],
-    cta: "Partner With Us",
+    icon: Settings,
+    title: "Finance & Technology Partnerships",
+    desc: "Leveraging capital and innovative technology to drive efficiency, transparency and scalable agricultural solutions.",
   },
 ];
 
-// const currentPartners = [
-//   { name: "AgroBank International", type: "Financial Partner" },
-//   { name: "University of Wageningen", type: "Research Partner" },
-//   { name: "UN Food Programme", type: "Development Partner" },
-//   { name: "FreshNow Group", type: "Retail Partner" },
-//   { name: "GreenCapital Fund", type: "Impact Investor" },
-//   { name: "EcoTrade Alliance", type: "Trade Partner" },
-//   { name: "African Development Bank", type: "Development Finance" },
-//   { name: "Berkeley Organic Institute", type: "Research Partner" },
-// ];
+const impactStats = [
+  { icon: Handshake, value: "50+", label: "Active Partners" },
+  { icon: Globe, value: "25+", label: "Countries Reached" },
+  { icon: Users, value: "2M+", label: "Farmers Impacted" },
+  { icon: Leaf, value: "15+", label: "Commodities Traded" },
+  { icon: TrendingUp, value: "$1B+", label: "Trade Facilitated" },
+];
 
-const partnerProcess = [
-  { step: "01", title: "Initial Inquiry", desc: "Fill out our partnership interest form. We'll respond within 2 business days to discuss your goals." },
-  { step: "02", title: "Alignment Meeting", desc: "A call with our Partnerships team to explore mutual value, expectations, and partnership structure." },
-  { step: "03", title: "Proposal & MOU", desc: "We draft a partnership proposal and Memorandum of Understanding outlining responsibilities and terms." },
-  { step: "04", title: "Onboarding", desc: "Dedicated onboarding support and introduction to your relationship manager and relevant network members." },
+const futureValues = [
+  {
+    icon: Target,
+    title: "Shared Goals",
+    desc: "Aligning on common goals for sustainable growth and impact.",
+  },
+  {
+    icon: Users,
+    title: "Shared Growth",
+    desc: "Creating opportunities that benefit partners, farmers and communities.",
+  },
+  {
+    icon: Globe,
+    title: "Shared Impact",
+    desc: "Delivering long-term value for people, planet and markets.",
+  },
 ];
 
 export function PartnershipsPage() {
@@ -59,120 +58,212 @@ export function PartnershipsPage() {
     <div>
       <PageHero
         badge="Public & Institutional Partnerships"
-        title="Building Partnerships That Strengthen
-"
+        title="Building Partnerships That Strengthen"
         titleHighlight=" Agricultural Systems"
         description="Farm Life Market believes the food system's biggest challenges require collaborative solutions. We partner with businesses, institutions, and organizations that share our vision for a more sustainable world."
         image={heroImage}
         breadcrumb={[{ label: "Partnerships" }]}
       />
 
-      {/* Partnership Types */}
-      <section className="py-20 bg-white">
+      {/* Partnership Focus */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Partnership Types</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-4 mb-4">
+              <div className="h-px w-8 bg-gray-300" />
+              <span className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase">
+                Our Partnership Focus
+              </span>
+              <div className="h-px w-8 bg-gray-300" />
             </div>
-            <h2 className="text-[#1a2e1a] max-w-xl mx-auto" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}>
-              Strategic Partnership Areas
+            <h2
+              className="text-[#1a2e1a] mb-6 mx-auto max-w-3xl"
+              style={{
+                fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
+                fontWeight: 800,
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Building Strong Partnerships. <br />
+              <span className="text-[#2d5016]">Creating Shared Value.</span>
             </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
+              Together with our partners, we strengthen food systems, improve
+              market access, and create sustainable value across the agriculture
+              ecosystem.
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-7">
-            {partnershipTypes.map((p) => (
-              <div key={p.title} className="group border border-gray-100 rounded-2xl p-8 hover:shadow-lg hover:border-[#E8B835]/30 transition-all">
-                <div className="flex items-start gap-5 mb-5">
-                  <div className="w-12 h-12 bg-[#E8B835]/15 rounded-xl flex items-center justify-center shrink-0">
-                    <p.icon size={22} className="text-[#2d5016]" />
-                  </div>
-                  <div>
-                    <h3 className="text-[#1a2e1a] mb-2" style={{ fontWeight: 700, fontSize: "1.1rem" }}>{p.title}</h3>
-                    <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{p.desc}</p>
-                  </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+            {focusAreas.map((item, idx) => (
+              <div key={idx} className="flex flex-col items-center text-center group">
+                <div className="w-16 h-16 rounded-2xl bg-[#f0f7e8] flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-[#2d5016] group-hover:scale-110">
+                  <item.icon
+                    size={28}
+                    className="text-[#2d5016] transition-colors duration-300 group-hover:text-white"
+                    strokeWidth={1.5}
+                  />
                 </div>
-                <ul className="space-y-2.5 mb-6">
-                  {p.benefits.map((b) => (
-                    <li key={b} className="flex items-center gap-2 text-sm text-gray-700">
-                      <CheckCircle2 size={14} className="text-[#E8B835] shrink-0" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 text-[#2d5016] text-sm hover:gap-3 transition-all"
-                  style={{ fontWeight: 600 }}
+                <h3
+                  className="text-[#1a2e1a] mb-4 text-sm tracking-wide"
+                  style={{ fontWeight: 800 }}
                 >
-                  {p.cta} <ArrowRight size={14} />
+                  {item.title}
+                </h3>
+                <p className="text-gray-500 text-xs leading-relaxed max-w-[240px]">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Together */}
+      <section className="relative py-24 overflow-hidden">
+        {/* Background with field image and dark green overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000"
+            alt="Agriculture field"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#0a1a0a]/90 backdrop-blur-[2px]" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-[10px] font-bold tracking-[0.3em] text-[#E8B835] uppercase">
+              Our Impact Together
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-start">
+            {impactStats.map((stat, idx) => (
+              <div
+                key={idx}
+                className={`flex flex-col items-center text-center ${
+                  idx !== impactStats.length - 1 ? "md:border-r border-white/10" : ""
+                }`}
+              >
+                <stat.icon
+                  size={24}
+                  className="text-[#E8B835] mb-6"
+                  strokeWidth={1.5}
+                />
+                <div
+                  className="text-white text-3xl mb-2"
+                  style={{ fontWeight: 800 }}
+                >
+                  {stat.value}
+                </div>
+                <div className="text-white/60 text-[10px] uppercase tracking-widest font-bold">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Future Together */}
+      <section className="bg-[#faf9f6] overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-stretch w-full">
+          {/* Left + Middle Content - Dynamic padding to align with site container */}
+          <div 
+            className="lg:flex-1 py-20 flex flex-col lg:flex-row items-stretch"
+            style={{ paddingLeft: "max(1.5rem, calc((100vw - 1280px) / 2))" }}
+          >
+            {/* Left Content */}
+            <div className="lg:w-[45%] px-8 flex flex-col justify-center">
+              <div className="max-w-md">
+                <span className="text-[10px] font-bold tracking-[0.2em] text-[#2d5016] uppercase block mb-6">
+                  Let's Build the Future Together
+                </span>
+                <h2
+                  className="text-[#1a2e1a] mb-6"
+                  style={{
+                    fontSize: "clamp(1.8rem, 3vw, 2.6rem)",
+                    fontWeight: 800,
+                    lineHeight: 1.1,
+                    letterSpacing: "-0.02em",
+                  }}
+                >
+                  Stronger Partnerships. <br />
+                  <span className="text-[#2d5016]">Stronger Food Systems.</span>
+                </h2>
+                <p className="text-gray-500 mb-10 text-sm leading-relaxed max-w-sm">
+                  Join us in building a resilient, inclusive and sustainable
+                  agricultural future.
+                </p>
+
+                <Link
+                  to="/connect"
+                  className="inline-flex items-center gap-3 bg-[#0a1a0a] text-white px-8 py-4 rounded-sm hover:bg-[#2d5016] transition-all group font-bold text-xs uppercase tracking-wider"
+                >
+                  Become a Partner
+                  <ArrowRight
+                    size={14}
+                    className="transition-transform group-hover:translate-x-1"
+                  />
                 </Link>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Current Partners */}
-      <section className="py-20 bg-[#f8f5ee]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Partners</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Trusted by world-class organizations
-            </h2>
-          </div>
-          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {currentPartners.map((p, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-[#2d5016]/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Handshake size={20} className="text-[#2d5016]" />
+
+            {/* Vertical Divider */}
+            <div className="hidden lg:flex items-center px-4">
+              <div className="w-px h-48 bg-[#d4a52e]/30" />
+            </div>
+
+            {/* Middle Features */}
+            <div className="lg:flex-1 py-10 lg:py-0 px-8 flex flex-col sm:flex-row items-center gap-10 justify-center">
+              {futureValues.map((val, idx) => (
+                <div key={idx} className="flex flex-col items-center text-center max-w-[160px]">
+                  <div className="w-20 h-20 rounded-full bg-white shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex items-center justify-center mb-6 border border-gray-50">
+                    <val.icon size={28} className="text-[#2d5016]" strokeWidth={1.5} />
+                  </div>
+                  <h4
+                    className="text-[#1a2e1a] text-xs mb-3 uppercase tracking-wider"
+                    style={{ fontWeight: 800 }}
+                  >
+                    {val.title}
+                  </h4>
+                  <p className="text-gray-400 text-[10px] leading-relaxed">
+                    {val.desc}
+                  </p>
                 </div>
-                <div className="text-[#1a2e1a] text-sm mb-1" style={{ fontWeight: 600 }}>{p.name}</div>
-                <div className="text-[#E8B835] text-xs" style={{ fontWeight: 500 }}>{p.type}</div>
-              </div>
-            ))}
-          </div> */}
-        </div>
-      </section>
-
-      {/* Partnership Process */}
-      <section className="py-20 bg-[#1a2e1a]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>The Process</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
+              ))}
             </div>
-            <h2 className="text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              How we build partnerships
-            </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {partnerProcess.map((step, i) => (
-              <div key={i} className="bg-white/5 border border-white/10 rounded-2xl p-7">
-                <div className="text-[#E8B835] text-3xl mb-4" style={{ fontWeight: 800 }}>{step.step}</div>
-                <h3 className="text-white mb-3" style={{ fontWeight: 600 }}>{step.title}</h3>
-                <p className="text-white/60 text-sm" style={{ lineHeight: 1.75 }}>{step.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-8 py-3.5 rounded-sm hover:bg-[#d4a52e] transition-colors"
-              style={{ fontWeight: 600 }}
+
+          {/* Right Slanted Image - Full Bleed to Right */}
+          <div className="lg:w-[25%] min-h-[500px] relative overflow-hidden hidden lg:block">
+            <div 
+              className="absolute inset-0 bg-gray-100"
+              style={{ 
+                clipPath: "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)",
+              }}
             >
-              Start a Partnership Conversation <ArrowRight size={16} />
-            </Link>
+              <img
+                src="/home-contact.JPG"
+                alt="Small sprout"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
+          {/* Mobile Image (no slant) */}
+          <div className="lg:hidden h-64 relative">
+            <img
+              src="/home-contact.JPG"
+              alt="Small sprout"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
     </div>
   );
 }
+

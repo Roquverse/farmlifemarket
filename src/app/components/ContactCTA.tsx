@@ -1,6 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 
-const sheepImg = "/home-contact.jpg";
+const sheepImg = "/home-contact.JPG";
 
 export function ContactCTA() {
   return (
