@@ -57,40 +57,40 @@ export function ConnectPage() {
               button2="Speak With Our Team"
             />
 
-      {/* 4 Cards Grid */}
+      {/* 3 Cards Grid */}
       <section className="py-16 px-6 max-w-7xl mx-auto -mt-8 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 h-[600px] lg:h-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 h-auto md:h-[600px]">
             {/* Col 1 */}
-            <div className="relative group overflow-hidden">
-              <img src="/connect-hero.png" alt="Strategic Partnerships" className="w-full h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-[#112311] text-white p-6 flex flex-col justify-center">
-                <div className="flex items-center gap-3 mb-3">
-                  <Users className="text-white/80" size={20} />
-                  <h3 className="text-sm font-bold tracking-wide uppercase">Strategic Partnerships</h3>
+            <div className="relative group overflow-hidden h-[480px] md:h-full">
+              <img src="/connect-hero.png" alt="Strategic Partnerships" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-0 left-0 w-full h-[35%] md:h-1/3 bg-[#112311] text-white p-8 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <Users className="text-white/80" size={22} />
+                  <h3 className="text-sm font-bold tracking-widest uppercase">Strategic Partnerships</h3>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed">Building alliances that drive growth and impact.</p>
+                <p className="text-white/70 text-sm leading-relaxed">Building alliances that drive growth and impact across global markets.</p>
               </div>
             </div>
             {/* Col 2 */}
-            <div className="relative group overflow-hidden">
-              <img src="/operations.jpeg" alt="Global Trade Network" className="w-full h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-[#172f17] text-white p-6 flex flex-col justify-center">
-                <div className="flex items-center gap-3 mb-3">
-                  <Globe className="text-white/80" size={20} />
-                  <h3 className="text-sm font-bold tracking-wide uppercase">Global Trade Network</h3>
+            <div className="relative group overflow-hidden h-[480px] md:h-full border-t border-b md:border-t-0 md:border-b-0 border-white/10">
+              <img src="/operations.jpeg" alt="Global Trade Network" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-0 left-0 w-full h-[35%] md:h-1/3 bg-[#172f17] text-white p-8 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <Globe className="text-white/80" size={22} />
+                  <h3 className="text-sm font-bold tracking-widest uppercase">Global Trade Network</h3>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed">Connecting markets and moving commodities efficiently.</p>
+                <p className="text-white/70 text-sm leading-relaxed">Connecting markets and moving commodities efficiently and reliably.</p>
               </div>
             </div>
             {/* Col 3 */}
-            <div className="relative group overflow-hidden">
-              <img src="/connect-hero2.png" alt="Sustainable Impact" className="w-full h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-[#1c381c] text-white p-6 flex flex-col justify-center">
-                <div className="flex items-center gap-3 mb-3">
-                  <Leaf className="text-white/80" size={20} />
-                  <h3 className="text-sm font-bold tracking-wide uppercase">Sustainable Impact</h3>
+            <div className="relative group overflow-hidden h-[480px] md:h-full">
+              <img src="/connect-hero2.png" alt="Sustainable Impact" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-0 left-0 w-full h-[35%] md:h-1/3 bg-[#1c381c] text-white p-8 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <Leaf className="text-white/80" size={22} />
+                  <h3 className="text-sm font-bold tracking-widest uppercase">Sustainable Impact</h3>
                 </div>
-                <p className="text-white/60 text-sm leading-relaxed">Empowering farmers and strengthening food systems for the future.</p>
+                <p className="text-white/70 text-sm leading-relaxed">Empowering farmers and strengthening food systems for the future.</p>
               </div>
             </div>
           </div>
