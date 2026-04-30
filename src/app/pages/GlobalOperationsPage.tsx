@@ -100,6 +100,7 @@ export function GlobalOperationsPage() {
         titleHighlight="Spanning 6 Continents"
         description="Connecting producers, buyers, and logistics partners across 30+ countries through coordinated trade infrastructure and regional market access."
         image={heroImage}
+        imagePosition="top"
         breadcrumb={[{ label: "Global Operations" }]}
         button="Join the Network"
         button2="Partner with Us"

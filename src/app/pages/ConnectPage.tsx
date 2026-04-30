@@ -52,6 +52,7 @@ export function ConnectPage() {
               titleHighlight="Farm Life Market"
               description="Engage our team on partnerships, sourcing, trade opportunities and strategic collaboration."
               image={heroImage}
+              imagePosition="top"
               breadcrumb={[{ label: "Connect" }]}
               button="Partnership Inquiry"
               button2="Speak With Our Team"

@@ -7,6 +7,7 @@ interface PageHeroProps {
   titleHighlight?: string;
   description: string;
   image: string;
+  imagePosition?: string;
   breadcrumb?: { label: string; href?: string }[];
   overlayStrength?: string;
   button?: string;
@@ -22,6 +23,7 @@ export function PageHero({
   titleHighlight,
   description,
   image,
+  imagePosition = "center",
   breadcrumb,
   overlayStrength = "from-black/70 via-black/45 to-black/20",
   button,
@@ -33,7 +35,7 @@ export function PageHero({
   return (
     <section className="relative h-[72vh] min-h-[480px] flex items-end overflow-hidden">
       <div className="absolute inset-0">
-        <img src={image} alt={title} className="w-full h-full object-cover" style={{objectPosition:"center"}} />
+        <img src={image} alt={title} className="w-full h-full object-cover" style={{objectPosition: imagePosition}} />
         <div className={`absolute inset-0 bg-gradient-to-r ${overlayStrength}`} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
       </div>
