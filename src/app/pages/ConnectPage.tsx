@@ -63,7 +63,7 @@ export function ConnectPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 h-auto md:h-[600px]">
             {/* Col 1 */}
             <div className="relative group overflow-hidden h-[480px] md:h-full">
-              <img src="/connect-hero.png" alt="Strategic Partnerships" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/connect-hero.png" alt="Strategic Partnerships" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: "top"}}/>
               <div className="absolute bottom-0 left-0 w-full h-[35%] md:h-1/3 bg-[#112311] text-white p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-4">
                   <Users className="text-white/80" size={22} />
@@ -74,7 +74,7 @@ export function ConnectPage() {
             </div>
             {/* Col 2 */}
             <div className="relative group overflow-hidden h-[480px] md:h-full border-t border-b md:border-t-0 md:border-b-0 border-white/10">
-              <img src="/operations.jpeg" alt="Global Trade Network" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/operations.jpeg" alt="Global Trade Network" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: "top"}}/>
               <div className="absolute bottom-0 left-0 w-full h-[35%] md:h-1/3 bg-[#172f17] text-white p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-4">
                   <Globe className="text-white/80" size={22} />
@@ -85,7 +85,7 @@ export function ConnectPage() {
             </div>
             {/* Col 3 */}
             <div className="relative group overflow-hidden h-[480px] md:h-full">
-              <img src="/connect-hero2.png" alt="Sustainable Impact" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/connect-hero2.png" alt="Sustainable Impact" className="w-full h-[65%] md:h-2/3 object-cover group-hover:scale-105 transition-transform duration-700" style={{objectPosition: "top"}}/>
               <div className="absolute bottom-0 left-0 w-full h-[35%] md:h-1/3 bg-[#1c381c] text-white p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-4">
                   <Leaf className="text-white/80" size={22} />
