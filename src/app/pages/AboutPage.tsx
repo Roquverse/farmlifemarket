@@ -1,4 +1,6 @@
-import { Award, Leaf, Users, Heart, Target, Eye } from "lucide-react";
+import { Award, Leaf, Users, Heart, Target, Eye, X } from "lucide-react";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../components/ui/dialog";
 import { PageHero } from "../components/PageHero";
 import { Link } from "react-router";
 
@@ -41,12 +43,71 @@ const milestones = [
 
 const team = [
   { name: "Thanda Keller Robb, BA ", role: "Founder and Chief Executive  Officer", image: "/Thanda.jpg" },
-  { name: "Patrick M. Reid, MBA ", role: "Chief Operating Officer, President Of Global Operations. ", image: "/profile1.jpg" },
+  { name: "Patrick M. Reid, MBA ", role: "Chief Operating Officer, President Of Global Operations. ", image: "/profile1.jpeg" },
 
-  { name: "Ojo Olajide Samuel", role: "Chief Technical Officer, Global Operations", image: "/profile3.jpg" },
+  { name: "Ojo Olajide Samuel", role: "Chief Technical Officer, Global Operations", image: "/jaiden.jpg" },
+];
+const members = [
+  { 
+    name: "Thanda Keller Robb, BA ", 
+    role: "Founder and Chief Executive Officer", 
+    image: "/thanda 2.jpeg",
+    bio: `Thanda Keller Robb is the Founder and Chief Executive Officer of Farm Life Market LLC, a global agriculture and food commerce platform connecting farmers to buyers across Africa, the Caribbean, and the United States. She leads the company’s strategy, partnerships, and expansion, focused on improving market access and building stronger agricultural supply chains.
+
+With over 12 years of experience as a business consultant and a background as a Sales Director, Thanda brings practical expertise in growth strategy, client development, and international business.
+
+Her entrepreneurial journey began early, including running a fresh produce business as a teenager, shaping her long-term focus on agriculture and trade. She has completed business and project management studies at Columbia University and is currently pursuing an MBA with a focus on international business.
+
+Areas of Expertise
+•⁠  ⁠Agriculture and global trade
+•⁠  ⁠Business strategy and growth
+•⁠  ⁠International market development
+•⁠  ⁠Sales and revenue strategy
+•⁠  ⁠Partnerships and stakeholder engagement`
+  },
+  { 
+    name: "Jenny Dodson, CPA", 
+    role: "Advisory Board Member", 
+    image: "/jenny.jpeg",
+    bio: `Jenny Dodson is a CPA and financial services professional with over 25 years of experience in audit, compliance, financial reporting, and regulatory reporting. She began her career at Ernst & Young, where she developed a strong foundation in audit and internal controls. 
+Over time, she has built deep expertise in regulatory reporting, governance, and risk management within complex financial institutions. Jenny is known for her disciplined approach, sound judgment, and ability to navigate highly regulated environments with clarity and precision. Born and raised in Shanghai, China, she is fluent in Mandarin and English and brings a global perspective shaped by her U.S.-based education and international experience. At Farm Life Market, she serves in an independent advisory capacity, providing perspective on financial governance, compliance, and reporting as the company grows.
+
+Areas of Expertise
+•⁠  ⁠Audit & Internal Controls
+•⁠  ⁠Compliance & Risk Management
+•⁠  ⁠Financial & Regulatory Reporting
+•⁠  ⁠Governance Frameworks
+•⁠  ⁠Banking & Financial Services`
+  },
+  { 
+    name: "Nathan Robb", 
+    role: "Advisory Board Member", 
+    image: "/Nathan.jpeg",
+    bio: `Nathan Robb is a senior government relations professional with extensive experience in federal and state policy advocacy in the United States, particularly in support of higher education, scientific research, and student financial aid. In his current leadership role, he advances strategic priorities by engaging policymakers and shaping public policy initiatives that strengthen institutional and research objectives. Earlier in his career, he served as a political analyst with the Japanese Consulate in New York, providing insight into U.S.–Japan relations. Nathan holds a bachelor’s degree and a master’s degree from the University of Chicago.`
+  },
+  { 
+    name: "Ojo Olajide Samuel", 
+    role: "Chief Technical Officer, Global Operations", 
+    image: "/jaiden.jpg",
+    bio: `Ojo Olajide Samuel is a technology professional with a strong background in software development, systems architecture, and digital platform deployment. As Chief Technology Officer at Farm Life Market, he leads the design and execution of the company’s technology infrastructure, supporting the development of a scalable marketplace that connects farmers, buyers, and partners across multiple regions.
+
+He has hands-on experience building and managing web and mobile applications, with a focus on performance, reliability, and user experience. His work spans platform integration, database management, and the development of secure systems to support digital payments and operational workflows.
+
+Ojo plays a central role in advancing Farm Life Market’s digital ecosystem, including the ongoing development of the FLM Go platform and wallet infrastructure. He is focused on delivering practical, efficient technology solutions that support growth, improve access for users, and strengthen the platform’s long-term capabilities.
+
+Areas of Expertise
+•⁠  ⁠Software Development & Engineering
+•⁠  ⁠Systems Architecture
+•⁠  ⁠Web & Mobile Application Development
+•⁠  ⁠Platform Integration
+•⁠  ⁠Database Management
+•⁠  ⁠Digital Payments Infrastructure`
+  },
 ];
 
 export function AboutPage() {
+  const [selectedMember, setSelectedMember] = useState<typeof members[0] | null>(null);
+
   return (
     <div>
       <PageHero
@@ -194,6 +255,83 @@ Expanding trade access across Africa, the Caribbean and North America.
               </div>
             ))}
           </div>
+          <div className="text-center mt-12">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-8 py-3.5 rounded-sm hover:bg-[#d4a52e] transition-colors"
+              style={{ fontWeight: 600 }}
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* Members*/}
+      <section className="py-20 bg-[#1a2e1a]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <span className="w-8 h-0.5 bg-[#E8B835]" />
+              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Advisory Board members</span>
+              <span className="w-8 h-0.5 bg-[#E8B835]" />
+            </div>
+            <h2 className="text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
+              Advisory Board members Driving the Platform
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {members.map((member) => (
+              <div 
+                key={member.name} 
+                className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all cursor-pointer group"
+                onClick={() => setSelectedMember(member)}
+              >
+                <div className="relative overflow-hidden rounded-xl mb-4 aspect-[4/5]">
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white text-sm font-medium px-4 py-2 border border-white/20 rounded-full backdrop-blur-sm">
+                      Read Bio
+                    </span>
+                  </div>
+                </div>
+                <div className="text-white text-sm mb-1" style={{ fontWeight: 600, fontSize: "18px" }}>{member.name}</div>
+                <div className="text-white/50 text-xs">{member.role}</div>
+              </div>
+            ))}
+          </div>
+
+          <Dialog open={!!selectedMember} onOpenChange={(open) => !open && setSelectedMember(null)}>
+            <DialogContent className="sm:max-w-[600px] bg-[#1a2e1a] border-white/10 text-white p-0 overflow-hidden">
+              {selectedMember && (
+                <div className="flex flex-col md:flex-row">
+                  <div className="w-full md:w-2/5 aspect-[4/5] md:aspect-auto h-[300px] md:h-auto">
+                    <img 
+                      src={selectedMember.image} 
+                      alt={selectedMember.name} 
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div className="p-8 md:w-3/5 relative">
+                    <DialogHeader className="mb-6">
+                      <div className="text-[#E8B835] text-xs uppercase tracking-widest font-bold mb-2">
+                        {selectedMember.role}
+                      </div>
+                      <DialogTitle className="text-2xl font-bold text-white mb-1">
+                        {selectedMember.name}
+                      </DialogTitle>
+                    </DialogHeader>
+                    <div className="text-white/70 text-sm leading-relaxed max-h-[300px] overflow-y-auto pr-2 custom-scrollbar whitespace-pre-wrap">
+                      {selectedMember.bio}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </DialogContent>
+          </Dialog>
           <div className="text-center mt-12">
             <Link
               to="/contact"
