@@ -305,26 +305,34 @@ Expanding trade access across Africa, the Caribbean and North America.
           </div>
 
           <Dialog open={!!selectedMember} onOpenChange={(open) => !open && setSelectedMember(null)}>
-            <DialogContent className="sm:max-w-[600px] bg-[#1a2e1a] border-white/10 text-white p-0 overflow-hidden">
+            <DialogContent className="sm:max-w-[600px] max-h-[90vh] md:max-h-none overflow-y-auto md:overflow-hidden bg-[#1a2e1a] border-white/10 text-white p-0 [&>button]:hidden">
               {selectedMember && (
-                <div className="flex flex-col md:flex-row">
-                  <div className="w-full md:w-2/5 aspect-[4/5] md:aspect-auto h-[300px] md:h-auto">
+                <div className="flex flex-col md:flex-row relative">
+                  {/* Close Button - Mobile/All */}
+                  <button 
+                    onClick={() => setSelectedMember(null)}
+                    className="absolute right-4 top-4 z-10 bg-[#1a2e1a] border border-white/20 p-2 rounded-lg hover:bg-white/5 transition-colors"
+                  >
+                    <X size={20} className="text-white" />
+                  </button>
+
+                  <div className="w-full md:w-2/5 h-[240px] md:h-auto">
                     <img 
                       src={selectedMember.image} 
                       alt={selectedMember.name} 
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                  <div className="p-8 md:w-3/5 relative">
+                  <div className="p-6 md:p-8 md:w-3/5 relative">
                     <DialogHeader className="mb-6">
-                      <div className="text-[#E8B835] text-xs uppercase tracking-widest font-bold mb-2">
+                      <div className="text-[#E8B835] text-[10px] md:text-xs uppercase tracking-widest font-bold mb-2">
                         {selectedMember.role}
                       </div>
-                      <DialogTitle className="text-2xl font-bold text-white mb-1">
+                      <DialogTitle className="text-xl md:text-2xl font-bold text-white mb-1">
                         {selectedMember.name}
                       </DialogTitle>
                     </DialogHeader>
-                    <div className="text-white/70 text-sm leading-relaxed max-h-[300px] overflow-y-auto pr-2 custom-scrollbar whitespace-pre-wrap">
+                    <div className="text-white/70 text-sm leading-relaxed max-h-[250px] md:max-h-[350px] overflow-y-auto pr-2 custom-scrollbar whitespace-pre-wrap">
                       {selectedMember.bio}
                     </div>
                   </div>
