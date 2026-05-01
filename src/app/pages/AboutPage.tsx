@@ -242,9 +242,6 @@ Expanding trade access across Africa, the Caribbean and North America.
               <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Leadership</span>
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
-            <h2 className="text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Leadership Driving the Platform
-            </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
@@ -275,9 +272,6 @@ Expanding trade access across Africa, the Caribbean and North America.
               <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Advisory Board members</span>
               <span className="w-8 h-0.5 bg-[#E8B835]" />
             </div>
-            <h2 className="text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Advisory Board members Driving the Platform
-            </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {members.map((member) => (
