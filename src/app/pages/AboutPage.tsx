@@ -42,14 +42,8 @@ const milestones = [
 ];
 
 const team = [
-  { name: "Thanda Keller Robb, BA ", role: "Founder and Chief Executive  Officer", image: "/Thanda.jpg" },
-  { name: "Patrick M. Reid, MBA ", role: "Chief Operating Officer, President Of Global Operations. ", image: "/profile1.jpeg" },
-
-  { name: "Ojo Olajide Samuel", role: "Chief Technical Officer, Global Operations", image: "/jaiden.jpg" },
-];
-const members = [
   { 
-    name: "Thanda Keller Robb, BA ", 
+    name: "Thanda Keller Robb", 
     role: "Founder and Chief Executive Officer", 
     image: "/thanda 2.jpeg",
     bio: `Thanda Keller Robb is the Founder and Chief Executive Officer of Farm Life Market LLC, a global agriculture and food commerce platform connecting farmers to buyers across Africa, the Caribbean, and the United States. She leads the company’s strategy, partnerships, and expansion, focused on improving market access and building stronger agricultural supply chains.
@@ -66,24 +60,12 @@ Areas of Expertise
 •⁠  ⁠Partnerships and stakeholder engagement`
   },
   { 
-    name: "Jenny Dodson, CPA", 
-    role: "Advisory Board Member", 
-    image: "/jenny.jpeg",
-    bio: `Jenny Dodson is a CPA and financial services professional with over 25 years of experience in audit, compliance, financial reporting, and regulatory reporting. She began her career at Ernst & Young, where she developed a strong foundation in audit and internal controls. 
-Over time, she has built deep expertise in regulatory reporting, governance, and risk management within complex financial institutions. Jenny is known for her disciplined approach, sound judgment, and ability to navigate highly regulated environments with clarity and precision. Born and raised in Shanghai, China, she is fluent in Mandarin and English and brings a global perspective shaped by her U.S.-based education and international experience. At Farm Life Market, she serves in an independent advisory capacity, providing perspective on financial governance, compliance, and reporting as the company grows.
+    name: "Patrick M. Reid", 
+    role: "Chief Operating Officer, President Of Global Operations", 
+    image: "/profile1.jpeg",
+    bio: `Patrick M. Reid is the Chief Operating Officer and President of Global Operations at Farm Life Market. With an MBA and extensive experience in international business management, Patrick oversees the company's daily operations and strategic execution across global markets. 
 
-Areas of Expertise
-•⁠  ⁠Audit & Internal Controls
-•⁠  ⁠Compliance & Risk Management
-•⁠  ⁠Financial & Regulatory Reporting
-•⁠  ⁠Governance Frameworks
-•⁠  ⁠Banking & Financial Services`
-  },
-  { 
-    name: "Nathan Robb", 
-    role: "Advisory Board Member", 
-    image: "/Nathan.jpeg",
-    bio: `Nathan Robb is a senior government relations professional with extensive experience in federal and state policy advocacy in the United States, particularly in support of higher education, scientific research, and student financial aid. In his current leadership role, he advances strategic priorities by engaging policymakers and shaping public policy initiatives that strengthen institutional and research objectives. Earlier in his career, he served as a political analyst with the Japanese Consulate in New York, providing insight into U.S.–Japan relations. Nathan holds a bachelor’s degree and a master’s degree from the University of Chicago.`
+He is a results-oriented leader with a proven track record of optimizing operational efficiency and driving sustainable growth in complex, multi-national environments. His expertise in supply chain management and international trade is instrumental in Farm Life Market's mission to connect global agricultural markets.`
   },
   { 
     name: "Ojo Olajide Samuel", 
@@ -102,6 +84,53 @@ Areas of Expertise
 •⁠  ⁠Platform Integration
 •⁠  ⁠Database Management
 •⁠  ⁠Digital Payments Infrastructure`
+  },
+];
+const members = [
+  { 
+    name: "Thanda Keller Robb", 
+    role: "Founder and Chief Executive Officer", 
+    image: "/thanda 2.jpeg",
+    bio: `Thanda Keller Robb is the Founder and Chief Executive Officer of Farm Life Market LLC, a global agriculture and food commerce platform connecting farmers to buyers across Africa, the Caribbean, and the United States. She leads the company’s strategy, partnerships, and expansion, focused on improving market access and building stronger agricultural supply chains.
+
+With over 12 years of experience as a business consultant and a background as a Sales Director, Thanda brings practical expertise in growth strategy, client development, and international business.
+
+Her entrepreneurial journey began early, including running a fresh produce business as a teenager, shaping her long-term focus on agriculture and trade. She has completed business and project management studies at Columbia University and is currently pursuing an MBA with a focus on international business.
+
+Areas of Expertise
+•⁠  ⁠Agriculture and global trade
+•⁠  ⁠Business strategy and growth
+•⁠  ⁠International market development
+•⁠  ⁠Sales and revenue strategy
+•⁠  ⁠Partnerships and stakeholder engagement`
+  },
+  { 
+    name: "Jenny Dodson", 
+    role: "Advisory Board Member", 
+    image: "/jenny.jpeg",
+    bio: `Jenny Dodson is a CPA and financial services professional with over 25 years of experience in audit, compliance, financial reporting, and regulatory reporting. She began her career at Ernst & Young, where she developed a strong foundation in audit and internal controls. 
+Over time, she has built deep expertise in regulatory reporting, governance, and risk management within complex financial institutions. Jenny is known for her disciplined approach, sound judgment, and ability to navigate highly regulated environments with clarity and precision. Born and raised in Shanghai, China, she is fluent in Mandarin and English and brings a global perspective shaped by her U.S.-based education and international experience. At Farm Life Market, she serves in an independent advisory capacity, providing perspective on financial governance, compliance, and reporting as the company grows.
+
+Areas of Expertise
+•⁠  ⁠Audit & Internal Controls
+•⁠  ⁠Compliance & Risk Management
+•⁠  ⁠Financial & Regulatory Reporting
+•⁠  ⁠Governance Frameworks
+•⁠  ⁠Banking & Financial Services`
+  },
+  { 
+    name: "Nathan Robb", 
+    role: "Advisory Board Member", 
+    image: "/Nathan.jpeg",
+    bio: `Nathan Robb is a senior government relations professional with extensive experience in federal and state policy advocacy in the United States, particularly in support of higher education, scientific research, and student financial aid. In his current leadership role, he advances strategic priorities by engaging policymakers and shaping public policy initiatives that strengthen institutional and research objectives. Earlier in his career, he served as a political analyst with the Japanese Consulate in New York, providing insight into U.S.–Japan relations. Nathan holds a bachelor’s degree and a master’s degree from the University of Chicago.`
+  },
+    { 
+    name: "Patrick M. Reid", 
+    role: "Chief Operating Officer, President Of Global Operations", 
+    image: "/profile1.jpeg",
+    bio: `Patrick M. Reid is the Chief Operating Officer and President of Global Operations at Farm Life Market. With an MBA and extensive experience in international business management, Patrick oversees the company's daily operations and strategic execution across global markets. 
+
+He is a results-oriented leader with a proven track record of optimizing operational efficiency and driving sustainable growth in complex, multi-national environments. His expertise in supply chain management and international trade is instrumental in Farm Life Market's mission to connect global agricultural markets.`
   },
 ];
 
@@ -245,9 +274,24 @@ Expanding trade access across Africa, the Caribbean and North America.
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
-              <div key={member.name} className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-colors">
-                <img src={member.image} alt={member.name} style={{ width: "100%", height: "350px", border: "1px solid #E8B835/40", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 4px", overflow: "hidden", borderRadius: "12px", objectFit: "cover", objectPosition: "top" }} />
-                <div className="text-white text-sm mb-1" style={{ fontWeight: 600, paddingTop: "10px", fontSize: "18px" }}>{member.name}</div>
+              <div 
+                key={member.name} 
+                className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all cursor-pointer group"
+                onClick={() => setSelectedMember(member as any)}
+              >
+                <div className="relative overflow-hidden rounded-xl mb-4 aspect-[4/5]">
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white text-sm font-medium px-4 py-2 border border-white/20 rounded-full backdrop-blur-sm">
+                      Read Bio
+                    </span>
+                  </div>
+                </div>
+                <div className="text-white text-sm mb-1" style={{ fontWeight: 600, fontSize: "18px" }}>{member.name}</div>
                 <div className="text-white/50 text-xs">{member.role}</div>
               </div>
             ))}
