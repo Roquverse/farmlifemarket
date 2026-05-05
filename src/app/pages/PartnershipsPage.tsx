@@ -1,5 +1,6 @@
 import { Handshake, Building2, Globe, ArrowRight, Leaf, Users, Truck, Settings, TrendingUp, Target, Landmark } from "lucide-react";
 import { PageHero } from "../components/PageHero";
+import { SectionHeader } from "../components/SectionHeader";
 import { Link } from "react-router";
 
 const heroImage = "/partnership.JPG";
@@ -68,50 +69,21 @@ export function PartnershipsPage() {
       {/* Partnership Focus */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-4 mb-4">
-              <div className="h-px w-8 bg-gray-300" />
-              <span className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase">
-                Our Partnership Focus
-              </span>
-              <div className="h-px w-8 bg-gray-300" />
-            </div>
-            <h2
-              className="text-[#1a2e1a] mb-6 mx-auto max-w-3xl"
-              style={{
-                fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
-                fontWeight: 800,
-                lineHeight: 1.1,
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Building Strong Partnerships. <br />
-              <span className="text-[#2d5016]">Creating Shared Value.</span>
-            </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-              Together with our partners, we strengthen food systems, improve
-              market access, and create sustainable value across the agriculture
-              ecosystem.
-            </p>
-          </div>
+          <SectionHeader
+            badge="Our Partnership Focus"
+            title="Building Strong Partnerships."
+            titleHighlight="Creating Shared Value."
+            description="Together with our partners, we strengthen food systems, improve market access, and create sustainable value across the agriculture ecosystem."
+          />
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {focusAreas.map((item, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center group">
-                <div className="w-16 h-16 rounded-2xl bg-[#f0f7e8] flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-[#2d5016] group-hover:scale-110">
-                  <item.icon
-                    size={28}
-                    className="text-[#2d5016] transition-colors duration-300 group-hover:text-white"
-                    strokeWidth={1.5}
-                  />
+              <div key={idx} className="group bg-[#fafafa] border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all flex flex-col text-center">
+                <div className="w-14 h-14 bg-[#edf4e4] rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:bg-[#2d5016] transition-colors">
+                  <item.icon size={24} className="text-[#2d5016] group-hover:text-white transition-colors" />
                 </div>
-                <h3
-                  className="text-[#1a2e1a] mb-4 text-sm tracking-wide"
-                  style={{ fontWeight: 800 }}
-                >
-                  {item.title}
-                </h3>
-                <p className="text-gray-500 text-xs leading-relaxed max-w-[240px]">
+                <h3 className="text-[#1a2e1a] font-semibold text-base mb-4">{item.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed max-w-[240px] mx-auto">
                   {item.desc}
                 </p>
               </div>
@@ -178,22 +150,13 @@ export function PartnershipsPage() {
             {/* Left Content */}
             <div className="lg:w-[45%] px-8 flex flex-col justify-center">
               <div className="max-w-md">
-                <span className="text-[10px] font-bold tracking-[0.2em] text-[#2d5016] uppercase block mb-6">
-                  Let's Build the Future Together
-                </span>
-                <h2
-                  className="text-[#1a2e1a] mb-6"
-                  style={{
-                    fontSize: "clamp(1.8rem, 3vw, 2.6rem)",
-                    fontWeight: 800,
-                    lineHeight: 1.1,
-                    letterSpacing: "-0.02em",
-                  }}
-                >
-                  Stronger Partnerships. <br />
-                  <span className="text-[#2d5016]">Stronger Food Systems.</span>
-                </h2>
-                <p className="text-gray-500 mb-10 text-sm leading-relaxed max-w-sm">
+                <SectionHeader
+                  badge="Let's Build the Future Together"
+                  title="Stronger Partnerships."
+                  titleHighlight="Stronger Food Systems."
+                />
+                <div className="-mt-12">
+                  <p className="text-gray-500 mb-10 text-sm leading-relaxed max-w-sm">
                   Join us in building a resilient, inclusive and sustainable
                   agricultural future.
                 </p>
@@ -208,6 +171,7 @@ export function PartnershipsPage() {
                     className="transition-transform group-hover:translate-x-1"
                   />
                 </Link>
+                </div>
               </div>
             </div>
 
@@ -220,16 +184,13 @@ export function PartnershipsPage() {
             <div className="lg:flex-1 py-10 lg:py-0 px-8 flex flex-col sm:flex-row items-center gap-10 justify-center">
               {futureValues.map((val, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center max-w-[160px]">
-                  <div className="w-20 h-20 rounded-full bg-white shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex items-center justify-center mb-6 border border-gray-50">
-                    <val.icon size={28} className="text-[#2d5016]" strokeWidth={1.5} />
+                  <div className="w-14 h-14 bg-[#edf4e4] rounded-xl flex items-center justify-center mb-6">
+                    <val.icon size={24} className="text-[#2d5016]" />
                   </div>
-                  <h4
-                    className="text-[#1a2e1a] text-xs mb-3 uppercase tracking-wider"
-                    style={{ fontWeight: 800 }}
-                  >
+                  <h4 className="text-[#1a2e1a] text-sm mb-3 font-semibold uppercase tracking-wider">
                     {val.title}
                   </h4>
-                  <p className="text-gray-400 text-[10px] leading-relaxed">
+                  <p className="text-gray-500 text-xs leading-relaxed">
                     {val.desc}
                   </p>
                 </div>

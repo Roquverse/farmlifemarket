@@ -2,6 +2,7 @@ import { Truck, Thermometer, MapPin, Clock, BarChart2, Shield, ArrowRight, Check
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { PageHero } from "../components/PageHero";
+import { SectionHeader } from "../components/SectionHeader";
 import { Link } from "react-router";
 
 const heroImage =
@@ -152,38 +153,28 @@ export function LogisticsPage() {
       {/* Services */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4 justify-center">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-xs uppercase tracking-widest font-semibold">Core Services</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2
-              className="text-[#1a2e1a] font-bold mb-4"
-              style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)" }}
-            >
-              End-to-End Logistics Coverage
-            </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto" style={{ lineHeight: 1.7 }}>
-              From the first mile out of the farm to the last mile into the buyer's facility — every stage of the journey is managed and monitored.
-            </p>
-          </div>
+          <SectionHeader
+            badge="Core Services"
+            title="End-to-End"
+            titleHighlight="Logistics Coverage"
+            description="From the first mile out of the farm to the last mile into the buyer's facility — every stage of the journey is managed and monitored."
+          />
 
           <div className="grid md:grid-cols-2 gap-6">
             {services.map(({ icon: Icon, title, desc, features }) => (
               <div
                 key={title}
-                className="group bg-[#f8f5ee] rounded-2xl p-8 border border-[#e8e2d4] hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group bg-[#fafafa] rounded-2xl p-8 border border-gray-100 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#E8B835]/15 flex items-center justify-center mb-6">
-                  <Icon size={22} className="text-[#E8B835]" />
+                <div className="w-12 h-12 rounded-xl bg-[#edf4e4] flex items-center justify-center mb-6 group-hover:bg-[#2d5016] transition-colors">
+                  <Icon size={22} className="text-[#2d5016] group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-[#1a2e1a] font-bold text-xl mb-3">{title}</h3>
-                <p className="text-gray-600 text-sm mb-6" style={{ lineHeight: 1.8 }}>{desc}</p>
+                <h3 className="text-[#1a2e1a] font-semibold text-xl mb-3">{title}</h3>
+                <p className="text-gray-500 text-sm mb-6" style={{ lineHeight: 1.8 }}>{desc}</p>
                 <ul className="space-y-2.5">
                   {features.map((f) => (
-                    <li key={f} className="flex items-start gap-2.5 text-sm text-gray-600">
-                      <CheckCircle size={15} className="shrink-0 mt-0.5 text-[#2d5016]" />
+                    <li key={f} className="flex items-start gap-2.5 text-sm text-gray-500">
+                      <span className="w-1 h-1 rounded-full bg-[#2d5016] shrink-0 mt-2" />
                       {f}
                     </li>
                   ))}
@@ -195,21 +186,13 @@ export function LogisticsPage() {
       </section>
 
       {/* How it works */}
-      <section className="py-24 bg-[#f8f5ee]">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4 justify-center">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-xs uppercase tracking-widest font-semibold">The Process</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2
-              className="text-[#1a2e1a] font-bold"
-              style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)" }}
-            >
-              From Order to Delivery — Automated
-            </h2>
-          </div>
+          <SectionHeader
+            badge="The Process"
+            title="From Order to Delivery"
+            titleHighlight="Automated"
+          />
 
           <div className="relative">
             {/* Vertical connector */}
@@ -239,19 +222,14 @@ export function LogisticsPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 mb-5">
-                <span className="w-8 h-0.5 bg-[#E8B835]" />
-                <span className="text-[#E8B835] text-xs uppercase tracking-widest font-semibold">Live Tracking</span>
-              </div>
-              <h2 className="text-white font-bold mb-5" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", lineHeight: 1.2 }}>
-                Track Your Shipment
-                <br />
-                <span className="text-[#E8B835]">In Real Time.</span>
-              </h2>
-              <p className="text-white/65 mb-8" style={{ lineHeight: 1.8 }}>
-                Every shipment moving through the Farm Life Market network is assigned a unique tracking ID. Use it to monitor milestones, temperature status, carrier updates, and estimated arrival — all in one place.
-              </p>
-              <ul className="space-y-3 mb-10">
+              <SectionHeader
+                badge="Live Tracking"
+                title="Track Your Shipment"
+                titleHighlight="In Real Time."
+                description="Every shipment moving through the Farm Life Market network is assigned a unique tracking ID. Use it to monitor milestones, temperature status, carrier updates, and estimated arrival — all in one place."
+                dark
+              />
+              <ul className="space-y-3 mb-10 -mt-8">
                 {["Live milestone updates from farm gate to delivery", "Temperature & cold-chain monitoring", "Carrier contact and vessel details", "Automated alerts for delays or breaches"].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-white/70 text-sm">
                     <CheckCircle size={15} className="shrink-0 mt-0.5 text-[#E8B835]" />
@@ -267,28 +245,26 @@ export function LogisticsPage() {
       </section>
 
       {/* Trust signals */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 mb-4">
-                <span className="w-8 h-0.5 bg-[#E8B835]" />
-                <span className="text-[#E8B835] text-xs uppercase tracking-widest font-semibold">Why It Works</span>
-              </div>
-              <h2 className="text-[#1a2e1a] font-bold mb-6" style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)" }}>
-                Built on Verified Networks & Real-Time Accountability
-              </h2>
-              <div className="space-y-5">
+              <SectionHeader
+                badge="Why It Works"
+                title="Built on Verified Networks"
+                titleHighlight="& Real-Time Accountability"
+              />
+              <div className="space-y-5 -mt-8">
                 {[
                   { icon: Shield, text: "Every carrier partner is vetted for licensing, insurance, and compliance before joining our network." },
                   { icon: Clock, text: "Automated escalation protocols activate within 30 minutes of any delay or breach event." },
                   { icon: BarChart2, text: "Clients have full dashboard access to shipment data, carrier performance, and cost reports at any time." },
                 ].map(({ icon: Icon, text }) => (
                   <div key={text} className="flex gap-4 items-start">
-                    <div className="w-9 h-9 rounded-lg bg-[#E8B835]/15 flex items-center justify-center shrink-0">
-                      <Icon size={16} className="text-[#E8B835]" />
+                    <div className="w-9 h-9 rounded-lg bg-[#edf4e4] flex items-center justify-center shrink-0">
+                      <Icon size={16} className="text-[#2d5016]" />
                     </div>
-                    <p className="text-gray-600 text-sm pt-1" style={{ lineHeight: 1.7 }}>{text}</p>
+                    <p className="text-gray-500 text-sm pt-1" style={{ lineHeight: 1.7 }}>{text}</p>
                   </div>
                 ))}
               </div>

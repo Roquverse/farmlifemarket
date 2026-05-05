@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
+import { SectionHeader } from "./SectionHeader";
 
 const familyImg = "https://images.unsplash.com/photo-1774218419969-b4d0e465319a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwZmFybSUyMGZvb2QlMjBmYW1pbHklMjBoZWFsdGh5JTIwZWF0aW5nfGVufDF8fHx8MTc3NDM4OTc0N3ww&ixlib=rb-4.1.0&q=80&w=1080";
 const farmerWomanImg = "/handpicked.jpg";
@@ -28,22 +29,13 @@ export function OrganicFoodSection() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-          <div className="max-w-lg">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
-              <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Mission</span>
-            </div>
-            <h2
-              className="text-[#0f172a]"
-              style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.25 }}
-            >
-              We grow fresh organic food for you
-            </h2>
-          </div>
-          <p className="text-gray-500 max-w-xs" style={{ lineHeight: 1.7 }}>
-            Every meal is an opportunity to nourish your body with the cleanest ingredients nature provides.
-          </p>
+        <div className="mb-14">
+          <SectionHeader
+            badge="Our Mission"
+            title="We grow fresh organic food"
+            titleHighlight="for you"
+            description="Every meal is an opportunity to nourish your body with the cleanest ingredients nature provides."
+          />
         </div>
 
         {/* Cards */}

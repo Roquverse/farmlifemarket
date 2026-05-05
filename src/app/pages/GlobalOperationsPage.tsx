@@ -1,5 +1,6 @@
 import { MapPin, Package, ArrowRight, Plane, Ship, Train } from "lucide-react";
 import { PageHero } from "../components/PageHero";
+import { SectionHeader } from "../components/SectionHeader";
 import { Link } from "react-router";
 
 const heroImage =
@@ -121,35 +122,30 @@ export function GlobalOperationsPage() {
       </section> */}
 
       {/* Regions */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Regional Presence</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Our footprint around the globe
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <SectionHeader
+            badge="Regional Presence"
+            title="Our footprint"
+            titleHighlight="around the globe"
+          />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {regions.map((r) => (
-              <div key={r.name} className="border border-gray-100 rounded-2xl p-7 hover:shadow-md transition-shadow">
+              <div key={r.name} className="bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all">
                 <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-[#1a2e1a]" style={{ fontWeight: 700, fontSize: "1.05rem" }}>{r.name}</h3>
+                  <h3 className="text-[#1a2e1a] font-semibold">{r.name}</h3>
                   <span
-                    className="text-xs px-3 py-1 rounded-full"
-                    style={{ background: r.color + "22", color: r.color, fontWeight: 600 }}
-                  ></span>
+                    className="w-2 h-2 rounded-full shrink-0 mt-1"
+                    style={{ background: r.color }}
+                  />
                 </div>
                 <p className="text-gray-500 text-sm mb-5">{r.countries}</p>
                 <div>
-                  <div className="text-xs text-gray-400 mb-2" style={{ fontWeight: 600 }}>LOGISTICS HUBS</div>
+                  <div className="text-[10px] text-gray-400 mb-2.5 uppercase tracking-wider font-semibold">Logistics Hubs</div>
                   <div className="flex flex-wrap gap-2">
                     {r.hubs.map((hub) => (
-                      <div key={hub} className="flex items-center gap-1 bg-[#f8f5ee] rounded-full px-3 py-1">
-                        <MapPin size={10} className="text-[#E8B835]" />
+                      <div key={hub} className="flex items-center gap-1.5 bg-[#fafafa] border border-gray-100 rounded-full px-3 py-1">
+                        <MapPin size={10} className="text-[#2d5016]" />
                         <span className="text-xs text-gray-600">{hub}</span>
                       </div>
                     ))}
@@ -162,26 +158,21 @@ export function GlobalOperationsPage() {
       </section>
 
       {/* Logistics Modes */}
-      <section className="py-20 bg-[#f8f5ee]">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Logistics</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Multi-modal shipping solutions
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-7">
+          <SectionHeader
+            badge="Logistics"
+            title="Multi-modal"
+            titleHighlight="shipping solutions"
+          />
+          <div className="grid md:grid-cols-3 gap-5">
             {logistics.map((l) => (
-              <div key={l.title} className="bg-white rounded-2xl p-8 shadow-sm text-center">
-                <div className="w-14 h-14 bg-[#E8B835]/15 rounded-full flex items-center justify-center mx-auto mb-5">
-                  <l.icon size={24} className="text-[#2d5016]" />
+              <div key={l.title} className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all text-center">
+                <div className="w-12 h-12 bg-[#edf4e4] rounded-xl flex items-center justify-center mx-auto mb-5 group-hover:bg-[#2d5016] transition-colors">
+                  <l.icon size={22} className="text-[#2d5016] group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-[#1a2e1a] mb-2" style={{ fontWeight: 600, fontSize: "1.05rem" }}>{l.title}</h3>
-                <div className="inline-block bg-[#E8B835]/15 text-[#2d5016] text-xs px-3 py-1 rounded-full mb-4" style={{ fontWeight: 600 }}>
+                <h3 className="text-[#1a2e1a] mb-2 font-semibold">{l.title}</h3>
+                <div className="inline-block bg-[#edf4e4] text-[#2d5016] text-xs px-3 py-1 rounded-full mb-4 font-semibold">
                   Transit: {l.time}
                 </div>
                 <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{l.desc}</p>
@@ -192,26 +183,23 @@ export function GlobalOperationsPage() {
       </section>
 
       {/* Challenges & Solutions */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>How We Solve It</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Turning global challenges into competitive advantages
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <SectionHeader
+            badge="How We Solve It"
+            title="Turning global challenges"
+            titleHighlight="into competitive advantages"
+          />
+          <div className="grid md:grid-cols-2 gap-5">
             {challenges.map((c, i) => (
-              <div key={i} className="bg-[#f8f5ee] rounded-2xl p-7">
-                <div className="flex items-center gap-3 mb-3">
-                  <Package size={18} className="text-[#E8B835]" />
-                  <h3 className="text-[#1a2e1a]" style={{ fontWeight: 600 }}>{c.challenge}</h3>
+              <div key={i} className="bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] transition-all">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-9 h-9 bg-[#edf4e4] rounded-lg flex items-center justify-center shrink-0">
+                    <Package size={16} className="text-[#2d5016]" />
+                  </div>
+                  <h3 className="text-[#1a2e1a] font-semibold">{c.challenge}</h3>
                 </div>
-                <p className="text-gray-600 text-sm" style={{ lineHeight: 1.75 }}>{c.solution}</p>
+                <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{c.solution}</p>
               </div>
             ))}
           </div>

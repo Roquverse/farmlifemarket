@@ -1,9 +1,9 @@
 import { Tractor, ShoppingBag, Truck, BarChart3, Leaf, Shield, ArrowRight } from "lucide-react";
 import { PageHero } from "../components/PageHero";
+import { SectionHeader } from "../components/SectionHeader";
 import { Link } from "react-router";
 
-const heroImage =
-  "/what-we-do-hero.jpeg";
+const heroImage = "/what-we-do-hero.jpeg";
 
 const commerceInfrastructure = [
   {
@@ -69,36 +69,32 @@ export function WhatWeDoPage() {
       />
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Services</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a] max-w-3xl mx-auto mb-6" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}>
-              Integrated Services Across the Agricultural Value Chain
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Supporting producers, buyers, and institutions through solutions designed to improve productivity, market access, logistics, and trade.
-            </p>
-          </div>
+          <SectionHeader
+            badge="Services"
+            title="Integrated Services"
+            titleHighlight="Across the Agricultural Value Chain"
+            description="Supporting producers, buyers, and institutions through solutions designed to improve productivity, market access, logistics, and trade."
+          />
 
           <div className="mb-16">
-            <h3 className="text-[#1a2e1a] text-xl font-bold mb-8 border-b border-gray-100 pb-4 uppercase tracking-wider text-sm">Commerce Infrastructure</h3>
-            <div className="grid md:grid-cols-3 gap-7">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2d5016]" />
+              <h3 className="text-[#1a2e1a] text-xs uppercase tracking-widest font-bold">Commerce Infrastructure</h3>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
               {commerceInfrastructure.map((s) => (
-                <div key={s.title} className="group border border-gray-100 rounded-2xl p-7 hover:shadow-lg hover:border-[#E8B835]/30 transition-all flex flex-col">
-                  <div className="w-12 h-12 bg-[#E8B835]/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#E8B835]/25 transition-colors">
-                    <s.icon size={22} className="text-[#E8B835]" />
+                <div key={s.title} className="group bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all flex flex-col">
+                  <div className="w-11 h-11 bg-[#edf4e4] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#2d5016] transition-colors">
+                    <s.icon size={20} className="text-[#2d5016] group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="text-[#1a2e1a] mb-3" style={{ fontWeight: 600, fontSize: "1.05rem" }}>{s.title}</h3>
+                  <h3 className="text-[#1a2e1a] mb-3 font-semibold text-base">{s.title}</h3>
                   <p className="text-gray-500 text-sm mb-6 flex-grow" style={{ lineHeight: 1.75 }}>{s.desc}</p>
-                  <ul className="space-y-3 mt-auto">
+                  <ul className="space-y-2.5 mt-auto">
                     {s.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm text-gray-600">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#E8B835] shrink-0 mt-2" />
+                      <li key={f} className="flex items-start gap-3 text-sm text-gray-500">
+                        <span className="w-1 h-1 rounded-full bg-[#2d5016] shrink-0 mt-2" />
                         {f}
                       </li>
                     ))}
@@ -109,19 +105,22 @@ export function WhatWeDoPage() {
           </div>
 
           <div>
-            <h3 className="text-[#1a2e1a] text-xl font-bold mb-8 border-b border-gray-100 pb-4 uppercase tracking-wider text-sm">Growth & Producer Support</h3>
-            <div className="grid md:grid-cols-3 gap-7">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2d5016]" />
+              <h3 className="text-[#1a2e1a] text-xs uppercase tracking-widest font-bold">Growth & Producer Support</h3>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
               {growthProducerSupport.map((s) => (
-                <div key={s.title} className="group border border-gray-100 rounded-2xl p-7 hover:shadow-lg hover:border-[#E8B835]/30 transition-all flex flex-col">
-                  <div className="w-12 h-12 bg-[#E8B835]/15 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#E8B835]/25 transition-colors">
-                    <s.icon size={22} className="text-[#E8B835]" />
+                <div key={s.title} className="group bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all flex flex-col">
+                  <div className="w-11 h-11 bg-[#edf4e4] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#2d5016] transition-colors">
+                    <s.icon size={20} className="text-[#2d5016] group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="text-[#1a2e1a] mb-3" style={{ fontWeight: 600, fontSize: "1.05rem" }}>{s.title}</h3>
+                  <h3 className="text-[#1a2e1a] mb-3 font-semibold text-base">{s.title}</h3>
                   <p className="text-gray-500 text-sm mb-6 flex-grow" style={{ lineHeight: 1.75 }}>{s.desc}</p>
-                  <ul className="space-y-3 mt-auto">
+                  <ul className="space-y-2.5 mt-auto">
                     {s.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm text-gray-600">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#E8B835] shrink-0 mt-2" />
+                      <li key={f} className="flex items-start gap-3 text-sm text-gray-500">
+                        <span className="w-1 h-1 rounded-full bg-[#2d5016] shrink-0 mt-2" />
                         {f}
                       </li>
                     ))}
@@ -130,32 +129,26 @@ export function WhatWeDoPage() {
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-[#f8f5ee]">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Process</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Getting started is simple
-            </h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <SectionHeader
+            badge="Process"
+            title="Getting started"
+            titleHighlight="is simple"
+          />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {processSteps.map((step, i) => (
               <div key={i} className="relative">
                 {i < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-full w-full h-px border-t-2 border-dashed border-[#E8B835]/40 z-0" style={{ width: "calc(100% - 2rem)" }} />
+                  <div className="hidden lg:block absolute top-8 left-full w-full h-px border-t-2 border-dashed border-gray-200 z-0" style={{ width: "calc(100% - 2rem)" }} />
                 )}
-                <div className="bg-white rounded-2xl p-7 relative z-10 shadow-sm">
-                  <div className="text-[#E8B835] text-3xl mb-4" style={{ fontWeight: 800 }}>{step.step}</div>
-                  <h3 className="text-[#1a2e1a] mb-3" style={{ fontWeight: 600 }}>{step.title}</h3>
+                <div className="bg-white rounded-2xl p-7 relative z-10 border border-gray-100 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-shadow">
+                  <div className="text-[#E8B835] text-3xl mb-5 font-black">{step.step}</div>
+                  <h3 className="text-[#1a2e1a] mb-3 font-semibold">{step.title}</h3>
                   <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{step.desc}</p>
                 </div>
               </div>
@@ -165,7 +158,7 @@ export function WhatWeDoPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#2d5016]">
+      <section className="py-20 bg-[#1a2e1a]">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-white mb-4" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
             Ready to transform your farm's potential?

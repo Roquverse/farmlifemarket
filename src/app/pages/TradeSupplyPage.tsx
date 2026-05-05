@@ -1,6 +1,9 @@
 import { TrendingUp, Scale, FileText, Clock, ShieldCheck, DollarSign, ArrowRight } from "lucide-react";
 import { PageHero } from "../components/PageHero";
+import { SectionHeader } from "../components/SectionHeader";
 import { Link } from "react-router";
+
+const SERIF = "'Playfair Display', Georgia, serif";
 
 const heroImage =
   "/trade supply.jpeg";
@@ -116,25 +119,20 @@ export function TradeSupplyPage() {
       </section> */}
 
       {/* Trade Features */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Trade Tools</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a] max-w-xl mx-auto" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}>
-              Infrastructure built for reliable, transparent trade
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <SectionHeader
+            badge="Trade Tools"
+            title="Infrastructure built"
+            titleHighlight="for reliable, transparent trade"
+          />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {tradeFeatures.map((f) => (
-              <div key={f.title} className="group border border-gray-100 rounded-2xl p-7 hover:shadow-lg hover:border-[#E8B835]/30 transition-all">
-                <div className="w-12 h-12 bg-[#E8B835]/15 rounded-xl flex items-center justify-center mb-5">
-                  <f.icon size={22} className="text-[#2d5016]" />
+              <div key={f.title} className="group bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all">
+                <div className="w-11 h-11 bg-[#edf4e4] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#2d5016] transition-colors">
+                  <f.icon size={20} className="text-[#2d5016] group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-[#1a2e1a] mb-3" style={{ fontWeight: 600, fontSize: "1.05rem" }}>{f.title}</h3>
+                <h3 className="text-[#1a2e1a] mb-3 font-semibold">{f.title}</h3>
                 <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{f.desc}</p>
               </div>
             ))}
@@ -143,18 +141,13 @@ export function TradeSupplyPage() {
       </section>
 
       {/* Commodity Categories */}
-      <section className="py-20 bg-[#f8f5ee]">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Commodities</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              What we trade
-            </h2>
-          </div>
+          <SectionHeader
+            badge="Commodities"
+            title="What we"
+            titleHighlight="trade"
+          />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {commodities.map((c) => (
               <div key={c.category} className="bg-white rounded-2xl p-7 shadow-sm">
@@ -178,18 +171,13 @@ export function TradeSupplyPage() {
       </section>
 
       {/* Supply Chain Flow */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Supply Chain</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              End-to-end supply chain visibility
-            </h2>
-          </div>
+          <SectionHeader
+            badge="Supply Chain"
+            title="End-to-end"
+            titleHighlight="supply chain visibility"
+          />
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {supplyChainSteps.map((step, i) => (
               <div key={i} className="relative">

@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { SectionHeader } from "./SectionHeader";
 
 const products = [
   {
@@ -41,21 +42,13 @@ export function ProduceSection() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
-            <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Products</span>
-            <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
-          </div>
-          <h2
-            className="text-[#0f172a]"
-            style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.25 }}
-          >
-            Wonderful produce
-          </h2>
-          <p className="text-gray-500 mt-4 max-w-md mx-auto" style={{ lineHeight: 1.7 }}>
-            From our fields to your plate — browse our full selection of certified organic farm products.
-          </p>
+        <div className="mb-14">
+          <SectionHeader
+            badge="Products"
+            title="Wonderful"
+            titleHighlight="produce"
+            description="From our fields to your plate — browse our full selection of certified organic farm products."
+          />
         </div>
 
         {/* Product Cards */}

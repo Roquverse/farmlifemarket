@@ -2,13 +2,13 @@ import { Award, Leaf, Users, Heart, Target, Eye, X } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../components/ui/dialog";
 import { PageHero } from "../components/PageHero";
+import { SectionHeader } from "../components/SectionHeader";
 import { Link } from "react-router";
 
-const heroImage =
-  "/about-hero.jpg";
+const SERIF = "'Playfair Display', Georgia, serif";
 
-const teamImage =
-  "/img.jpg";
+const heroImage = "/about-hero.jpg";
+const teamImage = "/img.jpg";
 
 const values = [
   {
@@ -46,7 +46,7 @@ const team = [
     name: "Thanda Keller Robb", 
     role: "Founder and Chief Executive Officer", 
     image: "/thanda 2.jpeg",
-    bio: `Thanda Keller Robb is the Founder and Chief Executive Officer of Farm Life Market LLC, a global agriculture and food commerce platform connecting farmers to buyers across Africa, the Caribbean, and the United States. She leads the company’s strategy, partnerships, and expansion, focused on improving market access and building stronger agricultural supply chains.
+    bio: `Thanda Keller Robb is the Founder and Chief Executive Officer of Farm Life Market LLC, a global agriculture and food commerce platform connecting farmers to buyers across Africa, the Caribbean, and the United States. She leads the company's strategy, partnerships, and expansion, focused on improving market access and building stronger agricultural supply chains.
 
 With over 12 years of experience as a business consultant and a background as a Sales Director, Thanda brings practical expertise in growth strategy, client development, and international business.
 
@@ -71,11 +71,11 @@ He is a results-oriented leader with a proven track record of optimizing operati
     name: "Ojo Olajide Samuel", 
     role: "Chief Technical Officer, Global Operations", 
     image: "/jaiden.jpg",
-    bio: `Ojo Olajide Samuel is a technology professional with a strong background in software development, systems architecture, and digital platform deployment. As Chief Technology Officer at Farm Life Market, he leads the design and execution of the company’s technology infrastructure, supporting the development of a scalable marketplace that connects farmers, buyers, and partners across multiple regions.
+    bio: `Ojo Olajide Samuel is a technology professional with a strong background in software development, systems architecture, and digital platform deployment. As Chief Technology Officer at Farm Life Market, he leads the design and execution of the company's technology infrastructure, supporting the development of a scalable marketplace that connects farmers, buyers, and partners across multiple regions.
 
 He has hands-on experience building and managing web and mobile applications, with a focus on performance, reliability, and user experience. His work spans platform integration, database management, and the development of secure systems to support digital payments and operational workflows.
 
-Ojo plays a central role in advancing Farm Life Market’s digital ecosystem, including the ongoing development of the FLM Go platform and wallet infrastructure. He is focused on delivering practical, efficient technology solutions that support growth, improve access for users, and strengthen the platform’s long-term capabilities.
+Ojo plays a central role in advancing Farm Life Market's digital ecosystem, including the ongoing development of the FLM Go platform and wallet infrastructure. He is focused on delivering practical, efficient technology solutions that support growth, improve access for users, and strengthen the platform's long-term capabilities.
 
 Areas of Expertise
 •⁠  ⁠Software Development & Engineering
@@ -86,12 +86,13 @@ Areas of Expertise
 •⁠  ⁠Digital Payments Infrastructure`
   },
 ];
+
 const members = [
   { 
     name: "Thanda Keller Robb", 
     role: "Founder and Chief Executive Officer", 
     image: "/thanda 2.jpeg",
-    bio: `Thanda Keller Robb is the Founder and Chief Executive Officer of Farm Life Market LLC, a global agriculture and food commerce platform connecting farmers to buyers across Africa, the Caribbean, and the United States. She leads the company’s strategy, partnerships, and expansion, focused on improving market access and building stronger agricultural supply chains.
+    bio: `Thanda Keller Robb is the Founder and Chief Executive Officer of Farm Life Market LLC, a global agriculture and food commerce platform connecting farmers to buyers across Africa, the Caribbean, and the United States. She leads the company's strategy, partnerships, and expansion, focused on improving market access and building stronger agricultural supply chains.
 
 With over 12 years of experience as a business consultant and a background as a Sales Director, Thanda brings practical expertise in growth strategy, client development, and international business.
 
@@ -122,9 +123,9 @@ Areas of Expertise
     name: "Nathan Robb", 
     role: "Advisory Board Member", 
     image: "/Nathan.jpeg",
-    bio: `Nathan Robb is a senior government relations professional with extensive experience in federal and state policy advocacy in the United States, particularly in support of higher education, scientific research, and student financial aid. In his current leadership role, he advances strategic priorities by engaging policymakers and shaping public policy initiatives that strengthen institutional and research objectives. Earlier in his career, he served as a political analyst with the Japanese Consulate in New York, providing insight into U.S.–Japan relations. Nathan holds a bachelor’s degree and a master’s degree from the University of Chicago.`
+    bio: `Nathan Robb is a senior government relations professional with extensive experience in federal and state policy advocacy in the United States, particularly in support of higher education, scientific research, and student financial aid. In his current leadership role, he advances strategic priorities by engaging policymakers and shaping public policy initiatives that strengthen institutional and research objectives. Earlier in his career, he served as a political analyst with the Japanese Consulate in New York, providing insight into U.S.–Japan relations. Nathan holds a bachelor's degree and a master's degree from the University of Chicago.`
   },
-    { 
+  { 
     name: "Patrick M. Reid", 
     role: "Chief Operating Officer, President Of Global Operations", 
     image: "/profile1.jpeg",
@@ -149,53 +150,53 @@ export function AboutPage() {
       />
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="mb-14">
+            <SectionHeader
+              badge="Who We Are"
+              title="More Than a Marketplace"
+              titleHighlight="Trade Infrastructure for Agriculture"
+            />
+          </div>
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 mb-4">
-                <span className="w-8 h-0.5 bg-[#E8B835]" />
-                <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>
-                  Who We Are
-                </span>
+              <div className="space-y-4 text-gray-700 text-lg mb-8" style={{ lineHeight: 1.7 }}>
+                <p>
+                  Farm Life Market is building trusted infrastructure connecting farmers, buyers and supply chains across emerging and global markets.
+                </p>
+                <p>
+                  Supporting farmer networks across strategic markets. Expanding trade access across Africa, the Caribbean and North America.
+                </p>
               </div>
-              <h2
-                className="text-[#1a2e1a] mb-6"
-                style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}
-              >
-                More Than a Marketplace — Trade Infrastructure for Agriculture
-              </h2>
-              <p className="text-gray-600 mb-5" style={{ lineHeight: 1.8 }}>
-                Farm Life Market is building trusted infrastructure connecting farmers, buyers and supply chains across emerging and global markets.
-              </p>
-              <p className="text-gray-600 mb-5" style={{ lineHeight: 1.8 }}>
-                Supporting farmer networks across strategic markets.
-Expanding trade access across Africa, the Caribbean and North America.
-              </p>
-              
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-[#f8f5ee] rounded-xl p-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Target size={18} className="text-[#E8B835]" />
-                    <span className="text-[#1a2e1a] text-sm" style={{ fontWeight: 600 }}>Our Mission</span>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-[#fafafa] border border-gray-100 rounded-2xl p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-8 h-8 bg-[#edf4e4] rounded-lg flex items-center justify-center">
+                      <Target size={15} className="text-[#2d5016]" />
+                    </div>
+                    <span className="text-[#1a2e1a] text-sm font-semibold">Our Mission</span>
                   </div>
-                  <p className="text-gray-600 text-sm" style={{ lineHeight: 1.7 }}>
+                  <p className="text-gray-500 text-[13px]" style={{ lineHeight: 1.6 }}>
                     Build trusted infrastructure for agricultural trade and market access.
                   </p>
                 </div>
-                <div className="bg-[#f8f5ee] rounded-xl p-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Eye size={18} className="text-[#E8B835]" />
-                    <span className="text-[#1a2e1a] text-sm" style={{ fontWeight: 600 }}>Our Vision</span>
+                <div className="bg-[#fafafa] border border-gray-100 rounded-2xl p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-8 h-8 bg-[#edf4e4] rounded-lg flex items-center justify-center">
+                      <Eye size={15} className="text-[#2d5016]" />
+                    </div>
+                    <span className="text-[#1a2e1a] text-sm font-semibold">Our Vision</span>
                   </div>
-                  <p className="text-gray-600 text-sm" style={{ lineHeight: 1.7 }}>
+                  <p className="text-gray-500 text-[13px]" style={{ lineHeight: 1.6 }}>
                     Advance a more connected, efficient and inclusive global food economy.
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden aspect-[4/5]">
+              {/* Made the image more compact with aspect-square instead of 4/5 */}
+              <div className="rounded-2xl overflow-hidden aspect-square md:aspect-[4/3] lg:aspect-square max-w-lg ml-auto">
                 <img src={teamImage} alt="Farm Life Market team" className="w-full h-full object-cover" />
               </div>
             </div>
@@ -204,25 +205,21 @@ Expanding trade access across Africa, the Caribbean and North America.
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-[#f8f5ee]">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Core Values</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Principles That Drive Our Platform
-            </h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <SectionHeader
+            badge="Core Values"
+            title="Principles That"
+            titleHighlight="Drive Our Platform"
+            centered
+          />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {values.map((v) => (
-              <div key={v.title} className="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-[#E8B835]/15 rounded-xl flex items-center justify-center mb-5">
-                  <v.icon size={22} className="text-[#E8B835]" />
+              <div key={v.title} className="group bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all">
+                <div className="w-11 h-11 bg-[#edf4e4] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#2d5016] transition-colors">
+                  <v.icon size={20} className="text-[#2d5016] group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-[#1a2e1a] mb-3" style={{ fontWeight: 600 }}>{v.title}</h3>
+                <h3 className="text-[#1a2e1a] mb-3 font-semibold">{v.title}</h3>
                 <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{v.desc}</p>
               </div>
             ))}
@@ -231,30 +228,24 @@ Expanding trade access across Africa, the Caribbean and North America.
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Platform Evolution</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-             Key Growth Milestones
-            </h2>
-          </div>
+          <SectionHeader
+            badge="Platform Evolution"
+            title="Key Growth"
+            titleHighlight="Milestones"
+            centered
+          />
           <div className="relative">
-            <div className="absolute left-[88px] top-0 bottom-0 w-px bg-[#e8e2d4]" />
-            <div className="space-y-8">
+            <div className="absolute left-[88px] top-0 bottom-0 w-px bg-gray-100" />
+            <div className="space-y-7">
               {milestones.map((m, i) => (
                 <div key={i} className="flex items-start gap-8">
-                  <div className="text-[#E8B835] text-sm w-16 shrink-0 pt-1 text-right" style={{ fontWeight: 700 }}>
-                    {m.year}
-                  </div>
+                  <div className="text-[#2d5016] text-sm w-16 shrink-0 pt-1 text-right font-bold">{m.year}</div>
                   <div className="relative shrink-0">
-                    <div className="w-5 h-5 rounded-full bg-[#E8B835] border-4 border-white shadow-md mt-0.5" />
+                    <div className="w-5 h-5 rounded-full bg-[#edf4e4] border-2 border-[#2d5016] mt-0.5" />
                   </div>
-                  <p className="text-gray-700 pt-0.5" style={{ lineHeight: 1.7 }}>{m.event}</p>
+                  <p className="text-gray-600 pt-0.5" style={{ lineHeight: 1.7 }}>{m.event}</p>
                 </div>
               ))}
             </div>
@@ -263,15 +254,15 @@ Expanding trade access across Africa, the Caribbean and North America.
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-[#1a2e1a]">
+      <section className="py-24 bg-[#1a2e1a]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Leadership</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-          </div>
+          <SectionHeader
+            badge="Leadership"
+            title=""
+            titleHighlight=""
+            centered
+            dark
+          />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
               <div 
@@ -279,7 +270,7 @@ Expanding trade access across Africa, the Caribbean and North America.
                 className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all cursor-pointer group"
                 onClick={() => setSelectedMember(member as any)}
               >
-                <div className="relative overflow-hidden rounded-xl mb-4 aspect-[4/5]">
+                <div className="relative overflow-hidden rounded-xl mb-5 aspect-[4/5]">
                   <img 
                     src={member.image} 
                     alt={member.name} 
@@ -291,7 +282,7 @@ Expanding trade access across Africa, the Caribbean and North America.
                     </span>
                   </div>
                 </div>
-                <div className="text-white text-sm mb-1" style={{ fontWeight: 600, fontSize: "18px" }}>{member.name}</div>
+                <div className="text-white font-semibold text-base mb-1">{member.name}</div>
                 <div className="text-white/50 text-xs">{member.role}</div>
               </div>
             ))}
@@ -299,24 +290,24 @@ Expanding trade access across Africa, the Caribbean and North America.
           <div className="text-center mt-12">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-8 py-3.5 rounded-sm hover:bg-[#d4a52e] transition-colors"
-              style={{ fontWeight: 600 }}
+              className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-8 py-3.5 rounded-sm hover:bg-[#d4a52e] transition-colors font-semibold"
             >
               Get in Touch
             </Link>
           </div>
         </div>
       </section>
-      {/* Members*/}
-      <section className="py-20 bg-[#1a2e1a]">
+
+      {/* Advisory Board */}
+      <section className="py-24 bg-[#1a2e1a]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Advisory Board members</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-          </div>
+          <SectionHeader
+            badge="Advisory Board"
+            title=""
+            titleHighlight=""
+            centered
+            dark
+          />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {members.map((member) => (
               <div 
@@ -324,7 +315,7 @@ Expanding trade access across Africa, the Caribbean and North America.
                 className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all cursor-pointer group"
                 onClick={() => setSelectedMember(member)}
               >
-                <div className="relative overflow-hidden rounded-xl mb-4 aspect-[4/5]">
+                <div className="relative overflow-hidden rounded-xl mb-5 aspect-[4/5]">
                   <img 
                     src={member.image} 
                     alt={member.name} 
@@ -336,7 +327,7 @@ Expanding trade access across Africa, the Caribbean and North America.
                     </span>
                   </div>
                 </div>
-                <div className="text-white text-sm mb-1" style={{ fontWeight: 600, fontSize: "18px" }}>{member.name}</div>
+                <div className="text-white font-semibold text-base mb-1">{member.name}</div>
                 <div className="text-white/50 text-xs">{member.role}</div>
               </div>
             ))}
@@ -346,7 +337,6 @@ Expanding trade access across Africa, the Caribbean and North America.
             <DialogContent className="sm:max-w-[600px] max-h-[90vh] md:max-h-none overflow-y-auto md:overflow-hidden bg-[#1a2e1a] border-white/10 text-white p-0 [&>button]:hidden">
               {selectedMember && (
                 <div className="flex flex-col md:flex-row relative">
-                  {/* Close Button - Mobile/All */}
                   <button 
                     onClick={() => setSelectedMember(null)}
                     className="absolute right-4 top-4 z-10 bg-[#1a2e1a] border border-white/20 p-2 rounded-lg hover:bg-white/5 transition-colors"
@@ -378,11 +368,11 @@ Expanding trade access across Africa, the Caribbean and North America.
               )}
             </DialogContent>
           </Dialog>
+
           <div className="text-center mt-12">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-8 py-3.5 rounded-sm hover:bg-[#d4a52e] transition-colors"
-              style={{ fontWeight: 600 }}
+              className="inline-flex items-center gap-2 bg-[#E8B835] text-[#1a1a1a] px-8 py-3.5 rounded-sm hover:bg-[#d4a52e] transition-colors font-semibold"
             >
               Get in Touch
             </Link>

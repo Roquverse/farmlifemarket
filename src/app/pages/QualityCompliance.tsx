@@ -1,6 +1,9 @@
 import { CheckCircle2, Award, FileCheck, Microscope, Droplets, Wind } from "lucide-react";
 import { PageHero } from "../components/PageHero";
+import { SectionHeader } from "../components/SectionHeader";
 import { Link } from "react-router";
+
+const SERIF = "'Playfair Display', Georgia, serif";
 
 const heroImage =
   "/quality.png";
@@ -88,18 +91,17 @@ export function QualityCompliancePage() {
       />
 
       {/* Intro */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 mb-4">
-                <span className="w-8 h-0.5 bg-[#E8B835]" />
-                <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Approach</span>
-              </div>
-              <h2 className="text-[#1a2e1a] mb-6" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700, lineHeight: 1.25 }}>
-                A multi-layered framework for authentic organic integrity
-              </h2>
-              <p className="text-gray-600 mb-6" style={{ lineHeight: 1.8 }}>
+          <SectionHeader
+            badge="Our Approach"
+            title="A multi-layered framework"
+            titleHighlight="for authentic organic integrity"
+            description=""
+          />
+          <div className="grid md:grid-cols-2 gap-16 items-start mt-10">
+            <div className="space-y-6">
+              <p className="text-gray-600" style={{ lineHeight: 1.8 }}>
                 In an industry rife with greenwashing, we believe that trust is earned through transparency. Our standards framework combines internationally recognized certifications with our own proprietary auditing layer — ensuring that every Farm Life Market listing is genuinely what it claims to be.
               </p>
               <p className="text-gray-600" style={{ lineHeight: 1.8 }}>
@@ -113,8 +115,8 @@ export function QualityCompliancePage() {
                 { label: "Rapid Review Processes" },
                 { label: "Fraud Prevention Standards" },
               ].map((s, i) => (
-                <div key={i} className="bg-[#f8f5ee] rounded-xl p-6 text-center" style={{ padding: '4rem 0' }}>
-                  <div className="text-gray-500 text-sm mt-2" style={{ lineHeight: 1.5 }}>{s.label}</div>
+                <div key={i} className="bg-[#fafafa] border border-gray-100 rounded-2xl p-6 text-center flex flex-col justify-center min-h-[160px] hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all">
+                  <div className="text-gray-600 text-sm font-medium" style={{ lineHeight: 1.5 }}>{s.label}</div>
                 </div>
               ))}
             </div>
@@ -123,30 +125,27 @@ export function QualityCompliancePage() {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-[#f8f5ee]">
+      <section className="py-24 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Certifications</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              Standards and Certifications Supported
-            </h2>
-          </div>
+          <SectionHeader
+            badge="Certifications"
+            title="Standards and Certifications"
+            titleHighlight="Supported"
+          />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert) => (
-              <div key={cert.name} className="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md transition-shadow">
+              <div key={cert.name} className="group bg-white border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <div className="text-[#1a2e1a]" style={{ fontWeight: 700, fontSize: "1.05rem" }}>{cert.name}</div>
-                    <div className="text-[#E8B835] text-xs mt-0.5" style={{ fontWeight: 600 }}>{cert.region}</div>
+                    <div className="text-[#1a2e1a] font-semibold text-lg">{cert.name}</div>
+                    <div className="text-[#2d5016] text-xs mt-0.5 font-semibold">{cert.region}</div>
                   </div>
-                  <Award size={20} className="text-[#E8B835] shrink-0" />
+                  <div className="w-10 h-10 bg-[#edf4e4] rounded-xl flex items-center justify-center shrink-0 group-hover:bg-[#2d5016] transition-colors">
+                    <Award size={18} className="text-[#2d5016] group-hover:text-white transition-colors" />
+                  </div>
                 </div>
-                <div className="text-gray-400 text-xs mb-3">{cert.body}</div>
-                <p className="text-gray-600 text-sm" style={{ lineHeight: 1.75 }}>{cert.desc}</p>
+                <div className="text-gray-400 text-xs mb-3 font-medium uppercase tracking-wide">{cert.body}</div>
+                <p className="text-gray-500 text-sm" style={{ lineHeight: 1.75 }}>{cert.desc}</p>
               </div>
             ))}
           </div>
@@ -154,29 +153,24 @@ export function QualityCompliancePage() {
       </section>
 
       {/* Four Pillars */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Our Framework</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-[#1a2e1a]" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              The four pillars of Farmlife Standards
-            </h2>
-          </div>
+          <SectionHeader
+            badge="Our Framework"
+            title="The four pillars of"
+            titleHighlight="Farmlife Standards"
+          />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
             {pillars.map((p) => (
-              <div key={p.title} className="border border-gray-100 rounded-2xl p-7">
-                <div className="w-12 h-12 bg-[#2d5016]/10 rounded-xl flex items-center justify-center mb-5">
-                  <p.icon size={22} className="text-[#2d5016]" />
+              <div key={p.title} className="group bg-[#fafafa] border border-gray-100 rounded-2xl p-7 hover:shadow-[0_8px_30px_rgba(0,0,0,0.07)] hover:border-gray-200 transition-all">
+                <div className="w-12 h-12 bg-[#edf4e4] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#2d5016] transition-colors">
+                  <p.icon size={22} className="text-[#2d5016] group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-[#1a2e1a] mb-4" style={{ fontWeight: 600 }}>{p.title}</h3>
+                <h3 className="text-[#1a2e1a] mb-4 font-semibold">{p.title}</h3>
                 <ul className="space-y-3">
                   {p.checks.map((c) => (
-                    <li key={c} className="flex items-start gap-2 text-sm text-gray-600">
-                      <CheckCircle2 size={14} className="text-[#E8B835] mt-0.5 shrink-0" />
+                    <li key={c} className="flex items-start gap-2.5 text-sm text-gray-500">
+                      <CheckCircle2 size={16} className="text-[#2d5016] mt-0.5 shrink-0" />
                       {c}
                     </li>
                   ))}
@@ -188,18 +182,14 @@ export function QualityCompliancePage() {
       </section>
 
       {/* Audit Process */}
-      <section className="py-20 bg-[#1a2e1a]">
+      <section className="py-24 bg-[#1a2e1a]">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-              <span className="text-[#E8B835] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>Audit Process</span>
-              <span className="w-8 h-0.5 bg-[#E8B835]" />
-            </div>
-            <h2 className="text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 700 }}>
-              How we verify every partner farm
-            </h2>
-          </div>
+          <SectionHeader
+            badge="Audit Process"
+            title="How we verify"
+            titleHighlight="every partner farm"
+            dark
+          />
           <div className="space-y-6">
             {auditProcess.map((step, i) => (
               <div key={i} className="flex gap-6 items-start bg-white/5 border border-white/10 rounded-xl p-6">

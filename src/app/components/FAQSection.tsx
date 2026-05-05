@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { SectionHeader } from "./SectionHeader";
 
 const faqs = [
   {
@@ -33,16 +34,11 @@ export function FAQSection() {
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-0.5 bg-[#f5ad10]"></span>
-              <span className="text-[#f5ad10] text-sm uppercase tracking-widest" style={{ fontWeight: 600 }}>FAQ</span>
-            </div>
-            <h2
-              className="text-[#0f172a] mb-6"
-              style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.25 }}
-            >
-              Questions about our farm
-            </h2>
+            <SectionHeader
+              badge="FAQ"
+              title="Questions about"
+              titleHighlight="our farm"
+            />
             <p className="text-gray-600 mb-8" style={{ lineHeight: 1.8 }}>
               Have more questions? We're happy to help. Browse our most common queries below
               or reach out to our team directly.
