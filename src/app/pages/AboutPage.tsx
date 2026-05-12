@@ -76,8 +76,8 @@ Areas of Expertise
   },
   { 
     name: "Ojo Olajide Samuel", 
-    role: "Chief Technical Officer, Global Operations", 
-    image: "/jaiden.jpg",
+    role: "Assistant Vice President and Regional Manager", 
+    image: "/jaiden.jpeg",
     bio: `Ojo Olajide Samuel serves as the Assistant Vice President and Regional Manager of Farm Life Market, supporting executive leadership while helping coordinate regional operations, organizational execution, and day-to-day business activities across the company’s growing agriculture and logistics ecosystem.
 
     In his role, he works closely with senior leadership to support operational management, cross-functional coordination, project execution, and regional business development initiatives. He also assists in maintaining communication between teams, overseeing operational workflows, and helping ensure that company objectives are executed efficiently across multiple markets.
