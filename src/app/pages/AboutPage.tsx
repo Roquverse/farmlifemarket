@@ -65,25 +65,34 @@ Areas of Expertise
     image: "/profile1.jpeg",
     bio: `Patrick M. Reid is the Chief Operating Officer and President of Global Operations at Farm Life Market. With an MBA and extensive experience in international business management, Patrick oversees the company's daily operations and strategic execution across global markets. 
 
-He is a results-oriented leader with a proven track record of optimizing operational efficiency and driving sustainable growth in complex, multi-national environments. His expertise in supply chain management and international trade is instrumental in Farm Life Market's mission to connect global agricultural markets.`
+    He is a results-oriented leader with a proven track record of optimizing operational efficiency and driving sustainable growth in complex, multi-national environments. His expertise in supply chain management and international trade is instrumental in Farm Life Market's mission to connect global agricultural markets.
+
+    Expertise and Experience
+    • Business management
+    • Leadership, Negotiations and Team Building
+    • Regulatory reporting governance
+    • Sales and Marketing
+`
   },
   { 
     name: "Ojo Olajide Samuel", 
     role: "Chief Technical Officer, Global Operations", 
     image: "/jaiden.jpg",
-    bio: `Ojo Olajide Samuel is a technology professional with a strong background in software development, systems architecture, and digital platform deployment. As Chief Technology Officer at Farm Life Market, he leads the design and execution of the company's technology infrastructure, supporting the development of a scalable marketplace that connects farmers, buyers, and partners across multiple regions.
+    bio: `Ojo Olajide Samuel serves as the Assistant Vice President and Regional Manager of Farm Life Market, supporting executive leadership while helping coordinate regional operations, organizational execution, and day-to-day business activities across the company’s growing agriculture and logistics ecosystem.
 
-He has hands-on experience building and managing web and mobile applications, with a focus on performance, reliability, and user experience. His work spans platform integration, database management, and the development of secure systems to support digital payments and operational workflows.
+    In his role, he works closely with senior leadership to support operational management, cross-functional coordination, project execution, and regional business development initiatives. He also assists in maintaining communication between teams, overseeing operational workflows, and helping ensure that company objectives are executed efficiently across multiple markets.
 
-Ojo plays a central role in advancing Farm Life Market's digital ecosystem, including the ongoing development of the FLM Go platform and wallet infrastructure. He is focused on delivering practical, efficient technology solutions that support growth, improve access for users, and strengthen the platform's long-term capabilities.
+    As Regional Manager, Ojo contributes to the expansion and coordination of Farm Life Market’s activities involving farmer onboarding, logistics support, vendor relations, and supply chain operations. His role helps strengthen the company’s ability to scale structured agricultural trade systems across Africa, the Caribbean, and the United States.
 
-Areas of Expertise
-•⁠  ⁠Software Development & Engineering
-•⁠  ⁠Systems Architecture
-•⁠  ⁠Web & Mobile Application Development
-•⁠  ⁠Platform Integration
-•⁠  ⁠Database Management
-•⁠  ⁠Digital Payments Infrastructure`
+    Ojo remains committed to supporting Farm Life Market’s mission of building technology-driven agricultural infrastructure that improves market access, operational efficiency, and long-term growth opportunities for farmers, vendors, and business partners.
+
+    Areas of Expertise
+    •⁠  ⁠Software Development & Engineering
+    •⁠  ⁠Systems Architecture
+    •⁠  ⁠Web & Mobile Application Development
+    •⁠  ⁠Platform Integration
+    •⁠  ⁠Database Management
+    •⁠  ⁠Digital Payments Infrastructure`
   },
 ];
 
@@ -131,7 +140,14 @@ Areas of Expertise
     image: "/profile1.jpeg",
     bio: `Patrick M. Reid is the Chief Operating Officer and President of Global Operations at Farm Life Market. With an MBA and extensive experience in international business management, Patrick oversees the company's daily operations and strategic execution across global markets. 
 
-He is a results-oriented leader with a proven track record of optimizing operational efficiency and driving sustainable growth in complex, multi-national environments. His expertise in supply chain management and international trade is instrumental in Farm Life Market's mission to connect global agricultural markets.`
+He is a results-oriented leader with a proven track record of optimizing operational efficiency and driving sustainable growth in complex, multi-national environments. His expertise in supply chain management and international trade is instrumental in Farm Life Market's mission to connect global agricultural markets.
+
+Expertise and Experience
+• Business management
+• Leadership, Negotiations and Team Building
+• Regulatory reporting governance
+• Sales and Marketing
+`
   },
 ];
 
