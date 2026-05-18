@@ -132,7 +132,18 @@ Areas of Expertise
     name: "Nathan Robb", 
     role: "Advisory Board Member", 
     image: "/Nathan.jpeg",
-    bio: `Nathan Robb is a senior government relations professional with extensive experience in federal and state policy advocacy in the United States, particularly in support of higher education, scientific research, and student financial aid. In his current leadership role, he advances strategic priorities by engaging policymakers and shaping public policy initiatives that strengthen institutional and research objectives. Earlier in his career, he served as a political analyst with the Japanese Consulate in New York, providing insight into U.S.–Japan relations. Nathan holds a bachelor's degree and a master's degree from the University of Chicago.`
+    bio: `Nathan W. Robb is a senior government relations professional with extensive experience in federal and state policy advocacy in the United States, with a focus on higher education, scientific research, and student financial aid. In his current leadership role, he advances strategic priorities by engaging policymakers and shaping public policy initiatives that strengthen institutional and research objectives.
+
+Earlier in his career, Nathan served as a political analyst with the Japanese Consulate in New York, where he provided insight into U.S.–Japan relations and supported diplomatic and policy-related initiatives.
+
+Nathan holds both a bachelor’s degree and a master’s degree from the University of Chicago.
+
+Areas of Expertise
+•⁠  ⁠Government relations and policy advocacy
+•⁠  ⁠Federal and state legislative engagement
+•⁠  ⁠Higher education and research policy
+•⁠  ⁠Public policy strategy and analysis
+•⁠  ⁠Stakeholder and institutional engagement`
   },
   { 
     name: "Patrick M. Reid", 
